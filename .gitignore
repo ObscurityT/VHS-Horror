@@ -1,0 +1,59 @@
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+
+# Cache do Unity
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+
+# Arquivos de build (Android/iOS)
+*.apk
+*.aab
+*.ipa
+*.xcworkspace/
+*.xcuserdata/
+*.xcuserstate
+
+# Arquivos de IDE
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.VC.db
+.vscode/
+.idea/
+*.code-workspace
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Backup e sistema
+*.bak
+*.old
+*.orig
+*.swp
+
+# Arquivos de sistema do Unity Hub
+sysinfo.txt
+
+# Git LFS (opcional, se for usar)
+#*.psd filter=lfs diff=lfs merge=lfs -text
+#*.png filter=lfs diff=lfs merge=lfs -text
+#*.fbx filter=lfs diff=lfs merge=lfs -text
