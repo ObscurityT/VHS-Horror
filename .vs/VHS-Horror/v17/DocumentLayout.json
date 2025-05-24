@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Unity\\VHS-Horror\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E58138B8-25E2-0566-A20C-4EF8F294BAFA}|Assembly-CSharp.csproj|d:\\unity\\vhs-horror\\assets\\user interface\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E58138B8-25E2-0566-A20C-4EF8F294BAFA}|Assembly-CSharp.csproj|solutionrelative:assets\\user interface\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E58138B8-25E2-0566-A20C-4EF8F294BAFA}|Assembly-CSharp.csproj|D:\\Unity\\VHS-Horror\\assets\\user interface\\scripts\\transitions\\closeandopen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E58138B8-25E2-0566-A20C-4EF8F294BAFA}|Assembly-CSharp.csproj|solutionrelative:assets\\user interface\\scripts\\transitions\\closeandopen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E58138B8-25E2-0566-A20C-4EF8F294BAFA}|Assembly-CSharp.csproj|D:\\Unity\\VHS-Horror\\assets\\character\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E58138B8-25E2-0566-A20C-4EF8F294BAFA}|Assembly-CSharp.csproj|solutionrelative:assets\\character\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E58138B8-25E2-0566-A20C-4EF8F294BAFA}|Assembly-CSharp.csproj|D:\\Unity\\VHS-Horror\\assets\\audio\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E58138B8-25E2-0566-A20C-4EF8F294BAFA}|Assembly-CSharp.csproj|solutionrelative:assets\\audio\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E58138B8-25E2-0566-A20C-4EF8F294BAFA}|Assembly-CSharp.csproj|D:\\Unity\\VHS-Horror\\assets\\audio\\scripts\\audio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E58138B8-25E2-0566-A20C-4EF8F294BAFA}|Assembly-CSharp.csproj|solutionrelative:assets\\audio\\scripts\\audio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "D:\\Unity\\VHS-Horror\\Assets\\User Interface\\Scripts\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\User Interface\\Scripts\\UIManager.cs",
+              "ToolTip": "D:\\Unity\\VHS-Horror\\Assets\\User Interface\\Scripts\\UIManager.cs",
+              "RelativeToolTip": "Assets\\User Interface\\Scripts\\UIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T20:16:08.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CloseAndOpen.cs",
+              "DocumentMoniker": "D:\\Unity\\VHS-Horror\\Assets\\User Interface\\Scripts\\Transitions\\CloseAndOpen.cs",
+              "RelativeDocumentMoniker": "Assets\\User Interface\\Scripts\\Transitions\\CloseAndOpen.cs",
+              "ToolTip": "D:\\Unity\\VHS-Horror\\Assets\\User Interface\\Scripts\\Transitions\\CloseAndOpen.cs",
+              "RelativeToolTip": "Assets\\User Interface\\Scripts\\Transitions\\CloseAndOpen.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T20:14:51.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\Unity\\VHS-Horror\\Assets\\Character\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Character\\Scripts\\Player.cs",
+              "ToolTip": "D:\\Unity\\VHS-Horror\\Assets\\Character\\Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\Character\\Scripts\\Player.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwCIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T20:13:31.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AudioManager.cs",
+              "DocumentMoniker": "D:\\Unity\\VHS-Horror\\Assets\\Audio\\Scripts\\AudioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Audio\\Scripts\\AudioManager.cs",
+              "ToolTip": "D:\\Unity\\VHS-Horror\\Assets\\Audio\\Scripts\\AudioManager.cs",
+              "RelativeToolTip": "Assets\\Audio\\Scripts\\AudioManager.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T20:11:27.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Audio.cs",
+              "DocumentMoniker": "D:\\Unity\\VHS-Horror\\Assets\\Audio\\Scripts\\Audio.cs",
+              "RelativeDocumentMoniker": "Assets\\Audio\\Scripts\\Audio.cs",
+              "ToolTip": "D:\\Unity\\VHS-Horror\\Assets\\Audio\\Scripts\\Audio.cs",
+              "RelativeToolTip": "Assets\\Audio\\Scripts\\Audio.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswBIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T20:07:27.003Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 79,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
