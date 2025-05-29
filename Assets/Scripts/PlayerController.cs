@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float mouseSensitivity = 2f;
     public Transform cameraTransform;
 
-    public CharacterController controller;
+    private CharacterController controller;
     public float verticalVelocity;
     public float cameraPitch = 0f;
 
