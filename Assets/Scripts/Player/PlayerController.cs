@@ -8,25 +8,19 @@ public class PlayerController : MonoBehaviour
     public float mouseSensitivity = 2f;
     public Transform cameraTransform;
 
-    private CharacterController controller;
-    public float verticalVelocity;
+    private Rigidbody rb;
     public float cameraPitch = 0f;
 
     private void Start()
     {
-       controller = GetComponent<CharacterController>();
+       rb = GetComponent<Rigidbody>();
        Cursor.lockState = CursorLockMode.Locked;
-        
+       rb.freezeRotation = true;
+
     }
 
     private void Update()
     {
-        //Movement
-        float moveX = Input.GetAxis("Horizontal");
-        float moveZ = Input.GetAxis("Vertical");
-
-        Vector3 move = transform.right * moveX + transform.forward * moveZ;
-        controller.Move(move * moveSpeed * Time.deltaTime);
 
         //Mouse look
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
@@ -40,5 +34,16 @@ public class PlayerController : MonoBehaviour
 
 
 
+    }
+
+    private void FixedUpdate()
+    {
+        //Movement
+        float moveX = Input.GetAxis("Horizontal");
+        float moveZ = Input.GetAxis("Vertical");
+
+        Vector3 move = transform.right * moveX + transform.forward * moveZ;
+        rb.MovePosition(rb.position + move * moveSpeed * Time.fixedDeltaTime);
+        
     }
 }
