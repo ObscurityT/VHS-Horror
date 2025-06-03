@@ -22,18 +22,6 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
 
-        //Mouse look
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
-
-        cameraPitch -= mouseY;
-        cameraPitch = Mathf.Clamp(cameraPitch, -85f, 85f);
-
-        cameraTransform.localRotation = Quaternion.Euler(cameraPitch, 0f, 0f);
-        transform.Rotate(Vector3.up * mouseX);
-
-
-
     }
 
     private void FixedUpdate()
