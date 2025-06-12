@@ -12,6 +12,7 @@ namespace AudioSystem
         Buff,
         RunAway,
         Button,
-        PlaceItem
+        PlaceItem,
+        BookPuzzleSucess
     }
 }

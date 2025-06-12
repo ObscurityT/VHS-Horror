@@ -5,7 +5,7 @@ public class BookPuzzleInteract : MonoBehaviour, IInteractable
 {
     public BookPuzzleCanvas puzzleCanvas;
 
-    public void Interact()
+    public void Interact(GameObject interaction)
     {
         puzzleCanvas.OpenCanvas();
     }

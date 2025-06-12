@@ -10,6 +10,8 @@ public class BookPuzzleCanvas : MonoBehaviour
     public Button submitButton;
     public TextMeshProUGUI feedbackText;
 
+    private bool puzzleSolved = false;
+
     private List<int> correctOrder = new List<int> { 0, 1, 2 };
     private List<int> currentOrder = new List<int>();
 
@@ -23,6 +25,12 @@ public class BookPuzzleCanvas : MonoBehaviour
         }
 
         feedbackText.text = "Escolha os livros na ordem.";
+    }
+
+     void Update()
+    {
+        if(canvas.activeSelf && Input.GetKeyDown(KeyCode.Escape))
+        { CloseCanvas(); }    
     }
 
     void OnBookClicked(Button btn)
@@ -53,9 +61,9 @@ public class BookPuzzleCanvas : MonoBehaviour
                 return;
             }
         }
-
+        puzzleSolved = true;
         feedbackText.text = "Correto! Puzzle resolvido.";
-        StartCoroutine(CloseAfterDelay(1.5f));
+        StartCoroutine(CloseAfterDelay(1f));
         // abrir uma porta, tocar um som, etc
     }
     private System.Collections.IEnumerator CloseAfterDelay(float delay)
@@ -67,6 +75,7 @@ public class BookPuzzleCanvas : MonoBehaviour
 
     public void OpenCanvas()
     {
+        if (puzzleSolved) return;
         FindFirstObjectByType<PlayerController>().canLook = false;
         canvas.SetActive(true);
         Time.timeScale = 0f;
@@ -85,4 +94,5 @@ public class BookPuzzleCanvas : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
+
 }
