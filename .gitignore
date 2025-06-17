@@ -34,6 +34,7 @@ UserSettings/
 *.userprefs
 *.VC.db
 .vscode/
+.vs/
 .idea/
 *.code-workspace
 
