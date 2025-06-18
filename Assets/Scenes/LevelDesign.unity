@@ -425,6 +425,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -676,7 +680,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50420074}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -692,7 +696,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1080,6 +1084,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1157,6 +1165,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1236,6 +1248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1313,6 +1329,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1392,6 +1412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1470,6 +1494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1547,6 +1575,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2210,6 +2242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2287,6 +2323,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2366,6 +2406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2443,6 +2487,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3260,6 +3308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3337,6 +3389,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3581,6 +3637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3824,6 +3884,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3909,7 +3973,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160969711}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3925,7 +3989,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4591,6 +4655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4668,6 +4736,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5099,6 +5171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5198,7 +5274,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5529,6 +5605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5607,6 +5687,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5684,6 +5768,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6501,6 +6589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6578,6 +6670,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7395,6 +7491,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7472,6 +7572,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7859,7 +7963,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364745080}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7875,7 +7979,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8450,7 +8554,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10546,7 +10650,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 396871745}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -10562,7 +10666,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10855,11 +10959,11 @@ Transform:
   m_GameObject: {fileID: 399080645}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.031934205, z: -0, w: 0.99949}
-  m_LocalPosition: {x: 20.693893, y: -2.4, z: -8.784841}
+  m_LocalPosition: {x: 20.693893, y: -2.4, z: -8.7848425}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 829102131}
+  m_Father: {fileID: 778679455}
   m_LocalEulerAnglesHint: {x: 0, y: -3.66, z: 0}
 --- !u!64 &399080647
 MeshCollider:
@@ -10890,7 +10994,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399080645}
-  m_Mesh: {fileID: 783407219}
+  m_Mesh: {fileID: 592518877}
 --- !u!23 &399080649
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10914,7 +11018,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11171,7 +11275,7 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
-  m_Mesh: {fileID: 783407219}
+  m_Mesh: {fileID: 592518877}
   m_VersionIndex: 3912
   m_IsSelectable: 1
   m_SelectedFaces: 
@@ -11323,6 +11427,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11588,7 +11696,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11919,6 +12027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11987,7 +12099,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463289006}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -12003,7 +12115,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15898,6 +16010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15976,6 +16092,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16053,6 +16173,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17443,6 +17567,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17520,6 +17648,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17606,7 +17738,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494119420}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -17622,7 +17754,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17953,6 +18085,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18030,6 +18166,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18847,6 +18987,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18915,7 +19059,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516858694}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -18931,7 +19075,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19295,6 +19439,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21097,6 +21245,171 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 509fd1a2ba93f4a46b3656aea9cdb72a, type: 3}
+--- !u!43 &592518877
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: pb_Mesh-12932(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  serializedVersion: 11
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 36
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 24
+    localAABB:
+      m_Center: {x: 16.542929, y: 0, z: 0.000012472272}
+      m_Extent: {x: 13.166428, y: 0.1, z: 0.5}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 24
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1152
+    _typelessdata: 98185840cdccccbdd100003f00000000000000000000803f000080bf0000000000000000000080bfb0a9d241cccc4c3fc3aced41cdccccbdd100003f00000000000000000000803f000080bf0000000000000000000080bf00000000cccc4c3f98185840cdcccc3dd100003f00000000000000000000803f000080bf0000000000000000000080bfb0a9d2410000803fc3aced41cdcccc3dd100003f00000000000000000000803f000080bf0000000000000000000080bf000000000000803fc3aced41cdccccbdd100003f0000803f000000000000000000000000000000000000803f000080bf0000803fcccc4c3fc3aced41cdccccbd5dfeffbe0000803f000000000000000000000000000000000000803f000080bf00000000cccc4c3fc3aced41cdcccc3dd100003f0000803f000000000000000000000000000000000000803f000080bf0000803f0000803fc3aced41cdcccc3d5dfeffbe0000803f000000000000000000000000000000000000803f000080bf000000000000803fc3aced41cdccccbd5dfeffbe0000000000000000000080bf0000803f0000000000000000000080bfb0a9d241cccc4c3f98185840cdccccbd5dfeffbe0000000000000000000080bf0000803f0000000000000000000080bf00000000cccc4c3fc3aced41cdcccc3d5dfeffbe0000000000000000000080bf0000803f0000000000000000000080bfb0a9d2410000803f98185840cdcccc3d5dfeffbe0000000000000000000080bf0000803f0000000000000000000080bf000000000000803f98185840cdccccbd5dfeffbe000080bf00000000000000000000000000000000000080bf000080bf0000803fcccc4c3f98185840cdccccbdd100003f000080bf00000000000000000000000000000000000080bf000080bf00000000cccc4c3f98185840cdcccc3d5dfeffbe000080bf00000000000000000000000000000000000080bf000080bf0000803f0000803f98185840cdcccc3dd100003f000080bf00000000000000000000000000000000000080bf000080bf000000000000803f98185840cdcccc3dd100003f000000000000803f000000000000803f0000000000000000000080bf000000000000803fc3aced41cdcccc3dd100003f000000000000803f000000000000803f0000000000000000000080bfb0a9d2410000803f98185840cdcccc3d5dfeffbe000000000000803f000000000000803f0000000000000000000080bf0000000000000033c3aced41cdcccc3d5dfeffbe000000000000803f000000000000803f0000000000000000000080bfb0a9d2410000003398185840cdccccbd5dfeffbe00000000000080bf00000000000080bf0000000000000000000080bfb0a9d24100000033c3aced41cdccccbd5dfeffbe00000000000080bf00000000000080bf0000000000000000000080bf000000000000003398185840cdccccbdd100003f00000000000080bf00000000000080bf0000000000000000000080bfb0a9d2410000803fc3aced41cdccccbdd100003f00000000000080bf00000000000080bf0000000000000000000080bf000000000000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 16.542929, y: 0, z: 0.000012472272}
+    m_Extent: {x: 13.166428, y: 0.1, z: 0.5}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &598413107
 GameObject:
   m_ObjectHideFlags: 0
@@ -21738,6 +22051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21981,6 +22298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22058,6 +22379,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22320,6 +22645,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22729,6 +23058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22806,6 +23139,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22885,6 +23222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22929,7 +23270,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 829102131}
+  m_Father: {fileID: 778679455}
   m_LocalEulerAnglesHint: {x: 0, y: -3.66, z: 0}
 --- !u!64 &666042492
 MeshCollider:
@@ -22960,7 +23301,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666042490}
-  m_Mesh: {fileID: 644193982}
+  m_Mesh: {fileID: 1394826655}
 --- !u!23 &666042494
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22984,7 +23325,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23241,7 +23582,7 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
-  m_Mesh: {fileID: 644193982}
+  m_Mesh: {fileID: 1394826655}
   m_VersionIndex: 5166
   m_IsSelectable: 1
   m_SelectedFaces: 
@@ -23480,6 +23821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23557,6 +23902,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24181,6 +24530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24258,6 +24611,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24344,7 +24701,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751693461}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -24360,7 +24717,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24691,6 +25048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24769,6 +25130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24846,6 +25211,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24932,7 +25301,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775134271}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -24948,7 +25317,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25211,6 +25580,41 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &778679454
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 778679455}
+  m_Layer: 0
+  m_Name: "Delimita\xE7\xE3o_Jardim"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &778679455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778679454}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 399080646}
+  - {fileID: 666042491}
+  - {fileID: 1668537486}
+  - {fileID: 2085634507}
+  m_Father: {fileID: 829102131}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &782634943
 GameObject:
   m_ObjectHideFlags: 0
@@ -26016,6 +26420,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26833,6 +27241,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26910,6 +27322,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26995,7 +27411,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801594041}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -27011,7 +27427,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27350,7 +27766,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809760119}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -27366,7 +27782,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27733,6 +28149,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27811,6 +28231,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27883,10 +28307,7 @@ Transform:
   - {fileID: 1886822147}
   - {fileID: 232833085}
   - {fileID: 442480384}
-  - {fileID: 399080646}
-  - {fileID: 666042491}
-  - {fileID: 1668537486}
-  - {fileID: 2085634507}
+  - {fileID: 778679455}
   - {fileID: 832806525}
   - {fileID: 160969712}
   - {fileID: 1517543491}
@@ -28161,7 +28582,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832806524}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -28177,7 +28598,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28672,6 +29093,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29238,6 +29663,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29896,7 +30325,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926828808}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -29912,7 +30341,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30242,6 +30671,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30692,7 +31125,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986607231}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -30708,7 +31141,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31039,6 +31472,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31117,6 +31554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31194,6 +31635,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31438,6 +31883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31516,6 +31965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31593,6 +32046,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32332,6 +32789,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32409,6 +32870,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33134,6 +33599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33542,6 +34011,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33620,6 +34093,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33694,6 +34171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33767,6 +34248,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33867,7 +34352,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35940,6 +36425,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36091,6 +36580,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36184,7 +36677,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203892996}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -36200,7 +36693,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36696,6 +37189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36773,6 +37270,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36852,6 +37353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36929,6 +37434,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37071,7 +37580,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273687053}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -37087,7 +37596,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37417,6 +37926,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37826,6 +38339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37977,6 +38494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38054,6 +38575,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38133,6 +38658,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38210,6 +38739,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38297,7 +38830,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1379688422}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -38313,7 +38846,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38644,6 +39177,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38732,7 +39269,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392831631}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -38748,7 +39285,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39011,6 +39548,171 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!43 &1394826655
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: pb_Mesh-12932(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  serializedVersion: 11
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 36
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 24
+    localAABB:
+      m_Center: {x: 9.46615, y: 0, z: 0.000020325184}
+      m_Extent: {x: 6.08965, y: 0.1, z: 0.5}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 24
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1152
+    _typelessdata: 94185840cdccccbd5501003f00000000000000000000803f000080bf0000000000000000000080bf6ade4241cccc4c3f8fe47841cdccccbd5501003f00000000000000000000803f000080bf0000000000000000000080bf00000000cccc4c3f94185840cdcccc3d5501003f00000000000000000000803f000080bf0000000000000000000080bf6ade42410000803f8fe47841cdcccc3d5501003f00000000000000000000803f000080bf0000000000000000000080bf000000000000803f8fe47841cdccccbd5501003f0000803f000000000000000000000000000000000000803f000080bf0000803fcccc4c3f8fe47841cdccccbd56fdffbe0000803f000000000000000000000000000000000000803f000080bf00000000cccc4c3f8fe47841cdcccc3d5501003f0000803f000000000000000000000000000000000000803f000080bf0000803f0000803f8fe47841cdcccc3d56fdffbe0000803f000000000000000000000000000000000000803f000080bf000000000000803f8fe47841cdccccbd56fdffbe0000000000000000000080bf0000803f0000000000000000000080bf6ade4241cccc4c3f94185840cdccccbd56fdffbe0000000000000000000080bf0000803f0000000000000000000080bf00000000cccc4c3f8fe47841cdcccc3d56fdffbe0000000000000000000080bf0000803f0000000000000000000080bf6ade42410000803f94185840cdcccc3d56fdffbe0000000000000000000080bf0000803f0000000000000000000080bf000000000000803f94185840cdccccbd56fdffbe000080bf00000000000000000000000000000000000080bf000080bf0000803fcccc4c3f94185840cdccccbd5501003f000080bf00000000000000000000000000000000000080bf000080bf00000000cccc4c3f94185840cdcccc3d56fdffbe000080bf00000000000000000000000000000000000080bf000080bf0000803f0000803f94185840cdcccc3d5501003f000080bf00000000000000000000000000000000000080bf000080bf000000000000803f94185840cdcccc3d5501003f000000000000803f000000000000803f0000000000000000000080bf000000000000803f8fe47841cdcccc3d5501003f000000000000803f000000000000803f0000000000000000000080bf6ade42410000803f94185840cdcccc3d56fdffbe000000000000803f000000000000803f0000000000000000000080bf00000000000000008fe47841cdcccc3d56fdffbe000000000000803f000000000000803f0000000000000000000080bf6ade42410000000094185840cdccccbd56fdffbe00000000000080bf00000000000080bf0000000000000000000080bf6ade4241000000008fe47841cdccccbd56fdffbe00000000000080bf00000000000080bf0000000000000000000080bf000000000000000094185840cdccccbd5501003f00000000000080bf00000000000080bf0000000000000000000080bf6ade42410000803f8fe47841cdccccbd5501003f00000000000080bf00000000000080bf0000000000000000000080bf000000000000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 9.46615, y: 0, z: 0.000020325184}
+    m_Extent: {x: 6.08965, y: 0.1, z: 0.5}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1399704376
 GameObject:
   m_ObjectHideFlags: 0
@@ -39085,7 +39787,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399704376}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -39101,7 +39803,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39520,6 +40222,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40337,6 +41043,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40415,6 +41125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40483,7 +41197,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428565223}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -40499,7 +41213,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -41427,6 +42141,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41676,7 +42394,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451491132}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -41692,7 +42410,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42023,6 +42741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42100,6 +42822,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42752,6 +43478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42837,7 +43567,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517543490}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -42853,7 +43583,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -43191,7 +43921,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521601422}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -43207,7 +43937,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -43547,7 +44277,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537271003}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -43563,7 +44293,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -45140,7 +45870,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580534211}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -45156,7 +45886,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -45487,6 +46217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45734,6 +46468,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46551,6 +47289,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46959,6 +47701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47044,7 +47790,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661556539}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -47060,7 +47806,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47391,6 +48137,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47430,12 +48180,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668537485}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.8186504, z: -0, w: 0.57429224}
+  m_LocalRotation: {x: -0, y: 0.81865036, z: -0, w: 0.57429224}
   m_LocalPosition: {x: 51.93021, y: -2.4, z: -3.3846295}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 829102131}
+  m_Father: {fileID: 778679455}
   m_LocalEulerAnglesHint: {x: 0, y: 109.9, z: 0}
 --- !u!64 &1668537487
 MeshCollider:
@@ -47466,7 +48216,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668537485}
-  m_Mesh: {fileID: 1768500787}
+  m_Mesh: {fileID: 1753718145}
 --- !u!23 &1668537489
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47490,7 +48240,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47747,7 +48497,7 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
-  m_Mesh: {fileID: 1768500787}
+  m_Mesh: {fileID: 1753718145}
   m_VersionIndex: 8884
   m_IsSelectable: 1
   m_SelectedFaces: 
@@ -47842,7 +48592,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -52099,6 +52849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52915,6 +53669,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -53046,6 +53804,171 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!43 &1753718145
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: pb_Mesh-12932(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  serializedVersion: 11
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 36
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 24
+    localAABB:
+      m_Center: {x: 14.279062, y: 0, z: -0.00008191168}
+      m_Extent: {x: 10.902506, y: 0.1, z: 0.5}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 24
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1152
+    _typelessdata: 84195840cdccccbd43f5ff3e00000000000000000000803f000080bf0000000000000000000080bfaa70ae41cccc4c3fda73c941cdccccbd43f5ff3e00000000000000000000803f000080bf0000000000000000000080bf00000000cccc4c3f84195840cdcccc3d43f5ff3e00000000000000000000803f000080bf0000000000000000000080bfaa70ae410000803fda73c941cdcccc3d43f5ff3e00000000000000000000803f000080bf0000000000000000000080bf000000000000803fda73c941cdccccbd43f5ff3e0000803f000000000000000000000000000000000000803f000080bf0000803fcccc4c3fda73c941cdccccbd5e0500bf0000803f000000000000000000000000000000000000803f000080bf00000000cccc4c3fda73c941cdcccc3d43f5ff3e0000803f000000000000000000000000000000000000803f000080bf0000803f0000803fda73c941cdcccc3d5e0500bf0000803f000000000000000000000000000000000000803f000080bf000000000000803fda73c941cdccccbd5e0500bf0000000000000000000080bf0000803f0000000000000000000080bfaa70ae41cccc4c3f84195840cdccccbd5e0500bf0000000000000000000080bf0000803f0000000000000000000080bf00000000cccc4c3fda73c941cdcccc3d5e0500bf0000000000000000000080bf0000803f0000000000000000000080bfaa70ae410000803f84195840cdcccc3d5e0500bf0000000000000000000080bf0000803f0000000000000000000080bf000000000000803f84195840cdccccbd5e0500bf000080bf00000000000000000000000000000000000080bf000080bf0000803fcccc4c3f84195840cdccccbd43f5ff3e000080bf00000000000000000000000000000000000080bf000080bf00000000cccc4c3f84195840cdcccc3d5e0500bf000080bf00000000000000000000000000000000000080bf000080bf0000803f0000803f84195840cdcccc3d43f5ff3e000080bf00000000000000000000000000000000000080bf000080bf000000000000803f84195840cdcccc3d43f5ff3e000000000000803f000000000000803f0000000000000000000080bf000000000000803fda73c941cdcccc3d43f5ff3e000000000000803f000000000000803f0000000000000000000080bfaa70ae410000803f84195840cdcccc3d5e0500bf000000000000803f000000000000803f0000000000000000000080bf0000000000000000da73c941cdcccc3d5e0500bf000000000000803f000000000000803f0000000000000000000080bfaa70ae410000000084195840cdccccbd5e0500bf00000000000080bf00000000000080bf0000000000000000000080bfaa70ae4100000000da73c941cdccccbd5e0500bf00000000000080bf00000000000080bf0000000000000000000080bf000000000000000084195840cdccccbd43f5ff3e00000000000080bf00000000000080bf0000000000000000000080bfaa70ae410000803fda73c941cdccccbd43f5ff3e00000000000080bf00000000000080bf0000000000000000000080bf000000000000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 14.279062, y: 0, z: -0.00008191168}
+    m_Extent: {x: 10.902506, y: 0.1, z: 0.5}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1758911578
 GameObject:
   m_ObjectHideFlags: 0
@@ -53687,6 +54610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -53846,7 +54773,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765556146}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -53862,7 +54789,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -54710,6 +55637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55139,6 +56070,171 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!43 &1777109810
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: pb_Mesh-12932(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
+  serializedVersion: 11
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 36
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 24
+    localAABB:
+      m_Center: {x: 3.8495178, y: 0, z: -0.000017285347}
+      m_Extent: {x: 5.0013456, y: 0.1, z: 0.5}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 24
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1152
+    _typelessdata: 1a6f93bfcdccccbdbcfdff3e00000000000000000000803f000080bf0000000000000000000080bf060b2041cccc4c3f239d0d41cdccccbdbcfdff3e00000000000000000000803f000080bf0000000000000000000080bf00000000cccc4c3f1a6f93bfcdcccc3dbcfdff3e00000000000000000000803f000080bf0000000000000000000080bf060b20410000803f239d0d41cdcccc3dbcfdff3e00000000000000000000803f000080bf0000000000000000000080bf000000000000803f239d0d41cdccccbdbcfdff3e0000803f000000000000000000000000000000000000803f000080bf0000803fcccc4c3f239d0d41cdccccbd220100bf0000803f000000000000000000000000000000000000803f000080bf00000000cccc4c3f239d0d41cdcccc3dbcfdff3e0000803f000000000000000000000000000000000000803f000080bf0000803f0000803f239d0d41cdcccc3d220100bf0000803f000000000000000000000000000000000000803f000080bf000000000000803f239d0d41cdccccbd220100bf0000000000000000000080bf0000803f0000000000000000000080bf060b2041cccc4c3f1a6f93bfcdccccbd220100bf0000000000000000000080bf0000803f0000000000000000000080bf00000000cccc4c3f239d0d41cdcccc3d220100bf0000000000000000000080bf0000803f0000000000000000000080bf060b20410000803f1a6f93bfcdcccc3d220100bf0000000000000000000080bf0000803f0000000000000000000080bf000000000000803f1a6f93bfcdccccbd220100bf000080bf00000000000000000000000000000000000080bf000080bf0000803fcccc4c3f1a6f93bfcdccccbdbcfdff3e000080bf00000000000000000000000000000000000080bf000080bf00000000cccc4c3f1a6f93bfcdcccc3d220100bf000080bf00000000000000000000000000000000000080bf000080bf0000803f0000803f1a6f93bfcdcccc3dbcfdff3e000080bf00000000000000000000000000000000000080bf000080bf000000000000803f1a6f93bfcdcccc3dbcfdff3e000000000000803f000000000000803f0000000000000000000080bf000000000000803f239d0d41cdcccc3dbcfdff3e000000000000803f000000000000803f0000000000000000000080bf060b20410000803f1a6f93bfcdcccc3d220100bf000000000000803f000000000000803f0000000000000000000080bf0000000000000000239d0d41cdcccc3d220100bf000000000000803f000000000000803f0000000000000000000080bf060b2041000000001a6f93bfcdccccbd220100bf00000000000080bf00000000000080bf0000000000000000000080bf060b204100000000239d0d41cdccccbd220100bf00000000000080bf00000000000080bf0000000000000000000080bf00000000000000001a6f93bfcdccccbdbcfdff3e00000000000080bf00000000000080bf0000000000000000000080bf060b20410000803f239d0d41cdccccbdbcfdff3e00000000000080bf00000000000080bf0000000000000000000080bf000000000000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 3.8495178, y: 0, z: -0.000017285347}
+    m_Extent: {x: 5.0013456, y: 0.1, z: 0.5}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1001 &1778215845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55206,6 +56302,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -55284,6 +56384,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -55371,7 +56475,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790838996}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -55387,7 +56491,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -55718,6 +56822,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55812,7 +56920,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796621039}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -55828,7 +56936,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -56158,6 +57266,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -56567,6 +57679,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -56644,6 +57760,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -56825,6 +57945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -56902,6 +58026,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57058,6 +58186,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57325,9 +58457,17 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57407,6 +58547,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -57484,6 +58628,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57740,7 +58888,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864488253}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -57756,7 +58904,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -58100,7 +59248,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871811978}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -58116,7 +59264,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -58643,6 +59791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58720,6 +59872,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58806,7 +59962,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886822146}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -58822,7 +59978,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -59318,6 +60474,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59551,7 +60711,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915386869}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -59567,7 +60727,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -60087,6 +61247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -60337,7 +61501,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945041718}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -60353,7 +61517,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -61289,6 +62453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -61366,6 +62534,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -61445,6 +62617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -61522,6 +62698,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -62174,6 +63354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -62416,6 +63600,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -63993,6 +65181,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64077,7 +65269,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043032351}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -64093,7 +65285,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -64424,6 +65616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64501,6 +65697,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -64580,6 +65780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64657,6 +65861,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -64736,6 +65944,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64813,6 +66025,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -64899,7 +66115,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074443558}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -64915,7 +66131,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -65411,6 +66627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -65455,7 +66675,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 829102131}
+  m_Father: {fileID: 778679455}
   m_LocalEulerAnglesHint: {x: 0, y: -38.4, z: 0}
 --- !u!64 &2085634508
 MeshCollider:
@@ -65486,7 +66706,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085634506}
-  m_Mesh: {fileID: 1551673256}
+  m_Mesh: {fileID: 1777109810}
 --- !u!23 &2085634510
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65510,7 +66730,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 60f49e7884f8e924f92f1c2c8516fea9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -65767,7 +66987,7 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
-  m_Mesh: {fileID: 1551673256}
+  m_Mesh: {fileID: 1777109810}
   m_VersionIndex: 8653
   m_IsSelectable: 1
   m_SelectedFaces: 
@@ -65840,6 +67060,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -66249,6 +67473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66492,6 +67720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66569,6 +67801,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -66648,6 +67884,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66725,6 +67965,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -66804,6 +68048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: parede (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66881,6 +68129,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
       propertyPath: m_Name
       value: parede
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d710d6fadc6da8429cc40ab88014fc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
