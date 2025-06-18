@@ -2125,7 +2125,7 @@ GameObject:
   - component: {fileID: 679785466}
   - component: {fileID: 679785470}
   m_Layer: 0
-  m_Name: Sphere111111
+  m_Name: Padlocl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3263,7 +3263,7 @@ GameObject:
   - component: {fileID: 1057473028}
   - component: {fileID: 1057473032}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: 'Key_ '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
