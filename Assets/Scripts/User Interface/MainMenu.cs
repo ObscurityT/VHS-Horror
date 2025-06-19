@@ -3,9 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+    public string sceneToLoad;
+    
     public void StartGame()
     {
-        SceneManager.LoadScene("NomeDaCenaDoJogo");  // Coloque aqui o nome da sua cena
+        SceneManager.LoadScene(sceneToLoad);  
     }
 
     public void Options()
@@ -17,7 +20,7 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
 #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;  // Para funcionar no editor
+        UnityEditor.EditorApplication.isPlaying = false; 
 #endif
     }
 }
