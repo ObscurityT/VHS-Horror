@@ -5,6 +5,7 @@ public class Padlock : MonoBehaviour, IInteractable
     public KeyType expectedKey;
     private bool unlocked = false;
     public PuzzleManager puzzleManager;
+    public PadlockAnimator padlockAnimator;
 
     public void Interact(GameObject interactor)
     {
@@ -18,6 +19,7 @@ public class Padlock : MonoBehaviour, IInteractable
             unlocked = true;
             Debug.Log("Unlocked with: " + expectedKey);
             keyInHand.ClearKey();
+            padlockAnimator?.Unlock(); 
             puzzleManager?.CheckPuzzle();
         }
         else

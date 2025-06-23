@@ -7,7 +7,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float interactionDistance = 3f;
     [SerializeField] private Camera playerCamera;
 
-    public float moveSpeed = 3f;
+    public float walkSpeed = 2.5f;
+    public float runSpeed = 3.3f;
     public float mouseSensitivity = 2f;
     public Transform cameraTransform;
 
@@ -15,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float cameraPitch = 0f;
 
     public bool canLook = true;
+    private bool isRunning;
 
 
     private void Start()
@@ -47,7 +49,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
+            Ray ray = playerCamera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
             Debug.DrawRay(playerCamera.transform.position, playerCamera.transform.forward * interactionDistance, Color.green, 1f);
             Debug.Log("Interact?");
             if (Physics.Raycast(ray, out RaycastHit hit, interactionDistance))
@@ -68,8 +70,11 @@ public class PlayerController : MonoBehaviour
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
 
+        isRunning = Input.GetKey(KeyCode.LeftShift);
+        float currentSpeed = isRunning ? runSpeed : walkSpeed;
+
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
-        rb.MovePosition(rb.position + move * moveSpeed * Time.fixedDeltaTime);
-        
+        rb.MovePosition(rb.position + move * currentSpeed * Time.fixedDeltaTime);
+
     }
 }
