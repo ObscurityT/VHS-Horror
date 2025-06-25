@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+
+
         if (canLook)
         {
             //Mouse look
@@ -77,4 +79,5 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(rb.position + move * currentSpeed * Time.fixedDeltaTime);
 
     }
+
 }

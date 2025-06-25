@@ -12,7 +12,11 @@ public class PadlockAnimator : MonoBehaviour
 
     [Header("Padlock Drop")]
     public float dropDelay = 1f;        // quanto tempo depois do levantamento
-    public float destroyDelay = 5f;     // quanto tempo até sumir após cair
+    public float destroyDelay = 5f;   // quanto tempo até sumir após cair
+    
+    [Header("Audio")]
+    public string destrancarSound = "mecanismo_girando";
+    public string cairSound = "metal_caindo";
 
     private Vector3 originalPosition;
     private Vector3 targetPosition;
@@ -44,6 +48,8 @@ public class PadlockAnimator : MonoBehaviour
 
     public void Unlock()
     {
+        if (!string.IsNullOrEmpty(destrancarSound))
+            AudioSystem.AudioManager.Instance.PlaySFX(destrancarSound);
         unlocked = true;
     }
 
@@ -51,7 +57,9 @@ public class PadlockAnimator : MonoBehaviour
     {
         yield return new WaitForSeconds(dropDelay);
 
-        
+        if (!string.IsNullOrEmpty(cairSound))
+            AudioSystem.AudioManager.Instance.PlaySFX(cairSound);
+
         if (!TryGetComponent<Rigidbody>(out var rb))
         {
             rb = gameObject.AddComponent<Rigidbody>();

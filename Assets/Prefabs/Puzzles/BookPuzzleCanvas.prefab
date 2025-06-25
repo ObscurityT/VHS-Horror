@@ -229,6 +229,7 @@ GameObject:
   - component: {fileID: 1007904160091379477}
   - component: {fileID: 6921851889544783314}
   - component: {fileID: 6044515225694704068}
+  - component: {fileID: 2478049670664581013}
   m_Layer: 5
   m_Name: BookPuzzleCanvas
   m_TagString: Untagged
@@ -319,6 +320,23 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2478049670664581013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759561552794514271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef2f146b58e23a348a7686d38f77857d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundOnOpen: PapelAbrindo
+  soundOnSuccess: LoboUivo
+  soundOnFail: Prato1
+  soundOnClose: '[Nenhum]'
+  randomPitch: 0
 --- !u!1 &1454754378644695989
 GameObject:
   m_ObjectHideFlags: 0
