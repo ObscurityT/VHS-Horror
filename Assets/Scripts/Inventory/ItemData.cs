@@ -2,15 +2,13 @@ using UnityEngine;
 
 namespace InventorySystem
 {
-    [CreateAssetMenu(fileName = "New Item", menuName = "Scriptable Objects/Item")]
+    [CreateAssetMenu(fileName = "New Item", menuName = "Scriptable Objects/Inventory Item")]
     public class ItemData : ScriptableObject
     {
-        public string _name;
+        public string itemName;
         [TextArea] public string description;
-        public Sprite spriteIcon;
-        public EVIDENCES evidenceType;
-        public string group; // A B C D E F G ...
+        public Sprite icon;
+        public InventoryItemType itemType;
         public bool isCollectible;
-        [TextArea] public string idea;
     }
 }

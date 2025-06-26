@@ -9,6 +9,13 @@ public class NoteUIController : MonoBehaviour
     public TMP_Text noteUIText;
     private GameObject lastNoteObject;
 
+    private PuzzleAudioHelper audioHelper;
+
+    private void Start()
+    {
+        audioHelper = GetComponent<PuzzleAudioHelper>();
+    }
+
     void Awake()
     {
         instance = this;
@@ -29,6 +36,13 @@ public class NoteUIController : MonoBehaviour
 
     public void CloseNote()
     {
+        Debug.Log("Fechando nota...");
+
+        if (audioHelper != null)
+            audioHelper.PlayCloseSound();
+        else
+            Debug.LogWarning("audioHelper está NULL!");
+
         noteCanvas.SetActive(false);
 
         

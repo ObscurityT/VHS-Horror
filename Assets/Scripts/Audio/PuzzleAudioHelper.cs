@@ -51,7 +51,19 @@ public class PuzzleAudioHelper : MonoBehaviour
 
     public void PlayCloseSound()
     {
+        Debug.Log("PlayCloseSound chamado!");
         if (!string.IsNullOrEmpty(soundOnClose))
-            AudioSystem.AudioManager.Instance.PlaySFX(soundOnClose);
+        {
+            Debug.Log("Tocando som: " + soundOnClose);
+
+            if (AudioSystem.AudioManager.Instance != null)
+                AudioSystem.AudioManager.Instance.PlaySFX(soundOnClose);
+            else
+                Debug.LogWarning("AudioManager.Instance está NULL!");
+        }
+        else
+        {
+            Debug.Log("soundOnClose está vazio");
+        }
     }
 }
