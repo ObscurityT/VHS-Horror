@@ -6,6 +6,7 @@ public class Padlock : MonoBehaviour, IInteractable
     private bool unlocked = false;
     public PuzzleManager puzzleManager;
     public PadlockAnimator padlockAnimator;
+    public PuzzleAudioHelper audioHelper;
 
     public void Interact(GameObject interactor)
     {
@@ -18,12 +19,18 @@ public class Padlock : MonoBehaviour, IInteractable
         {
             unlocked = true;
             Debug.Log("Unlocked with: " + expectedKey);
+
+            if (audioHelper != null)
+                audioHelper.PlaySuccessSound();
+
             keyInHand.ClearKey();
             padlockAnimator?.Unlock(); 
             puzzleManager?.CheckPuzzle();
         }
         else
         {
+            if (audioHelper != null)
+                audioHelper.PlayFailSound();
             Debug.Log("Wrong key.");
         }
     }

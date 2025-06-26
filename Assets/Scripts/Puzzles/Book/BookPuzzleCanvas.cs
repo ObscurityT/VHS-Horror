@@ -10,6 +10,7 @@ public class BookPuzzleCanvas : MonoBehaviour
     public Button submitButton;
     public TextMeshProUGUI feedbackText;
 
+    public PuzzleAudioHelper audioHelper;
     private bool puzzleSolved = false;
 
     private List<int> correctOrder = new List<int> { 0, 1, 2 };
@@ -57,15 +58,21 @@ public class BookPuzzleCanvas : MonoBehaviour
             if (currentOrder[i] != correctOrder[i])
             {
                 feedbackText.text = "Ordem incorreta!";
+                if (audioHelper != null)
+                    audioHelper.PlayFailSound();
                 currentOrder.Clear();
                 return;
             }
         }
         puzzleSolved = true;
         feedbackText.text = "Correto! Puzzle resolvido.";
+
+        if (audioHelper != null)
+            audioHelper.PlaySuccessSound();
+
         StartCoroutine(CloseAfterDelay(1f));
-        // abrir uma porta, tocar um som, etc
     }
+
     private System.Collections.IEnumerator CloseAfterDelay(float delay)
     {
         yield return new WaitForSecondsRealtime(delay); // funciona com Time.timeScale = 0
@@ -76,6 +83,21 @@ public class BookPuzzleCanvas : MonoBehaviour
     public void OpenCanvas()
     {
         if (puzzleSolved) return;
+
+        Debug.Log("OpenCanvas chamado!");
+
+
+        if (audioHelper != null)
+        { 
+            Debug.Log("PlayOpenSound chamado");
+        audioHelper.PlayOpenSound();
+
+        }
+        else
+        {
+            Debug.LogWarning("audioHelper está nulo");
+        }
+
         FindFirstObjectByType<PlayerController>().canLook = false;
         canvas.SetActive(true);
         Time.timeScale = 0f;

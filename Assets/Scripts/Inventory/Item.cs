@@ -1,62 +1,30 @@
+using InventorySystem;
 using UnityEngine;
-using SaveSystem;
 
-namespace InventorySystem
+public class Item : MonoBehaviour
 {
-    public class Item : MonoBehaviour, IDataPersistence
+    public ItemData data;
+    public bool collected;
+    public string id;
+
+    [SerializeField] GameObject visual;
+    [SerializeField] Collider _collider;
+
+    private void Start()
     {
-        [SerializeField] ItemData itemData;
-        [HideInInspector] public string _name;
-        [HideInInspector] public string description;
-        [HideInInspector] public Sprite spriteIcon;
-        [HideInInspector] public EVIDENCES evidenceType;
-        [HideInInspector] public string group;
-        [HideInInspector] public bool isCollectible;
-        [HideInInspector] public string idea;
+        if (data == null) { Debug.LogError("Faltando ItemData!"); return; }
+    }
 
-        [HideInInspector] public ItemSlot slot;
-        [SerializeField] GameObject visual;
-        [SerializeField] Collider _collider;
+    public void Collect()
+    {
+        collected = true;
+        InventoryManager.instance.AddItem(this);
+        RemoveFromScene();
+    }
 
-        public bool collected = false;
-        public string id;
-
-        [ContextMenu("Generate ID")] private void GenerateGuid() { id = System.Guid.NewGuid().ToString(); }
-
-        private void Start()
-        {
-            _name = itemData._name;
-            description = itemData.description;
-            spriteIcon = itemData.spriteIcon;
-            evidenceType = itemData.evidenceType;
-            group = itemData.group;
-            isCollectible = itemData.isCollectible;
-            idea = itemData.idea;
-        }
-
-        public void LoadData(GameData data)
-        {
-            data.collectedItems.TryGetValue(id, out collected);
-            if (collected == true)
-            {
-                RemoveFromScene();
-            }
-        }
-
-        public void SaveData(GameData data)
-        {
-            // se tiver ja no dicionario entao removemos
-            // e adicionamos denovo para nao dar erro
-            if (data.collectedItems.ContainsKey(id)) { data.collectedItems.Remove(id); }
-            data.collectedItems.Add(id, collected);
-            Debug.Log("WELCOME SAVE TS15");
-
-        }
-
-        public void RemoveFromScene()
-        {
-            visual.gameObject.SetActive(false);
-            _collider.enabled = false;
-        }
+    public void RemoveFromScene()
+    {
+        visual.SetActive(false);
+        _collider.enabled = false;
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6702265776136906191}
   - component: {fileID: 8899437946830878579}
   - component: {fileID: 8890018565146425386}
+  - component: {fileID: 8837678226602220591}
   m_Layer: 0
   m_Name: PaperType1
   m_TagString: Untagged
@@ -117,6 +118,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.15934753, y: 0.5377407, z: 0.4633925}
   m_Center: {x: 0.017223358, y: -0.026539803, z: 0.17264092}
+--- !u!114 &8837678226602220591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6144816996553232047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef2f146b58e23a348a7686d38f77857d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundOnOpen: '[Nenhum]'
+  soundOnSuccess: '[Nenhum]'
+  soundOnFail: '[Nenhum]'
+  soundOnClose: '[Nenhum]'
+  randomPitch: 1
 --- !u!1 &7455462838340824337
 GameObject:
   m_ObjectHideFlags: 0

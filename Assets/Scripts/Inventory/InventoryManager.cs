@@ -7,88 +7,69 @@ namespace InventorySystem
 {
     public class InventoryManager : MonoBehaviour
     {
-        [SerializeField] KeyCode input;
-
-        [Header("UI Settings")]
-        public GameObject inventoryMenu;
-        [SerializeField] TMP_Text textName;
-        [SerializeField] TMP_Text textDescription;
-        [SerializeField] Image imagemDescription;
-
-        bool menuActivated; // ver se menu ta ativado :D
-
-        [Header("Slots Settings")]
-        [SerializeField] GameObject containerSlot;
-        [SerializeField] ItemSlot[] slots;
-        public List<EVIDENCES> evidences;
-
         public static InventoryManager instance;
 
-        private void Awake() // singleton
+        [Header("Input")]
+        [SerializeField] private KeyCode toggleKey = KeyCode.I;
+
+        [Header("UI")]
+        public GameObject inventoryMenu;
+        public TMP_Text titleText;
+        public TMP_Text descriptionText;
+        public Image imagePreview;
+
+        [Header("Slots")]
+        public GameObject slotContainer;
+        private ItemSlot[] slots;
+
+        private bool isActive = false;
+
+        private void Awake()
         {
-            if (instance == null) { instance = this; }
-            else { Destroy(gameObject); }
+            if (instance == null) instance = this;
+            else Destroy(gameObject);
         }
 
         private void Start()
         {
-            imagemDescription.gameObject.SetActive(false);
-            textName.text = null;
-            textDescription.text = null;
-
-            if (containerSlot != null) { slots = containerSlot.GetComponentsInChildren<ItemSlot>(); }
-            for (int i = 0; i < slots.Length; i++)
-            {
-                slots[i].textName = textName;
-                slots[i].textDescription = textDescription;
-                slots[i].imagemDescription = imagemDescription;
-            }
+            slots = slotContainer.GetComponentsInChildren<ItemSlot>();
+            ClearPreview();
         }
 
         private void Update()
         {
-            #region Input
-            if (UnityEngine.Input.GetKeyDown(KeyCode.Escape) && menuActivated == true)
+            if (Input.GetKeyDown(toggleKey))
             {
-                inventoryMenu.SetActive(false);
-                menuActivated = false;
+                isActive = !isActive;
+                inventoryMenu.SetActive(isActive);
             }
-            else if (UnityEngine.Input.GetKeyDown(input))
-            {
-                menuActivated = !menuActivated;
-                inventoryMenu.SetActive(menuActivated);
-            }
-            #endregion
         }
 
         public void AddItem(Item item)
         {
-            Debug.Log($"Entrou em AddItem no InventoryManager\nslots.Length: {slots.Length}");
-
-            for (int i = 0; i < slots.Length; i++)
+            foreach (var slot in slots)
             {
-                if (slots[i].isFull == false)
+                if (!slot.isFull)
                 {
-                    slots[i].AddItem(item);
-                    Debug.Log("AddItem do InventoryManager chamou AddItem do ItemSlot");
+                    slot.AddItem(item);
                     return;
                 }
             }
         }
 
-        public bool CheckIfContains(EVIDENCES evidence)
-        {
-            if (evidences.Contains(evidence) == true) { Debug.Log($"Inventory contains item {evidence} necessary."); return true; }
-            else { Debug.Log($"Inventory doesn't contains item {evidence} necessary."); return false; }
-        }
-
         public void DeselectAllSlots()
         {
-            for (int i = 0; i < slots.Length; i++)
-            {
-                slots[i].isSelected = false;
-                slots[i].itemSelected.SetActive(false);
-            }
+            foreach (var slot in slots)
+                slot.Deselect();
+
+            ClearPreview();
+        }
+
+        private void ClearPreview()
+        {
+            imagePreview.gameObject.SetActive(false);
+            titleText.text = "";
+            descriptionText.text = "";
         }
     }
 }

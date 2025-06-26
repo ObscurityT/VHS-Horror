@@ -5,105 +5,66 @@ namespace AudioSystem
 {
     public class AudioManager : MonoBehaviour
     {
-        // referenciando os audios sources, em outras palavras, os caras que sao fonte de som
-        [SerializeField] private AudioSource musicSource;
-        [SerializeField] private AudioSource sfxSource;
+        public static AudioManager Instance;
 
-        [SerializeField] private List<Audio> sfxList;
-        [SerializeField] private List<Audio> musicList;
+        [Header("Audio Sources")]
+        public AudioSource sfxSource;
+        public AudioSource musicSource;
 
-        public static AudioManager instance;
+        [Header("Audio Clips")]
+        public List<AudioClip> sfxClips;
+        public List<AudioClip> musicClips;
 
-        private void Awake() // singleton
+        private Dictionary<string, AudioClip> sfxDict;
+        private Dictionary<string, AudioClip> musicDict;
+
+        void Awake()
         {
-            if (instance == null) { instance = this; }
-            else { Destroy(gameObject); }
-
-            DontDestroyOnLoad(gameObject);
-        }
-        private void Start()
-        {
-            LoadVolumes();
-        }
-
-        // tocar os audios
-        #region PlayAudio
-        public void PlaySfx(SOUND audioID, int index = -1, bool randomPitch = true)
-        {
-            Audio audio = sfxList.Find(a => a.soundID == audioID);
-            if (audio != null && index < audio.clip.Count)
+            if (Instance == null)
             {
-                if (index == -1) { index = UnityEngine.Random.Range(0, audio.clip.Count); } // determinando o audio p sorte
+                Instance = this;
+                DontDestroyOnLoad(gameObject);
 
-                if (randomPitch == true) { sfxSource.pitch = UnityEngine.Random.Range(audio.minPitch, audio.maxPitch); } // nao ficar repetitivo, distorcao de pitch :D
-                else { sfxSource.pitch = 1f; } // sfx ficar normal, sem distorcao de pitch
+                sfxDict = new Dictionary<string, AudioClip>();
+                musicDict = new Dictionary<string, AudioClip>();
 
-                sfxSource.PlayOneShot(audio.clip[index]);
+                foreach (AudioClip clip in sfxClips)
+                    sfxDict[clip.name] = clip;
+
+                foreach (AudioClip clip in musicClips)
+                    musicDict[clip.name] = clip;
+            }
+            else
+            {
+                Destroy(gameObject);
             }
         }
 
-        public void PlayMusic(MUSIC musicID, int index = -1)
+        public void PlaySFX(string name)
         {
-            Audio audio = musicList.Find(a => a.musicID == musicID);
-            if (audio != null && index < audio.clip.Count)
-            {
-                if (index == -1) { index = UnityEngine.Random.Range(0, audio.clip.Count); } // determinando o audio p sorte
+            if (sfxDict.ContainsKey(name))
+                sfxSource.PlayOneShot(sfxDict[name]);
+            else
+                Debug.LogWarning("SFX não encontrado: " + name);
+        }
 
-                musicSource.Stop();
-                musicSource.clip = audio.clip[index];
-                musicSource.loop = true;
+        public void PlayMusic(string name, bool loop = true)
+        {
+            if (musicDict.ContainsKey(name))
+            {
+                musicSource.clip = musicDict[name];
+                musicSource.loop = loop;
                 musicSource.Play();
             }
-
-            Debug.Log("index music: " + index);
-        }
-        #endregion
-
-        // parar de tocar os audios
-        #region StopAudio
-        public void StopMusic() { musicSource.Stop(); }
-
-        public void StopSFX() { sfxSource.Stop(); }
-        #endregion
-
-        // mudar volume
-        #region SetVolume
-        public void SetMusicVolume(float volume)
-        {
-            musicSource.volume = volume;
-            PlayerPrefs.SetFloat("VolumeMusic", volume);
-            PlayerPrefs.Save();
-            Debug.Log("volume music: " + volume);
+            else
+            {
+                Debug.LogWarning("Música não encontrada: " + name);
+            }
         }
 
-        public void SetSFXVolume(float volume)
+        public void StopMusic()
         {
-            sfxSource.volume = volume;
-            PlayerPrefs.SetFloat("VolumeSFX", volume);
-            PlayerPrefs.Save();
-            Debug.Log("volume sfx: " + volume);
-        }
-        #endregion
-
-        // quado comecar jogo config continuar mesma
-        #region GetVolume
-        public void GetMusicVolume()
-        {
-            float volume = PlayerPrefs.GetFloat("VolumeMusic", 0.2f);
-            musicSource.volume = volume;
-        }
-
-        public void GetSFXVolume()
-        {
-            float volume = PlayerPrefs.GetFloat("VolumeSFX", 0.5f);
-            sfxSource.volume = volume;
-        }
-        #endregion
-
-        private void LoadVolumes()
-        {
-            GetMusicVolume();
-            GetSFXVolume();
+            musicSource.Stop();
         }
     }
 }

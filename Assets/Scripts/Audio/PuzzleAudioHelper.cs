@@ -4,28 +4,66 @@ using UnityEngine;
 public class PuzzleAudioHelper : MonoBehaviour
 {
     [Header("Sons do Puzzle")]
-    public SOUND soundOnOpen;
-    public SOUND soundOnSuccess;
-    public SOUND soundOnFail;
+    public string soundOnOpen;
+    public string soundOnSuccess;
+    public string soundOnFail;
+    public string soundOnClose;
 
     [Header("Configurações")]
     public bool randomPitch = true;
 
     public void PlayOpenSound()
     {
-        if (soundOnOpen != SOUND.None)
-            AudioManager.instance.PlaySfx(soundOnOpen, -1, randomPitch);
+        Debug.Log("PlayOpenSound chamado!");
+        if (!string.IsNullOrEmpty(soundOnOpen))
+        {
+            SetRandomPitch();
+            AudioSystem.AudioManager.Instance.PlaySFX(soundOnOpen);
+        }
     }
 
     public void PlaySuccessSound()
     {
-        if (soundOnSuccess != SOUND.None)
-            AudioManager.instance.PlaySfx(soundOnSuccess, -1, randomPitch);
+        if (!string.IsNullOrEmpty(soundOnSuccess))
+        {
+            SetRandomPitch();
+            AudioSystem.AudioManager.Instance.PlaySFX(soundOnSuccess);
+        }
     }
 
     public void PlayFailSound()
     {
-        if (soundOnFail != SOUND.None)
-            AudioManager.instance.PlaySfx(soundOnFail, -1, randomPitch);
+        if (!string.IsNullOrEmpty(soundOnFail))
+        {
+            SetRandomPitch();
+            AudioSystem.AudioManager.Instance.PlaySFX(soundOnFail);
+        }
+    }
+
+    private void SetRandomPitch()
+    {
+        if (randomPitch && AudioSystem.AudioManager.Instance != null)
+        {
+            var src = AudioSystem.AudioManager.Instance.sfxSource;
+            src.pitch = Random.Range(0.9f, 1.1f);
+        }
+    }
+
+    public void PlayCloseSound()
+    {
+        Debug.Log("PlayCloseSound chamado!");
+        if (!string.IsNullOrEmpty(soundOnClose))
+        {
+            Debug.Log("Tocando som: " + soundOnClose);
+
+            if (AudioSystem.AudioManager.Instance != null)
+                AudioSystem.AudioManager.Instance.PlaySFX(soundOnClose);
+            else
+                Debug.LogWarning("AudioManager.Instance está NULL!");
+        }
+        else
+        {
+            Debug.Log("soundOnClose está vazio");
+        }
     }
 }

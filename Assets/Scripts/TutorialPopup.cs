@@ -17,6 +17,7 @@ public class TutorialPopup : MonoBehaviour
     public void CloseTutorial()
     {
         // Fecha o painel e trava o mouse de novo
+        Debug.Log("Fechando tutorial");
         tutorialPanel.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

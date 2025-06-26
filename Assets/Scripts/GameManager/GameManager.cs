@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     // int totalScenesInBuild;
     public SCENES sceneToLoad;
     public List<bool> rhythmVictory; // marca quais fases de combate o jogador ja passou
-    public Dictionary<EVIDENCES, bool> currentsItem; // true = tem 
+    public Dictionary<InventoryItemType, bool> currentsItem; // true = tem 
 
     public static GameManager instance;
 
