@@ -6,8 +6,11 @@ using UnityEngine.UI;
 
 public class ItemSlot : MonoBehaviour, IPointerClickHandler
 {
-    public Image itemImage;
-    public GameObject highlight;
+    public Image itemImage; // ícone do item
+    public Image slotBackground; // imagem de fundo do slot
+    public Sprite normalSprite; // slot escuro
+    public Sprite selectedSprite; // slot com highlight
+
     public bool isFull = false;
     public bool isSelected = false;
 
@@ -27,23 +30,22 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (isFull)
-        {
-            InventoryManager.instance.DeselectAllSlots();
+        if (!isFull) return;
 
-            highlight.SetActive(true);
-            isSelected = true;
+        InventoryManager.instance.DeselectAllSlots();
 
-            imagePreview.sprite = itemData.icon;
-            imagePreview.gameObject.SetActive(true);
-            titleText.text = itemData.itemName;
-            descriptionText.text = itemData.description;
-        }
+        isSelected = true;
+        slotBackground.sprite = selectedSprite;
+
+        imagePreview.sprite = itemData.icon;
+        imagePreview.gameObject.SetActive(true);
+        titleText.text = itemData.itemName;
+        descriptionText.text = itemData.description;
     }
 
     public void Deselect()
     {
-        highlight.SetActive(false);
         isSelected = false;
+        slotBackground.sprite = normalSprite;
     }
 }
