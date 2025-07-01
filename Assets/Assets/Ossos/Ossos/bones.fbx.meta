@@ -8,27 +8,27 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert10
-    second: {fileID: 2100000, guid: 3a231c1384569c24794956fd2673ee8b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert11
-    second: {fileID: 2100000, guid: 53d56b940586fae4db453c391260d8cd, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert7
-    second: {fileID: 2100000, guid: 3a9bc89da01a00449b6774e48bd4e87d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert8
     second: {fileID: 2100000, guid: 2411e637dc5b5b645850df68a5ebaf5a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: lambert9
+      name: lambert11
     second: {fileID: 2100000, guid: ebf32c80073ede54b8b3000d4d5f8790, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert7
+    second: {fileID: 2100000, guid: 3a231c1384569c24794956fd2673ee8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert8
+    second: {fileID: 2100000, guid: 53d56b940586fae4db453c391260d8cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert9
+    second: {fileID: 2100000, guid: 3a9bc89da01a00449b6774e48bd4e87d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
