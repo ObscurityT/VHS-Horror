@@ -12,7 +12,7 @@ public class UIInventory : MonoBehaviour
     [SerializeField]
     private UIInventoryDescription itemDescription;
 
-    public event Action<UIInventoryItem> OnDescriptionRequested;
+    public event Action<int> OnDescriptionRequested;
 
     
 
