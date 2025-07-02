@@ -6,41 +6,52 @@ using UnityEngine.UI;
 
 public class ItemSlot : MonoBehaviour, IPointerClickHandler
 {
-    public Image itemImage; // ícone do item
-    public Image slotBackground; // imagem de fundo do slot
-    public Sprite normalSprite; // slot escuro
-    public Sprite selectedSprite; // slot com highlight
+    public Image itemImage;
+    public Image slotBackground;
+    public Sprite normalSprite;
+    public Sprite selectedSprite;
 
     public bool isFull = false;
     public bool isSelected = false;
 
     private ItemData itemData;
 
-    public TMP_Text titleText;
-    public TMP_Text descriptionText;
-    public Image imagePreview;
 
     public void AddItem(Item item)
     {
         itemData = item.data;
+
+        Debug.Log("Slot " + name + " recebeu o item: " + itemData.itemName);
+
+        if (itemImage == null)
+        {
+            Debug.LogError("itemImage está NULL no slot " + name);
+        }
+
+        if (itemData.icon == null)
+        {
+            Debug.LogWarning("itemData.icon está NULL para " + itemData.itemName);
+        }
+
         itemImage.sprite = itemData.icon;
         itemImage.gameObject.SetActive(true);
         isFull = true;
+
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         if (!isFull) return;
 
+        Debug.Log("Slot clicado: " + itemData.itemName);
+
         InventoryManager.instance.DeselectAllSlots();
 
         isSelected = true;
         slotBackground.sprite = selectedSprite;
 
-        imagePreview.sprite = itemData.icon;
-        imagePreview.gameObject.SetActive(true);
-        titleText.text = itemData.itemName;
-        descriptionText.text = itemData.description;
+        InventoryManager.instance.ShowPreview(itemData);
+
     }
 
     public void Deselect()

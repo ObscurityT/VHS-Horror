@@ -58,9 +58,20 @@ public class PlayerController : MonoBehaviour
             {
                 Debug.Log("Acertou algo: " + hit.collider.gameObject.name);
 
-                if (hit.collider.TryGetComponent<IInteractable>(out var interactable))
+                if (hit.collider != null)
                 {
-                    interactable.Interact(gameObject);
+                    Debug.Log("Atingiu objeto: " + hit.collider.name);
+
+                    var interObj = hit.collider.GetComponent<IInteractable>();
+                    if (interObj == null)
+                    {
+                        Debug.LogWarning("Nenhum IInteractable encontrado no objeto " + hit.collider.name);
+                    }
+                    else
+                    {
+                        Debug.Log("IInteractable encontrado, chamando Interact");
+                        interObj.Interact(gameObject);
+                    }
                 }
             }
         }
