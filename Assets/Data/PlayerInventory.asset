@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8575c7f6d1dcb904bb6e3df94e036717, type: 3}
-  m_Name: Golden Key
+  m_Script: {fileID: 11500000, guid: 6d6056a21778b364d984af5da6ff5943, type: 3}
+  m_Name: PlayerInventory
   m_EditorClassIdentifier: 
-  itemName: Golden Key
-  description: 'Chave de ouro '
-  icon: {fileID: 0}
+  Size: 10

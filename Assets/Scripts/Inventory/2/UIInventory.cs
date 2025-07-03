@@ -21,42 +21,39 @@ public class UIInventory : MonoBehaviour
         Hide();
         itemDescription.ResetDescription();
     }
-    public void InitializeInventoryUI(List<ItemData> items)
+    public void InitializeInventoryUI(Dictionary<int, InventoryItem> items)
     {
-        // Limpa todos os slots
         for (int i = 0; i < slotList.Count; i++)
         {
             var slot = slotList[i];
 
+            slot.OnItemClicked -= HandleItemSelection;
             slot.OnItemClicked += HandleItemSelection;
 
-            if (i < items.Count)
+
+            if (items.TryGetValue(i, out InventoryItem inventoryItem))
             {
-                slotList[i].SetData(items[i].icon); // Mostra o item no slot
+                slot.SetData(inventoryItem.item.ItemImage);
             }
             else
             {
-                slotList[i].ClearSlot(); // Limpa se não tiver item
+                slot.ClearSlot();
             }
         }
     }
 
-    private void HandleItemSelection(UIInventoryItem item)
+
+    public void UpdateInventorySlot(int slotIndex, Sprite itemImage)
     {
-        Debug.Log("Slot clicado: " + item.gameObject.name + " | Está vazio? " + item.IsEmpty);
-
-        foreach (var slot in slotList)
-            slot.Deselect();
-
-        if (item.IsEmpty)
+        if (slotIndex >= 0 && slotIndex < slotList.Count)
         {
-            itemDescription.ResetDescription();
-            Debug.Log("Descrição resetada porque o slot está vazio");
-            return;
+            slotList[slotIndex].SetData(itemImage);
+            Debug.Log($"Slot {slotIndex} atualizado com imagem {itemImage.name}");
         }
-
-        item.Select();
-        
+        else
+        {
+            Debug.LogWarning("Tentativa de atualizar slot fora do intervalo válido.");
+        }
     }
 
     public void Show()
@@ -73,9 +70,66 @@ public class UIInventory : MonoBehaviour
 
     }
 
+    public void UpdateData(int itemIndex,Sprite itemImage)
+    {
+        if (slotList.Count > itemIndex)
+        {
+            slotList[itemIndex].SetData(itemImage);
+        }
+    }
+    private void HandleItemSelection(UIInventoryItem item)
+    {
+        Debug.Log("Slot clicado: " + item.gameObject.name + " | Está vazio? " + item.IsEmpty);
+
+        foreach (var slot in slotList)
+            slot.Deselect();
+
+        if (item.IsEmpty)
+        {
+            itemDescription.ResetDescription();
+            Debug.Log("Descrição resetada porque o slot está vazio");
+            return;
+        }
+
+        item.Select();
+
+        int index = slotList.IndexOf(item);
+        OnDescriptionRequested?.Invoke(index);
+
+    }
+
+  
+
     public void Hide()
     {
         gameObject.SetActive(false);
     }
+
+    private void DeselectAllItems()
+    {
+        foreach (UIInventoryItem item in slotList)
+        {
+            item.Deselect();
+        }
+    }
+
+    public void UpdateDescription(int itemIndex, Sprite itemImage, string name, string description)
+    {
+        itemDescription.SetDescription(itemImage, name, description);
+
+        foreach (var slot in slotList)
+            slot.Deselect();
+
+        slotList[itemIndex].Select();
+    }
+
+    public void ResetSelection()
+    {
+        itemDescription.ResetDescription();
+        foreach (var slot in slotList)
+            slot.Deselect();
+    }
+
+  
 
 }

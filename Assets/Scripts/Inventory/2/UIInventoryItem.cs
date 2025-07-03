@@ -18,27 +18,31 @@ public class UIInventoryItem : MonoBehaviour, IPointerClickHandler
     public event Action<UIInventoryItem> OnItemClicked;
     public void SetData(Sprite sprite)
     {
-        this.icon.gameObject.SetActive(true);
-        this.icon.sprite = sprite;
-        empty = false;
-    }
-    public void Select()
-    {
-        borderIcon.enabled = true;
-    }
 
+        if (sprite == null)
+        {
+            ClearSlot();
+            return;
+        }
+        icon.sprite = sprite;
+        icon.enabled = true;
+        icon.gameObject.SetActive(true);
+        empty = false;
+
+        Debug.Log($"{gameObject.name} - Ícone setado: {sprite.name}");
+    }
     public void ClearSlot()
     {
         icon.sprite = null;
         icon.enabled = false;
+        icon.gameObject.SetActive(false);
         Deselect();
         empty = true;
     }
 
-    public void Awake()
+    public void Select()
     {
-        ResetData();
-        Deselect();
+        borderIcon.enabled = true;
     }
 
     public void Deselect()
@@ -48,20 +52,28 @@ public class UIInventoryItem : MonoBehaviour, IPointerClickHandler
 
     private void ResetData()
     {
-        this.icon.gameObject.SetActive(false);
+        icon.sprite = null;
+        icon.enabled = false;
+        icon.gameObject.SetActive(false);
         empty = true;
     }
 
-    public void HandlePointerClick(BaseEventData data )
+    public void Awake()
     {
-        PointerEventData pointerData = data as PointerEventData;
-
-        if (pointerData != null && pointerData.button == PointerEventData.InputButton.Left)
-        {
-            Debug.Log("Clique detectado via EventTrigger em: " + gameObject.name);
-            OnItemClicked?.Invoke(this);
-        }
+        ResetData();
+        Deselect();
     }
+
+    //public void HandlePointerClick(BaseEventData data )
+    //{
+    //    PointerEventData pointerData = data as PointerEventData;
+
+    //    if (pointerData != null && pointerData.button == PointerEventData.InputButton.Left)
+    //    {
+    //        Debug.Log("Clique detectado via EventTrigger em: " + gameObject.name);
+    //        OnItemClicked?.Invoke(this);
+    //    }
+    //}
 
     public void OnPointerClick(PointerEventData eventData)
     {
