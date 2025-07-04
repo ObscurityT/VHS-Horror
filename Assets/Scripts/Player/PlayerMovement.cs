@@ -5,7 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Velocity")]
     public float walkSpeed = 2.5f;
-    public float runSpeed =  4.0f;
+    public float runSpeed =  3.3f;
     public float gravity = -9.81f;
 
     [Header("Components")]
@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
         //Shift between Walk and Run
         isRunning = Input.GetKey(KeyCode.LeftShift);
         float currentSpeed = isRunning ? runSpeed : walkSpeed;
+        Debug.Log("Está correndo? " + isRunning);
 
         controller.Move(moveDirection *  currentSpeed * Time.deltaTime);
 

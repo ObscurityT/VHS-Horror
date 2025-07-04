@@ -40,6 +40,9 @@ public class PlayerStatus : MonoBehaviour
         }
     }
 
+    public float GetCurrentSanity()
+    { return currentSanity; }
+
     void UpdateSanityUI()
     {
         if (sanitySlider != null)
