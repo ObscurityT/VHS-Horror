@@ -52,7 +52,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
+<<<<<<< HEAD:Assets/Assets/CaixaBarril/Barril2.mat
         m_Texture: {fileID: 2800000, guid: 47fda58ec3372bd4c948b732cf4a8664, type: 3}
+=======
+        m_Texture: {fileID: 2800000, guid: c308024218b04ad4eb9511e440ce4011, type: 3}
+>>>>>>> 19df2c6 (Atualizaçao de luzes e outras coisas):Assets/3DForge/Fantasy_Interiors/Villages_&_Towns/Materials/fi_village_beds.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
