@@ -3,74 +3,55 @@ using UnityEngine;
 
 public class PadlockAnimator : MonoBehaviour
 {
-    [Header("References")]
-    public Transform arcTransform; // CadeadoCima
+    [Header("Parte de cima)")]
+    public Transform topPart;
 
-    [Header("Animation Settings")]
-    public float liftHeight = 0.1f;
-    public float liftSpeed = 2f;
+    [Header("Movimento")]
+    public float moveUpDistance = 0.05f; // 5 cm (ajuste)
+    public float duration = 0.25f;
 
-    [Header("Padlock Drop")]
-    public float dropDelay = 1f;        // quanto tempo depois do levantamento
-    public float destroyDelay = 5f;   // quanto tempo até sumir após cair
-    
-    [Header("Audio")]
-    public string destrancarSound = "mecanismo_girando";
-    public string cairSound = "metal_caindo";
+    Vector3 _closedPos;
+    Vector3 _openPos;
+    bool _isOpen;
 
-    private Vector3 originalPosition;
-    private Vector3 targetPosition;
-    private bool unlocked = false;
-    private bool hasDropped = false;
-
-    void Start()
+    void Awake()
     {
-        if (arcTransform != null)
+        if (topPart == null)
         {
-            originalPosition = arcTransform.localPosition;
-            targetPosition = originalPosition + Vector3.up * liftHeight;
+            Debug.LogError("PadlockAnimator: 'topPart' não atribuído.");
+            enabled = false; return;
         }
-    }
-
-    void Update()
-    {
-        if (unlocked && !hasDropped && arcTransform != null)
-        {
-            arcTransform.localPosition = Vector3.Lerp(arcTransform.localPosition, targetPosition, Time.deltaTime * liftSpeed);
-
-            if (Vector3.Distance(arcTransform.localPosition, targetPosition) < 0.01f)
-            {
-                hasDropped = true;
-                StartCoroutine(DropSelf());
-            }
-        }
+        _closedPos = topPart.localPosition;
+        _openPos = _closedPos + Vector3.up * moveUpDistance;
     }
 
     public void Unlock()
     {
-        if (!string.IsNullOrEmpty(destrancarSound))
-            AudioSystem.AudioManager.Instance.PlaySFX(destrancarSound);
-        unlocked = true;
+        if (_isOpen || !isActiveAndEnabled) return;
+        StopAllCoroutines();
+        StartCoroutine(MoveTo(_openPos));
+        _isOpen = true;
     }
 
-    private IEnumerator DropSelf()
+    public void Lock()
     {
-        yield return new WaitForSeconds(dropDelay);
+        if (!_isOpen || !isActiveAndEnabled) return;
+        StopAllCoroutines();
+        StartCoroutine(MoveTo(_closedPos));
+        _isOpen = false;
+    }
 
-        if (!string.IsNullOrEmpty(cairSound))
-            AudioSystem.AudioManager.Instance.PlaySFX(cairSound);
+    IEnumerator MoveTo(Vector3 target)
+    {
+        float t = 0f;
+        Vector3 from = topPart.localPosition;
 
-        if (!TryGetComponent<Rigidbody>(out var rb))
+        while (t < 1f)
         {
-            rb = gameObject.AddComponent<Rigidbody>();
+            t += Time.deltaTime / duration;
+            topPart.localPosition = Vector3.Lerp(from, target, Mathf.SmoothStep(0f, 1f, t));
+            yield return null;
         }
-
-        
-        if (!TryGetComponent<Collider>(out var col))
-        {
-            gameObject.AddComponent<BoxCollider>();
-        }
-
-        Destroy(gameObject, destroyDelay);
+        topPart.localPosition = target;
     }
 }
