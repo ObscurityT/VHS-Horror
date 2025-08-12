@@ -3,55 +3,86 @@ using UnityEngine;
 
 public class PadlockAnimator : MonoBehaviour
 {
-    [Header("Parte de cima)")]
-    public Transform topPart;
+    [Header("Referência do arco")]
+    public Transform arcTransform;
 
-    [Header("Movimento")]
-    public float moveUpDistance = 0.05f; // 5 cm (ajuste)
-    public float duration = 0.25f;
+    [Header("Animação de subida")]
+    public float liftHeight = 0.1f;
+    public float liftSpeed = 2f;
 
-    Vector3 _closedPos;
-    Vector3 _openPos;
-    bool _isOpen;
+    [Header("Queda do cadeado")]
+    public float dropDelay = 1f;
+    public float destroyDelay = 3f;
 
-    void Awake()
+    [Header("Áudio")]
+    public string destrancarSound = "mecanismo_girando";
+    public string cairSound = "metal_caindo";
+
+    private Vector3 initialPosition;
+    private Vector3 liftedPosition;
+    private bool isUnlocking = false;
+    private bool hasDropped = false;
+
+    private void Start()
     {
-        if (topPart == null)
+        if (arcTransform == null)
         {
-            Debug.LogError("PadlockAnimator: 'topPart' não atribuído.");
-            enabled = false; return;
+            Debug.LogError("Cadeado_Cima não atribuído!");
+            enabled = false;
+            return;
         }
-        _closedPos = topPart.localPosition;
-        _openPos = _closedPos + Vector3.up * moveUpDistance;
+
+        initialPosition = arcTransform.localPosition;
+        liftedPosition = initialPosition + Vector3.up * liftHeight;
+    }
+
+    private void Update()
+    {
+        if (isUnlocking && !hasDropped)
+        {
+            arcTransform.localPosition = Vector3.Lerp(arcTransform.localPosition, liftedPosition, Time.deltaTime * liftSpeed);
+
+            if (Vector3.Distance(arcTransform.localPosition, liftedPosition) < 0.005f)
+            {
+                hasDropped = true;
+                StartCoroutine(DropArc());
+            }
+        }
     }
 
     public void Unlock()
     {
-        if (_isOpen || !isActiveAndEnabled) return;
-        StopAllCoroutines();
-        StartCoroutine(MoveTo(_openPos));
-        _isOpen = true;
-    }
+        if (isUnlocking) return;
 
-    public void Lock()
-    {
-        if (!_isOpen || !isActiveAndEnabled) return;
-        StopAllCoroutines();
-        StartCoroutine(MoveTo(_closedPos));
-        _isOpen = false;
-    }
+        isUnlocking = true;
 
-    IEnumerator MoveTo(Vector3 target)
-    {
-        float t = 0f;
-        Vector3 from = topPart.localPosition;
-
-        while (t < 1f)
+        if (!string.IsNullOrEmpty(destrancarSound))
         {
-            t += Time.deltaTime / duration;
-            topPart.localPosition = Vector3.Lerp(from, target, Mathf.SmoothStep(0f, 1f, t));
-            yield return null;
+            AudioSystem.AudioManager.Instance.PlaySFX(destrancarSound);
         }
-        topPart.localPosition = target;
+
+        Debug.Log("Cadeado desbloqueado, iniciando animação.");
+    }
+
+    private IEnumerator DropArc()
+    {
+        yield return new WaitForSeconds(dropDelay);
+
+        if (!string.IsNullOrEmpty(cairSound))
+            AudioSystem.AudioManager.Instance.PlaySFX(cairSound);
+
+     
+        GameObject padlockObject = transform.root.gameObject;
+
+        if (!padlockObject.TryGetComponent<Rigidbody>(out var rb))
+            rb = padlockObject.AddComponent<Rigidbody>();
+
+        if (!padlockObject.TryGetComponent<Collider>(out var col))
+            padlockObject.AddComponent<BoxCollider>();
+
+        rb.mass = 1f;
+        rb.angularDamping = 0.05f;
+
+        Destroy(padlockObject, destroyDelay);
     }
 }

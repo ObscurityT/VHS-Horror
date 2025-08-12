@@ -2,78 +2,52 @@ using UnityEngine;
 
 public class Padlock : MonoBehaviour, IInteractable
 {
-    [Header("Logic")]
+    [Header("Configuração")]
     public KeyType expectedKey;
-    [SerializeField] private bool unlocked;
 
-    [Header("Animator no Parent")]
-    public Animator animator;                 
-    public string unlockTrigger = "Unlock";   
-    public string openStateName = "PadlockOpen";
-
-    [Header("Refs")]
+    [Header("Referências")]
     public PuzzleManager puzzleManager;
+    public PadlockAnimator padlockAnimator;
+    public PuzzleAudioHelper audioHelper;
 
-    void Awake()
-    {
-        if (animator == null) animator = GetComponent<Animator>();
-        if (puzzleManager == null) puzzleManager = FindFirstObjectByType<PuzzleManager>();
-        if (animator == null) Debug.LogError("[Padlock] Animator não atribuído no " + name);
-    }
+    private bool unlocked = false;
 
     public void Interact(GameObject interactor)
     {
-        Debug.Log("[Padlock] Interact chamado em " + name);
-        if (unlocked) { Debug.Log("[Padlock] Já está aberto."); return; }
+        if (unlocked) return;
 
-        var keyInHand = interactor.GetComponent<InHandKey>();
-        if (keyInHand == null) { Debug.LogWarning("[Padlock] Player sem InHandKey."); return; }
+        // Verifica se o jogador está com uma chave na mão
+        InHandKey keyInHand = interactor.GetComponent<InHandKey>();
+        if (keyInHand == null)
+        {
+            Debug.Log(" Nenhuma chave na mão.");
+            return;
+        }
 
-        var got = keyInHand.GetKey();
-        Debug.Log($"[Padlock] Chave na mão: {got} | Esperada: {expectedKey}");
-
-        if (got == expectedKey)
+        // Verifica se é a chave correta
+        if (keyInHand.GetKey() == expectedKey)
         {
             unlocked = true;
+            Debug.Log("Cadeado destrancado com a chave: " + expectedKey);
 
-            if (animator != null)
-            {
-                if (!string.IsNullOrEmpty(unlockTrigger))
-                {
-                    Debug.Log("[Padlock] SetTrigger(Unlock)");
-                    animator.SetTrigger(unlockTrigger);
-                }
+            // Toca som de sucesso
+            audioHelper?.PlaySuccessSound();
 
-                // Fallback garante tocar o state aberto
-                if (!string.IsNullOrEmpty(openStateName))
-                {
-                    Debug.Log("[Padlock] Play(PadlockOpen)");
-                    animator.Play(openStateName, 0, 0f);
-                }
-            }
-
+            // Limpa a chave da mão do jogador
             keyInHand.ClearKey();
+
+            // Executa a animação do arco subindo
+            padlockAnimator?.Unlock();
+
+            // Checa se o puzzle foi resolvido
             puzzleManager?.CheckPuzzle();
         }
         else
         {
-            Debug.Log("[Padlock] Chave errada.");
+            Debug.Log("Chave incorreta: " + keyInHand.GetKey());
+            audioHelper?.PlayFailSound();
         }
     }
 
     public bool IsUnlocked() => unlocked;
-
-    
-    public void ForceOpen()
-    {
-        Debug.Log("[Padlock] ForceOpen()");
-        unlocked = true;
-        if (animator)
-        {
-            if (!string.IsNullOrEmpty(unlockTrigger))
-                animator.SetTrigger(unlockTrigger);
-            if (!string.IsNullOrEmpty(openStateName))
-                animator.Play(openStateName, 0, 0f);
-        }
-    }
 }

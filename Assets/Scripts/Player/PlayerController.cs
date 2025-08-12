@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float interactionDistance = 3f;
     [SerializeField] private Camera playerCamera;
 
+    [SerializeField] private string footstepSFXName = "Footstep";
+    [SerializeField] private float footstepInterval = 0.5f;
+
     public float walkSpeed = 2.5f;
     public float runSpeed = 3.3f;
     public float mouseSensitivity = 2f;
@@ -18,12 +21,14 @@ public class PlayerController : MonoBehaviour
     public bool canLook = true;
     private bool isRunning;
 
+    private float footstepTimer;
+
 
     private void Start()
     {
-       rb = GetComponent<Rigidbody>();
-       Cursor.lockState = CursorLockMode.Locked;
-       rb.freezeRotation = true;
+        rb = GetComponent<Rigidbody>();
+        Cursor.lockState = CursorLockMode.Locked;
+        rb.freezeRotation = true;
 
     }
 
@@ -89,6 +94,31 @@ public class PlayerController : MonoBehaviour
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
         rb.MovePosition(rb.position + move * currentSpeed * Time.fixedDeltaTime);
 
+        HandleFootsteps(move);
     }
 
+    void HandleFootsteps(Vector3 move)
+    {
+        bool isMoving = move.magnitude > 0.1f && IsGrounded();
+
+        if (isMoving)
+        {
+            footstepTimer -= Time.fixedDeltaTime;
+            if (footstepTimer <= 0f)
+            {
+                AudioSystem.AudioManager.Instance.PlaySFX(footstepSFXName);
+                footstepTimer = footstepInterval;
+            }
+        }
+        else
+        {
+            footstepTimer = 0f;
+        }
+
+        bool IsGrounded()
+        {
+            return Physics.Raycast(transform.position, Vector3.down, 1.1f);
+        }
+
+    }
 }
