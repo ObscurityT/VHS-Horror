@@ -222526,6 +222526,154 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: sfxClips.Array.size
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: ce36b8f5550abb74a802b992f1b4b3e8, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 340c6d61e33e42f459040a2bc9bcf297, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[5]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 7eaae341635105c4d979b9708d04dab3, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[6]'
+      value: 
+      objectReference: {fileID: 8300000, guid: be1a10e28afe2f94ab0273abb8ab6ae9, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[7]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 44b3e962a4ceb754b9973b5b7001bddf, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[8]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 0f925b195b508484eb777ccfd0a4a75c, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[9]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 4bb0be675e1c0c041900735140a04941, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[10]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a2a8214200c19304b9b4951b97da6ea8, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[11]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 661ae920c3c883649ac1be2172d92c57, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[12]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a3c3fc7cfce1154db9b382c9374dd7a, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[13]'
+      value: 
+      objectReference: {fileID: 8300000, guid: e69ed5d2b0cd80d41b5fdac0f877e36c, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[14]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 2e4d4e7792e32ac41a66b6b0c31543cc, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[15]'
+      value: 
+      objectReference: {fileID: 8300000, guid: b3eba2258aef2ce488e8e70b8e883d3f, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[16]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 730835fe6d645fe458707915053fe5e5, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[17]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e276a832ec9245498997b2b5bd3d329, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[18]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a4b0cc68eaa8b0546a533aadb70c501f, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[19]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 55f98b80792157b468eace983b09a7b3, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[20]'
+      value: 
+      objectReference: {fileID: 8300000, guid: bedf21030d4849f4b85d3252023bb0dd, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[21]'
+      value: 
+      objectReference: {fileID: 8300000, guid: f7eef3a4b2b1c3947bc8fd000d8d252e, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[22]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 75474f985c25821488f70d6c59bdde8c, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[23]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 1150214edae0e9a4baea72458f650c22, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[24]'
+      value: 
+      objectReference: {fileID: 8300000, guid: eed6165565c251446a0450710038b99a, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[25]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 55376a33d36f52c4481a2f836573004c, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[26]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 279405c04dfeba84fa065f0aa801f315, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[27]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 3ad3a8971e8815e448af4621fb6e66c1, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[28]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 311739b04b54d864fb2bd526b1d3b105, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[29]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 43bd440c74189a540a0a2bcc9226afeb, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[30]'
+      value: 
+      objectReference: {fileID: 8300000, guid: da4e61eb72a885f46a43bdddc867238f, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[31]'
+      value: 
+      objectReference: {fileID: 8300000, guid: b14ff3ddb184a4044ba1dfab7c515b45, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[32]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 4c45aa258f1ea474ea23a40dd3bb2ec4, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[33]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 59f829f64d80f3b43ab98d81e88b7a67, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[34]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a15dcd19443ead4885360f0faa19301, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[35]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 43f54a2ad1673054fbfbcb4edf78da3b, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[36]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 1ce56bc1f1234c8419398adeaedf93b9, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[37]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 7f3e2174ee5861a469df74a27cc9e3b5, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[38]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 24cc1d0af2d22b447ad9ec2b43433ced, type: 3}
     - target: {fileID: 3318326069023649036, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.0987135
@@ -222565,6 +222713,18 @@ PrefabInstance:
     - target: {fileID: 3318326069023649036, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063146709646661138, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063146709646661138, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063146709646661138, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

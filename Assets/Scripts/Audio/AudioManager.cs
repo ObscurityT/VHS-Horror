@@ -1,5 +1,6 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 namespace AudioSystem
 {
@@ -10,13 +11,22 @@ namespace AudioSystem
         [Header("Audio Sources")]
         public AudioSource sfxSource;
         public AudioSource musicSource;
+        private AudioSource audioSource;
+
 
         [Header("Audio Clips")]
         public List<AudioClip> sfxClips;
         public List<AudioClip> musicClips;
+        public AudioClip soundClip;
 
         private Dictionary<string, AudioClip> sfxDict;
         private Dictionary<string, AudioClip> musicDict;
+
+        void Start()
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.playOnAwake = true;
+        }
 
         void Awake()
         {
@@ -45,7 +55,7 @@ namespace AudioSystem
             if (sfxDict.ContainsKey(name))
                 sfxSource.PlayOneShot(sfxDict[name]);
             else
-                Debug.LogWarning("SFX n�o encontrado: " + name);
+                Debug.LogWarning("SFX não encontrado: " + name);
         }
 
         public void PlayMusic(string name, bool loop = true)
@@ -58,7 +68,17 @@ namespace AudioSystem
             }
             else
             {
-                Debug.LogWarning("M�sica n�o encontrada: " + name);
+                Debug.LogWarning("Música não encontrada: " + name);
+            }
+        }
+
+        //programador noob ( ﾉ ﾟｰﾟ)ﾉ
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                Debug.Log("Tocando som");
+                audioSource.PlayOneShot(soundClip);
             }
         }
 

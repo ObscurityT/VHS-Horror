@@ -66,4 +66,13 @@ public class PuzzleAudioHelper : MonoBehaviour
             Debug.Log("soundOnClose está vazio");
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Tocando o som");
+            PlayOpenSound();
+        }
+    }
 }
