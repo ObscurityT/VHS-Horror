@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class CursedMirrorRoom : MonoBehaviour
 {
-    public float timeLimit = 5f; 
+    public float timeLimit = 5f;
+    public float decreaseAmount = 5f;
     private float timer = 0f;
     private bool playerInside = false;
     private PlayerStatus status;
@@ -46,6 +47,6 @@ public class CursedMirrorRoom : MonoBehaviour
 
     private void TriggerPunishment()
     {
-        status.DecreaseSanity(1);
+        status.DecreaseSanity(decreaseAmount);
     }
 }

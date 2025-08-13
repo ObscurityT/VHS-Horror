@@ -172,7 +172,7 @@ public class DiaryTabsUI : MonoBehaviour
             yield return null;
         }
 
-        paginaAnimadaDir.localRotation = Quaternion.Euler(0, 180f, 0);
+        paginaAnimadaDir.localRotation = Quaternion.Euler(0, -180f, 0);
         paginaAnimadaDir.gameObject.SetActive(false);
 
         paginaAnimadaEsq.localRotation = Quaternion.Euler(0, 180f, 0);
