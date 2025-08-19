@@ -5,6 +5,7 @@ public class MirrorWatcher : MonoBehaviour
     public float maxLookTime = 3f; // tempo máximo olhando pro espelho
     public LayerMask mirrorLayer;
     public float rayDistance = 10f;
+   
 
    [SerializeField]
     private PlayerStatus status;
@@ -17,6 +18,7 @@ public class MirrorWatcher : MonoBehaviour
     void Update()
     {
         Ray ray = playerCamera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
+        Debug.DrawRay(ray.origin, ray.direction * rayDistance, Color.red);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, rayDistance, mirrorLayer))

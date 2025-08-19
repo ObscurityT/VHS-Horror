@@ -84,15 +84,14 @@ public class DiaryTabsUI : MonoBehaviour
 
         bool isRulesActive = tab == "Rules";
 
-        // Sprite swap directly via Button.image
         rulesTabButton.image.sprite = isRulesActive ? selectedSprite : unselectedSprite;
         legendsTabButton.image.sprite = isRulesActive ? unselectedSprite : selectedSprite;
 
-        // Content containers activation
+        
         rulesContent.SetActive(isRulesActive);
         legendsContent.SetActive(!isRulesActive);
 
-        // Reorder inside TabsGroup safely
+    
         if (isRulesActive)
         {
             rulesTabTransform.SetSiblingIndex(pageOverlayTransform.GetSiblingIndex() + 1);
@@ -134,8 +133,8 @@ public class DiaryTabsUI : MonoBehaviour
 
         if (currentPageIndex - 2 >= 0)
         {
-            currentPageIndex -= 2;
-            UpdatePages();
+            int previousIndex = currentPageIndex - 2;
+            StartCoroutine(FlipPageBackAndUpdate(previousIndex));
         }
     }
 
@@ -151,29 +150,57 @@ public class DiaryTabsUI : MonoBehaviour
         paginaAnimadaDir.gameObject.SetActive(true);
         imagemPaginaDir.sprite = paginaSpriteDir;
 
-        paginaAnimadaEsq.gameObject.SetActive(true);
-        imagemPaginaEsq.sprite = paginaSpriteEsq;
+        paginaAnimadaDir.pivot = new Vector2(0.5f, 0.5f);
+        paginaAnimadaDir.localRotation = Quaternion.Euler(0, 0f, 0);
 
-        paginaAnimadaDir.pivot = new Vector2(0.5f, 0.5f); // borda direita
-        paginaAnimadaDir.localRotation = Quaternion.Euler(0, 0, 0);
-
-        paginaAnimadaEsq.pivot = new Vector2(0.5f, 0.5f); // borda Esq
-        paginaAnimadaEsq.localRotation = Quaternion.Euler(0, 0, 0);
+        paginaAnimadaEsq.gameObject.SetActive(false);
 
         float duration = 0.6f;
         float t = 0f;
+
+        Debug.Log("[Flip Fwd] Vai animar: " + paginaAnimadaDir.name + " | Ativando? " + paginaAnimadaDir.gameObject.activeSelf);
 
         while (t < duration)
         {
             float rot = Mathf.Lerp(0, 180, t / duration);
             paginaAnimadaDir.localRotation = Quaternion.Euler(0, rot, 0);
-            paginaAnimadaEsq.localRotation = Quaternion.Euler(0, rot, 0);
             t += Time.deltaTime;
             yield return null;
         }
 
-        paginaAnimadaDir.localRotation = Quaternion.Euler(0, -180f, 0);
+        paginaAnimadaDir.localRotation = Quaternion.Euler(0, 180f, 0);
         paginaAnimadaDir.gameObject.SetActive(false);
+
+        currentPageIndex = newPageIndex;
+        UpdatePages();
+
+        isFlipping = false;
+    }
+
+    IEnumerator FlipPageBackAndUpdate(int newPageIndex)
+    {
+        isFlipping = true;
+
+        paginaAnimadaEsq.gameObject.SetActive(true);
+        imagemPaginaEsq.sprite = paginaSpriteDir;
+
+        paginaAnimadaEsq.pivot = new Vector2(0.5f, 0.5f);
+        paginaAnimadaEsq.localRotation = Quaternion.Euler(0, 0f, 0);
+
+        paginaAnimadaDir.gameObject.SetActive(false);
+
+        float duration = 0.6f;
+        float t = 0f;
+
+        Debug.Log("[Flip Fwd] Vai animar: " + paginaAnimadaDir.name + " | Ativando? " + paginaAnimadaDir.gameObject.activeSelf);
+
+        while (t < duration)
+        {
+            float rot = Mathf.Lerp(0, -180, t / duration);
+            paginaAnimadaEsq.localRotation = Quaternion.Euler(0, rot, 0);
+            t += Time.deltaTime;
+            yield return null;
+        }
 
         paginaAnimadaEsq.localRotation = Quaternion.Euler(0, 180f, 0);
         paginaAnimadaEsq.gameObject.SetActive(false);
@@ -183,6 +210,5 @@ public class DiaryTabsUI : MonoBehaviour
 
         isFlipping = false;
     }
-
 
 }
