@@ -4,6 +4,8 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Pedra
+  - Madeira
   - Mirror
   layers:
   - Default
@@ -13,7 +15,7 @@ TagManager:
   - Water
   - UI
   - Mirror
-  - 
+  - Floor
   - 
   - 
   - 

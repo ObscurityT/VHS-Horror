@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class NotePickup : MonoBehaviour, IInteractable
 {
@@ -7,10 +8,15 @@ public class NotePickup : MonoBehaviour, IInteractable
     [TextArea]
     public string noteText;
     public int noteOrder = 0;
-    
-    
-    
+
+    public AudioClip soundClip;
+    private AudioSource audioSource;
+
     private PuzzleAudioHelper audioHelper;
+
+    //definitivamente nn sei oq estou fazendo
+    //comentei parte do script que talvez seja inutil, mas vai que...
+    //com amor, programador noob
 
     public void Start()
     {
@@ -22,8 +28,10 @@ public class NotePickup : MonoBehaviour, IInteractable
     {
         Debug.Log("Interacting with the note");
 
-        if (audioHelper != null)
-            audioHelper.PlayOpenSound();
+        //  if (audioHelper != null)
+        //      audioHelper.PlayOpenSound();
+
+        audioSource.PlayOneShot(soundClip);
 
         NoteUIController.instance.ShowNote(noteText, this.gameObject);
     }

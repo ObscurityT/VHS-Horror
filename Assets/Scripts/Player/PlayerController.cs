@@ -1,4 +1,5 @@
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.InputSystem.Controls;
 
 public class PlayerController : MonoBehaviour
@@ -6,9 +7,6 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float interactionDistance = 3f;
     [SerializeField] private Camera playerCamera;
-
-    [SerializeField] private string footstepSFXName = "Footstep";
-    [SerializeField] private float footstepInterval = 0.5f;
 
     public float walkSpeed = 2.5f;
     public float runSpeed = 3.3f;
@@ -23,6 +21,17 @@ public class PlayerController : MonoBehaviour
 
     private float footstepTimer;
 
+    public AudioSource Passos;
+    public AudioClip woodClip;
+    public AudioClip rockClip;
+    public float pitchMin = 0.85f;
+    public float pitchMax = 1.05f;
+    public float resetDelay = 1f;
+    public string groundTag;
+
+    private string currentSurface = "";
+    private float timeSinceStopped = 0f;
+    private bool pitchReset = true;
 
     private void Start()
     {
@@ -97,28 +106,63 @@ public class PlayerController : MonoBehaviour
         HandleFootsteps(move);
     }
 
+    //programador noob (╯°□°）╯︵ ┻━┻
     void HandleFootsteps(Vector3 move)
     {
-        bool isMoving = move.magnitude > 0.1f && IsGrounded();
+        bool isMoving = move.magnitude > 0.1f && IsGrounded(out groundTag);
 
         if (isMoving)
         {
-            footstepTimer -= Time.fixedDeltaTime;
-            if (footstepTimer <= 0f)
+            AudioClip desiredClip = null;
+
+            if (groundTag == "Madeira")
+                desiredClip = woodClip;
+            else if (groundTag == "Pedra")
+                desiredClip = rockClip;
+
+            if (desiredClip != null)
             {
-                AudioSystem.AudioManager.Instance.PlaySFX(footstepSFXName);
-                footstepTimer = footstepInterval;
+                float previousTime = Passos.time;
+
+                if (pitchReset)
+                {
+                    Passos.pitch = Random.Range(pitchMin, pitchMax);
+                    pitchReset = false;
+                }
+
+                if (Passos.clip != desiredClip)
+                {
+                    Passos.clip = desiredClip;
+                    Passos.time = previousTime; 
+                    Passos.Play();
+                }
+                else if (!Passos.isPlaying)
+                {
+                    Passos.Play();
+                }
             }
+
+            timeSinceStopped = 0f;
         }
         else
         {
-            footstepTimer = 0f;
-        }
+            if (Passos.isPlaying)
+                Passos.Stop();
 
-        bool IsGrounded()
+            timeSinceStopped += Time.deltaTime;
+            if (timeSinceStopped >= resetDelay)
+                pitchReset = true; 
+        }
+    }
+
+    bool IsGrounded(out string tag)
+    {
+        if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 1.1f))
         {
-            return Physics.Raycast(transform.position, Vector3.down, 1.1f);
+            tag = hit.collider.tag;
+            return true;
         }
-
+        tag = null;
+        return false;
     }
 }
