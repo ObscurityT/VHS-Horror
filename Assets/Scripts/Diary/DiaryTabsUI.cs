@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class DiaryTabsUI : MonoBehaviour
 {
+
+    [Header("Diary Canvas")]
+    public GameObject diaryCanvas;
+
     [Header("Tab Buttons")]
     public Button rulesTabButton;
     public Button legendsTabButton;
@@ -21,6 +25,7 @@ public class DiaryTabsUI : MonoBehaviour
     public Sprite paginaSpriteEsq;
 
     [Header("Tab Transforms (Buttons as objects)")]
+    public Transform tabsContainer;
     public Transform rulesTabTransform;
     public Transform legendsTabTransform;
 
@@ -55,29 +60,78 @@ public class DiaryTabsUI : MonoBehaviour
         paginaAnimadaDir.gameObject.SetActive(false);
         paginaAnimadaEsq.gameObject.SetActive(false);
 
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        rulesTabButton.onClick.RemoveAllListeners();
+        legendsTabButton.onClick.RemoveAllListeners();
 
-        // Example placeholder content
-        rulesPages = new List<string> { "Regras 1", "Regras 2", "Regras 3", "Regras 4" };
-        legendsPages = new List<string> { "Lenda 1", "Lenda 2", "Lenda 3" };
+        rulesTabButton.onClick.AddListener(() => SelectTab("Rules"));
+        legendsTabButton.onClick.AddListener(() => SelectTab("Legends"));
 
         SelectTab("Rules");
 
-        // Button events
-        rulesTabButton.onClick.AddListener(() => SelectTab("Rules"));
-        legendsTabButton.onClick.AddListener(() => SelectTab("Legends"));
-        nextPageButton.onClick.AddListener(NextPage);
-        previousPageButton.onClick.AddListener(PreviousPage);
+    }
 
-        
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            ToggleDiary();
+        }
+    }
+
+    void ToggleDiary()
+    {
+        diaryCanvas.SetActive(!diaryCanvas.activeSelf);
+
+        if (diaryCanvas.activeSelf)
+        {
+            Time.timeScale = 0f;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            var player = FindFirstObjectByType<PlayerController>();
+            if (player != null) player.canLook = false;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            var player = FindFirstObjectByType<PlayerController>();
+            if (player != null) player.canLook = true;
+        }
+    }
+
+    public void CloseDiary()
+    {
+        isFlipping = false;
+        StopAllCoroutines();
+
+        if (paginaAnimadaDir)
+        {
+            paginaAnimadaDir.gameObject.SetActive(false);
+            paginaAnimadaDir.pivot = new Vector2(0f, 0.5f);
+            paginaAnimadaDir.localRotation = Quaternion.identity;
+        }
+        if (paginaAnimadaEsq)
+        {
+            paginaAnimadaEsq.gameObject.SetActive(false);
+            paginaAnimadaEsq.pivot = new Vector2(1f, 0.5f);
+            paginaAnimadaEsq.localRotation = Quaternion.identity;
+        }
+
+        diaryCanvas.SetActive(false);
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        var player = FindFirstObjectByType<PlayerController>();
+        if (player) player.canLook = true;
     }
 
     public void SelectTab(string tab)
     {
 
-        if (isFlipping) return;
+        //if (isFlipping) return;
 
         currentTab = tab;
         currentPageIndex = 0;
@@ -87,55 +141,85 @@ public class DiaryTabsUI : MonoBehaviour
         rulesTabButton.image.sprite = isRulesActive ? selectedSprite : unselectedSprite;
         legendsTabButton.image.sprite = isRulesActive ? unselectedSprite : selectedSprite;
 
-        
         rulesContent.SetActive(isRulesActive);
         legendsContent.SetActive(!isRulesActive);
 
-    
         if (isRulesActive)
-        {
-            rulesTabTransform.SetSiblingIndex(pageOverlayTransform.GetSiblingIndex() + 1);
-            legendsTabTransform.SetSiblingIndex(pageOverlayTransform.GetSiblingIndex() - 1);
-        }
+            rulesTabTransform.SetAsLastSibling();
         else
-        {
-            legendsTabTransform.SetSiblingIndex(pageOverlayTransform.GetSiblingIndex() + 1);
-            rulesTabTransform.SetSiblingIndex(pageOverlayTransform.GetSiblingIndex() - 1);
-        }
+            legendsTabTransform.SetAsLastSibling();
+
+
+        if (isRulesActive)
+            rulesPages = DiaryManager.Instance.GetRulesPages(); 
+        else
+            legendsPages = DiaryManager.Instance.GetLegendPages();
 
         UpdatePages();
+
+        nextPageButton.gameObject.SetActive(true);
+        previousPageButton.gameObject.SetActive(true);
     }
 
     void UpdatePages()
     {
-        List<string> pages = GetCurrentPages();
+        var pages = GetCurrentPages();
+
+        Debug.Log($"[UpdatePages] Tab: {currentTab} | Página atual: {currentPageIndex} de {pages.Count}");
+
+        if (pages.Count == 0)
+        {
+            leftPageText.text = "";
+            rightPageText.text = "";
+            nextPageButton.interactable = false;
+            previousPageButton.interactable = false;
+            return;
+        }
+
+        currentPageIndex = Mathf.Clamp(currentPageIndex, 0, pages.Count - 1);
+        if (currentPageIndex % 2 != 0) currentPageIndex--; 
 
         leftPageText.text = currentPageIndex < pages.Count ? pages[currentPageIndex] : "";
         rightPageText.text = (currentPageIndex + 1 < pages.Count) ? pages[currentPageIndex + 1] : "";
+
+        nextPageButton.interactable = currentPageIndex + 2 < pages.Count;
+        previousPageButton.interactable = currentPageIndex - 2 >= 0;
+
+        Debug.Log($"[UpdatePages] Botão voltar: {(previousPageButton.interactable ? "ativo" : "inativo")}");
     }
 
     public void NextPage()
     {
+        //if (isFlipping) return;
+        //var pages = GetCurrentPages();
+        //int nextIndex = currentPageIndex + 2;
+        //if (nextIndex <= pages.Count - 1)
+        //    StartCoroutine(FlipPageAndUpdate(nextIndex));
+
         if (isFlipping) return;
 
         List<string> pages = GetCurrentPages();
-        bool hasNext = (currentPageIndex + 1 < pages.Count);
-        if (!hasNext) return;
+        int nextIndex = currentPageIndex + 2;
 
-        int nextIndex = currentPageIndex + 2 <= pages.Count - 1 ? currentPageIndex + 2 : currentPageIndex + 1;
+        Debug.Log($"Tentando virar para a página {nextIndex}");
 
-        StartCoroutine(FlipPageAndUpdate(nextIndex));
+        if (nextIndex <= pages.Count - 1)
+        {
+            Debug.Log("Chamando FlipPageAndUpdate!");
+            StartCoroutine(FlipPageAndUpdate(nextIndex));
+        }
+        else
+        {
+            Debug.Log("Não tem mais páginas suficientes para virar.");
+        }
     }
 
     public void PreviousPage()
     {
         if (isFlipping) return;
-
-        if (currentPageIndex - 2 >= 0)
-        {
-            int previousIndex = currentPageIndex - 2;
+        int previousIndex = currentPageIndex - 2;
+        if (previousIndex >= 0)
             StartCoroutine(FlipPageBackAndUpdate(previousIndex));
-        }
     }
 
     List<string> GetCurrentPages()
@@ -155,16 +239,14 @@ public class DiaryTabsUI : MonoBehaviour
 
         paginaAnimadaEsq.gameObject.SetActive(false);
 
-        float duration = 0.6f;
+        const float duration = 0.6f;
         float t = 0f;
-
-        Debug.Log("[Flip Fwd] Vai animar: " + paginaAnimadaDir.name + " | Ativando? " + paginaAnimadaDir.gameObject.activeSelf);
 
         while (t < duration)
         {
             float rot = Mathf.Lerp(0, 180, t / duration);
             paginaAnimadaDir.localRotation = Quaternion.Euler(0, rot, 0);
-            t += Time.deltaTime;
+            t += Time.unscaledDeltaTime; 
             yield return null;
         }
 
@@ -173,7 +255,6 @@ public class DiaryTabsUI : MonoBehaviour
 
         currentPageIndex = newPageIndex;
         UpdatePages();
-
         isFlipping = false;
     }
 
@@ -182,32 +263,29 @@ public class DiaryTabsUI : MonoBehaviour
         isFlipping = true;
 
         paginaAnimadaEsq.gameObject.SetActive(true);
-        imagemPaginaEsq.sprite = paginaSpriteDir;
+        imagemPaginaEsq.sprite = paginaSpriteEsq;
 
         paginaAnimadaEsq.pivot = new Vector2(0.5f, 0.5f);
         paginaAnimadaEsq.localRotation = Quaternion.Euler(0, 0f, 0);
 
         paginaAnimadaDir.gameObject.SetActive(false);
 
-        float duration = 0.6f;
+        const float duration = 0.6f;
         float t = 0f;
-
-        Debug.Log("[Flip Fwd] Vai animar: " + paginaAnimadaDir.name + " | Ativando? " + paginaAnimadaDir.gameObject.activeSelf);
 
         while (t < duration)
         {
             float rot = Mathf.Lerp(0, -180, t / duration);
             paginaAnimadaEsq.localRotation = Quaternion.Euler(0, rot, 0);
-            t += Time.deltaTime;
+            t += Time.unscaledDeltaTime; 
             yield return null;
         }
 
-        paginaAnimadaEsq.localRotation = Quaternion.Euler(0, 180f, 0);
+        paginaAnimadaEsq.localRotation = Quaternion.Euler(0, -180f, 0);
         paginaAnimadaEsq.gameObject.SetActive(false);
 
         currentPageIndex = newPageIndex;
         UpdatePages();
-
         isFlipping = false;
     }
 
