@@ -1,3 +1,4 @@
+using AudioSystem;
 using System;
 using UnityEngine;
 
@@ -9,7 +10,7 @@ public class InventoryController : MonoBehaviour
     [SerializeField]
     private InventorySO inventoryData;
 
-    public void Start()
+    public void Awake()
     {
         inventoryData.Initialize();
         PrepareUI();
@@ -70,6 +71,8 @@ public class InventoryController : MonoBehaviour
                         item.Key,
                         item.Value.item.ItemImage);
                 }
+
+                AudioManager.Instance.PlayMusic("InventoryOpen");
             }
             else
             {

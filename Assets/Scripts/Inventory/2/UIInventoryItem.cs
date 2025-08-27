@@ -1,3 +1,4 @@
+using AudioSystem;
 using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -81,6 +82,7 @@ public class UIInventoryItem : MonoBehaviour, IPointerClickHandler
         if (eventData.button == PointerEventData.InputButton.Left)
         {
             OnItemClicked?.Invoke(this);
+            AudioManager.Instance.PlayMusic("InventoryClick");
         }
     }
 }
