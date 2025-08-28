@@ -106,10 +106,10 @@ public class PlayerController : MonoBehaviour
         HandleFootsteps(move);
     }
 
-    //programador noob (╯°□°）╯︵ ┻━┻
+    //programador noob aaaaaaaaargh
     void HandleFootsteps(Vector3 move)
     {
-        bool isMoving = move.magnitude > 0.1f && IsGrounded(out groundTag);
+        bool isMoving = move.magnitude > 0.6f && IsGrounded(out groundTag);
 
         if (isMoving)
         {
