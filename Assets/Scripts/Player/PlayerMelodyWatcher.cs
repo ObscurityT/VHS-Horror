@@ -65,7 +65,7 @@ public class PlayerMelodyWatcher : MonoBehaviour
         if (Mathf.Abs(inputX) > 0.01f || Mathf.Abs(inputZ) > 0.01f)
         {
             Debug.Log("Jogador se moveu durante a melodia!");
-            playerStatus.DecreaseSanity(10f);
+            playerStatus.DecreaseSanity(10);
             melodyActive = false;
             return;
         }

@@ -10,8 +10,7 @@ public class DiaryManager : MonoBehaviour
 
     private void Start()
     {
-        // Adiciona a única página de regras ao iniciar
-        rulesPages.Add(0, "-Nunca olhe diretamente para o espelho.\r\n-Não saia pela mesma porta que entrou.\r\n-Não fique mais do que 5 segundos dentro de um comôdo com um espelho quebrado.-\r\n-Feche todas as janelas se ouvir um uivo.\r\n-Se ouvir uma melodia não se mova!");
+      
     }
 
 
@@ -40,6 +39,20 @@ public class DiaryManager : MonoBehaviour
 
     public List<string> GetRulesPages()
     {
-        return new List<string>(rulesPages.Values);
+        int i = 1;
+        var linhas = new List<string>();
+        foreach (var regra in rulesPages.Values)
+        {
+            linhas.Add($"{i}: {regra}");
+            i++;
+        }
+        string allRules = string.Join("\n", linhas);
+        return new List<string> { allRules };
+    }
+
+    public void AddRulePage(int ruleNumber, string text)
+    {
+        if (!rulesPages.ContainsKey(ruleNumber))
+            rulesPages.Add(ruleNumber, text);
     }
 }

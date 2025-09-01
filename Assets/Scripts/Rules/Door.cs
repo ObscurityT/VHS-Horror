@@ -14,7 +14,7 @@ public class Door : MonoBehaviour
                 if (status.lastDoorID == doorID)
                 {
                     Debug.Log("Você está tentando voltar pela mesma porta!");
-                    status.DecreaseSanity(1f);
+                    status.DecreaseSanity(1);
                     return;
                 }
 

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MirrorWatcher : MonoBehaviour
 {
-    public float maxLookTime = 3f; // tempo máximo olhando pro espelho
+    public float maxLookTime = 3f; 
     public LayerMask mirrorLayer;
     public float rayDistance = 10f;
    

@@ -6,8 +6,8 @@ public class BookPuzzleManager : MonoBehaviour
     public PuzzleAudioHelper audioHelper;
     public List<SlotBook> slots; 
     public List<int> correctOrder; 
-    public GameObject puzzlePanel; 
-
+    public GameObject puzzlePanel;
+    private bool puzzleSolved = false;
 
 
     public void CheckPuzzle()
@@ -27,7 +27,7 @@ public class BookPuzzleManager : MonoBehaviour
         
         Debug.Log("Sucesso!");
         audioHelper.PlaySuccessSound();
-
+        puzzleSolved = true;
         StartCoroutine(ClosePuzzleAfterDelay(1.5f));
     }
 
@@ -41,6 +41,8 @@ public class BookPuzzleManager : MonoBehaviour
 
     public void OpenPuzzle()
     {
+        if (puzzleSolved) return;
+
         if (puzzlePanel != null)
             puzzlePanel.SetActive(true);
 

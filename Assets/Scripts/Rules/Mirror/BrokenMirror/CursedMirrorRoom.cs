@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class CursedMirrorRoom : MonoBehaviour
 {
-    public float timeLimit = 5f;
-    public float decreaseAmount = 5f;
+    public float timeLimit = 3f;
+    public int decreaseAmount = 1;
     private float timer = 0f;
     private bool playerInside = false;
     private PlayerStatus status;
@@ -39,7 +39,7 @@ public class CursedMirrorRoom : MonoBehaviour
             if (timer >= timeLimit)
             {
                 TriggerPunishment();
-                timer = 0f; // impede múltiplas ativações
+                timer = 0f; 
                 Debug.Log("Jogador ficou muito tempo na sala do espelho amaldiçoado!");
             }
         }
