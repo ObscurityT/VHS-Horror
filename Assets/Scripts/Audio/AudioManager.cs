@@ -43,9 +43,14 @@ namespace AudioSystem
         public void PlaySFX(string name)
         {
             if (sfxDict.ContainsKey(name))
+            {
+                Debug.Log("[AudioManager] Tocando SFX: " + name);
+                // sfxSource.spatialBlend = 0f; // forÃ§a som 2D
+                // sfxSource.volume = 1f;       // forÃ§a volume mÃ¡ximo
                 sfxSource.PlayOneShot(sfxDict[name]);
+            }
             else
-                Debug.LogWarning("SFX não encontrado: " + name);
+                Debug.LogWarning("SFX nï¿½o encontrado: " + name);
         }
 
         public void PlayMusic(string name, bool loop = true)
@@ -58,7 +63,7 @@ namespace AudioSystem
             }
             else
             {
-                Debug.LogWarning("Música não encontrada: " + name);
+                Debug.LogWarning("Mï¿½sica nï¿½o encontrada: " + name);
             }
         }
 
