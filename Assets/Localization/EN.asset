@@ -34,3 +34,13 @@ MonoBehaviour:
     value: Don't go back by the same door you came in.
   - key: RULE_02
     value: Don't look at the broken mirror.
+  - key: ITEM_SILVER_KEY
+    value: SILVER KEY
+  - key: ITEM_SILVER_KEY_DESC
+    value: An old, silver key. Maybe it opens a door.
+  - key: ITEM_GOLDEN_KEY
+    value: 'Golden Key
+
+'
+  - key: ITEM_GOLDENKEY_DESC
+    value: An old, Golden key. Maybe it opens a door.

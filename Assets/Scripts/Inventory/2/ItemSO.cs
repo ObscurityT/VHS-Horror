@@ -6,11 +6,10 @@ public class ItemSO : ScriptableObject
     public int ID => GetInstanceID();
 
     [field: SerializeField]
-    public string Name { get; set; }
+    public string NameKey { get; set; }
 
     [field: SerializeField]
-    [field: TextArea]
-    public string Description { get; set; }
+    public string DescriptionKey { get; set; }
 
     [field: SerializeField]
     public Sprite ItemImage { get; set; }

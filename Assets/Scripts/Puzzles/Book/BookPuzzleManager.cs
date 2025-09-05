@@ -51,6 +51,8 @@ public class BookPuzzleManager : MonoBehaviour
 
         var player = FindFirstObjectByType<PlayerController>();
         if (player != null) player.canLook = false;
+
+        Time.timeScale = 0f;
     }
 
     public void ClosePuzzle()
@@ -63,6 +65,8 @@ public class BookPuzzleManager : MonoBehaviour
 
         var player = FindFirstObjectByType<PlayerController>();
         if (player != null) player.canLook = true;
+
+        Time.timeScale = 1f;
     }
 
     private System.Collections.IEnumerator ClosePuzzleAfterDelay(float delay)

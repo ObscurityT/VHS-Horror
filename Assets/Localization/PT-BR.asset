@@ -32,6 +32,15 @@ MonoBehaviour:
     value: "N\xE3o saia pela mesma porta que entrou\n"
   - key: RULE_02
     value: "N\xE3o olhe para o espelho quebrado. \n"
-  - key: RULE_03
-    value: "Esta \xE9 uma regra muito longa,/nEsta \xE9 uma regra muito longa,/nEsta
-      \xE9 uma regra muito longa,Esta \xE9 uma regra muito longa,\n"
+  - key: ITEM_KEY_SILVER
+    value: Chave de Prata
+  - key: ITEM_SILVER_KEY_DESC
+    value: 'Uma chave velha de prata. Talvez abra alguma porta.
+
+'
+  - key: ITEM_GOLDEN_KEY
+    value: 'Chave De Ouro
+
+'
+  - key: ITEM_GOLDENKEY_DESC
+    value: Uma chave velha de ouro. Talvez abra alguma porta.

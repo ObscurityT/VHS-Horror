@@ -24,12 +24,12 @@ public class Key : MonoBehaviour, IInteractable
             if (slotIndex >= 0)
             {
                 inventoryController.UpdateInventorySlot(slotIndex, inventoryItem.ItemImage);
-                Debug.Log("Item adicionado ao inventário: " + inventoryItem.Name);
+                Debug.Log("Item adicionado ao inventário: " + inventoryItem.NameKey);
                 Destroy(gameObject);
             }
             else
             {
-                Debug.LogWarning("Inventário cheio! Não foi possível adicionar: " + inventoryItem.Name);
+                Debug.LogWarning("Inventário cheio! Não foi possível adicionar: " + inventoryItem.NameKey);
             }
             //inventoryController.UpdateInventorySlot(slotIndex, inventoryItem.ItemImage); // atualiza a UI
             //Debug.Log("Item adicionado ao inventário: " + inventoryItem.Name);

@@ -1,5 +1,6 @@
 using AudioSystem;
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class InventoryController : MonoBehaviour
@@ -41,7 +42,7 @@ public class InventoryController : MonoBehaviour
         }
 
         ItemSO item = inventoryItem.item;
-        inventory.UpdateDescription(itemIndex, item.ItemImage, item.Name, item.Description);
+        inventory.UpdateDescription(itemIndex, item.ItemImage, item.NameKey, item.DescriptionKey);
     }
 
     public InventorySO GetInventory()
@@ -54,32 +55,80 @@ public class InventoryController : MonoBehaviour
         inventory.UpdateInventorySlot(index, icon);
     }
 
+    public void OpenInventory()
+    {
+        if (!inventory.isActiveAndEnabled)
+        {
+            inventory.Show();
+
+            foreach (var item in inventoryData.GetCurrentInventoryState())
+            {
+                inventory.UpdateData(item.Key, item.Value.item.ItemImage);
+            }
+
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            if (AudioManager.Instance != null)
+                AudioManager.Instance.PlaySFX("InventoryOpen");
+        }
+    }
+
+    public void CloseInventory()
+    {
+        if (inventory.isActiveAndEnabled)
+        {
+            inventory.Hide();
+
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+    }
+
+    public void ToggleInventory()
+    {
+        if (!inventory.isActiveAndEnabled)
+            OpenInventory();
+        else
+            CloseInventory();
+    }
+
     public void Update()
     {
+        //if (Input.GetKeyDown(KeyCode.I))
+        //{
+        //    if (!inventory.isActiveAndEnabled)
+        //    {
+        //        inventory.Show();
+        //        Cursor.lockState = CursorLockMode.None;
+        //        Cursor.visible = true;
+
+        //        // Atualiza visualmente os slots com os dados do inventário
+        //        foreach (var item in inventoryData.GetCurrentInventoryState())
+        //        {
+        //            inventory.UpdateData(
+        //                item.Key,
+        //                item.Value.item.ItemImage);
+        //        }
+
+        //        AudioManager.Instance.PlayMusic("InventoryOpen");
+        //    }
+        //    else
+        //    {
+        //        inventory.Hide();
+        //        Cursor.lockState = CursorLockMode.Locked;
+        //        Cursor.visible = false;
+        //    }
+        //}
+
         if (Input.GetKeyDown(KeyCode.I))
         {
-            if (!inventory.isActiveAndEnabled)
-            {
-                inventory.Show();
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
+            ToggleInventory();
+        }
 
-                // Atualiza visualmente os slots com os dados do inventário
-                foreach (var item in inventoryData.GetCurrentInventoryState())
-                {
-                    inventory.UpdateData(
-                        item.Key,
-                        item.Value.item.ItemImage);
-                }
-
-                AudioManager.Instance.PlayMusic("InventoryOpen");
-            }
-            else
-            {
-                inventory.Hide();
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-            }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            CloseInventory();
         }
     }
 }

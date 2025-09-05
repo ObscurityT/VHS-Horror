@@ -113,9 +113,9 @@ public class UIInventory : MonoBehaviour
         }
     }
 
-    public void UpdateDescription(int itemIndex, Sprite itemImage, string name, string description)
+    public void UpdateDescription(int itemIndex, Sprite itemImage, string nameKey, string descriptionKey)
     {
-        itemDescription.SetDescription(itemImage, name, description);
+        itemDescription.SetDescription(itemImage, nameKey, descriptionKey);
 
         foreach (var slot in slotList)
             slot.Deselect();
