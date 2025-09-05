@@ -5,6 +5,8 @@ public class LocalizationManager : MonoBehaviour
 {
     public static LocalizationManager Instance;
 
+    public event System.Action OnLanguageChanged;
+
     public LocalizationData[] availableLanguages;
     private Dictionary<string, string> currentDictionary;
     public SystemLanguage currentLanguage = SystemLanguage.Portuguese;
@@ -33,6 +35,8 @@ public class LocalizationManager : MonoBehaviour
         {
             currentDictionary[entry.key] = entry.value;
         }
+
+        OnLanguageChanged?.Invoke();
     }
 
     LocalizationData GetDataForLanguage(SystemLanguage lang)

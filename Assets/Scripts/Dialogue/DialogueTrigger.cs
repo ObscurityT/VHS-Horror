@@ -2,19 +2,27 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    [TextArea(2, 5)]
-    public string message;
+    
+    public string messageKey;
 
     private bool isActive = false;
+    public bool oneShot = true;       
+    public bool retriggerOnExit = true;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (isActive) return;
+        if (oneShot && isActive) return;
+        if (!other.CompareTag("Player")) return;
 
-        if (other.CompareTag("Player"))
-        {
-            DialogueManager.Instance.ShowMessage(message);
-            isActive = true;
-        }
+        string localizedText = LocalizationManager.Instance.GetText(messageKey);
+        Debug.Log($"[LOC] {messageKey} -> len={localizedText?.Length} | '{localizedText}'");
+        DialogueManager.Instance.ShowMessage(localizedText);
+        isActive = true;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (!other.CompareTag("Player")) return;
+        if (retriggerOnExit) isActive = false;
     }
 }

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 807d5721f6d896d43a3e8e23b80d15c5, type: 3}
+  m_Name: PT-BR
+  m_EditorClassIdentifier: 
+  language: 28
+  entries:
+  - key: NOTE_01
+    value: teSTE DA PRIMEIRA NOTA
+  - key: NOTE_02
+    value: teSTE DA SEGUNDA NOTA
+  - key: DIALOGUE_HELLO
+    value: "Hello Esse \xE9 um dialogo"
+  - key: DIARY_TAB_LEGENDS
+    value: Lendas
+  - key: DIARY_TAB_RULES
+    value: Regras
+  - key: DIARY_BTN_PREVIOUS
+    value: Anterior
+  - key: DIARY_BTN_NEXT
+    value: "Pr\xF3ximo"
+  - key: RULE_01
+    value: "N\xE3o saia pela mesma porta que entrou\n"
+  - key: RULE_02
+    value: "N\xE3o olhe para o espelho quebrado. \n"

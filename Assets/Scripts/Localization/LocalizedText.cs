@@ -10,6 +10,15 @@ public class LocalizedText : MonoBehaviour
     {
         textComponent = GetComponent<TMP_Text>();
         UpdateText();
+
+        if (LocalizationManager.Instance != null)
+            LocalizationManager.Instance.OnLanguageChanged += UpdateText;
+    }
+
+    void OnDestroy()
+    {
+        if (LocalizationManager.Instance != null)
+            LocalizationManager.Instance.OnLanguageChanged -= UpdateText;
     }
 
     public void UpdateText()

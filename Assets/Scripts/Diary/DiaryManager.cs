@@ -34,16 +34,21 @@ public class DiaryManager : MonoBehaviour
 
     public List<string> GetLegendPages()
     {
-        return new List<string>(legendPages.Values);
+        List<string> pages = new List<string>();
+        foreach (var key in legendPages.Values)
+        {
+            pages.Add(LocalizationManager.Instance.GetText(key));
+        }
+        return pages;
     }
 
     public List<string> GetRulesPages()
     {
         int i = 1;
         var linhas = new List<string>();
-        foreach (var regra in rulesPages.Values)
+        foreach (var key in rulesPages.Values)
         {
-            linhas.Add($"{i}: {regra}");
+            linhas.Add($"{i}: {LocalizationManager.Instance.GetText(key)}");
             i++;
         }
         string allRules = string.Join("\n", linhas);

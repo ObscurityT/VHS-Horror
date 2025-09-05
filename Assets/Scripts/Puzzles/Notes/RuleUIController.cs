@@ -58,9 +58,7 @@ public class RuleUIController : MonoBehaviour
             return;
         }
 
-        Debug.Log($"Regra coletada - Ordem: {rulePickup.ruleOrder}, Texto: {rulePickup.ruleText}");
-
-        DiaryManager.Instance.AddRulePage(rulePickup.ruleOrder, rulePickup.ruleText);
+        DiaryManager.Instance.AddRulePage(rulePickup.ruleOrder, rulePickup.ruleKey);
 
         Destroy(lastRuleObject.gameObject);
         lastRuleObject = null;

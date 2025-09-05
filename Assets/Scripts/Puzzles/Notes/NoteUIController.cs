@@ -50,17 +50,16 @@ public class NoteUIController : MonoBehaviour
             Debug.LogWarning("lastNoteObject está NULL!");
             return;
         }
-
         var notePickup = lastNoteObject.GetComponent<NotePickup>();
+
         if (notePickup == null)
         {
             Debug.LogWarning("NotePickup não encontrado no objeto da nota");
             return;
         }
 
-        Debug.Log($"Nota coletada - Ordem: {notePickup.noteOrder}, Texto: {notePickup.noteText}");
 
-        DiaryManager.Instance.AddLegendPage(notePickup.noteOrder, notePickup.noteText);
+        DiaryManager.Instance.AddLegendPage(notePickup.noteOrder, notePickup.noteKey);
         NotesManager.instance.MarkNoteCollected(notePickup.noteOrder);
 
         Destroy(lastNoteObject.gameObject);

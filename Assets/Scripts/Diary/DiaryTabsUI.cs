@@ -33,12 +33,19 @@ public class DiaryTabsUI : MonoBehaviour
     public Sprite selectedSprite;
     public Sprite unselectedSprite;
 
+    [Header("Tab Labels")]
+    public TextMeshProUGUI legendsTabLabel;
+    public TextMeshProUGUI rulesTabLabel;
+
     [Header("Page Overlay Reference")]
     public Transform pageOverlayTransform;
 
     [Header("Navigation Buttons")]
     public Button nextPageButton;
     public Button previousPageButton;
+
+    public TextMeshProUGUI nextPageLabel;
+    public TextMeshProUGUI previousPageLabel;
 
     [Header("Page Texts")]
     public TextMeshProUGUI leftPageText;
@@ -60,11 +67,19 @@ public class DiaryTabsUI : MonoBehaviour
         paginaAnimadaDir.gameObject.SetActive(false);
         paginaAnimadaEsq.gameObject.SetActive(false);
 
+        if (!legendsTabLabel) legendsTabLabel = legendsTabButton.GetComponentInChildren<TextMeshProUGUI>();
+        if (!rulesTabLabel) rulesTabLabel = rulesTabButton.GetComponentInChildren<TextMeshProUGUI>();
+
         rulesTabButton.onClick.RemoveAllListeners();
         legendsTabButton.onClick.RemoveAllListeners();
 
         rulesTabButton.onClick.AddListener(() => SelectTab("Rules"));
         legendsTabButton.onClick.AddListener(() => SelectTab("Legends"));
+
+        UpdateTabLabels();
+
+        if (LocalizationManager.Instance != null)
+            LocalizationManager.Instance.OnLanguageChanged += UpdateTabLabels;
 
         SelectTab("Rules");
 
@@ -288,5 +303,21 @@ public class DiaryTabsUI : MonoBehaviour
         UpdatePages();
         isFlipping = false;
     }
+    void UpdateTabLabels()
+    {
+        if (LocalizationManager.Instance == null) return;
+        legendsTabLabel.text = LocalizationManager.Instance.GetText("DIARY_TAB_LEGENDS");
+        rulesTabLabel.text = LocalizationManager.Instance.GetText("DIARY_TAB_RULES");
 
+        if (previousPageLabel != null)
+            previousPageLabel.text = LocalizationManager.Instance.GetText("DIARY_BTN_PREVIOUS");
+        if (nextPageLabel != null)
+            nextPageLabel.text = LocalizationManager.Instance.GetText("DIARY_BTN_NEXT");
+    }
+
+    void OnDestroy()
+    {
+        if (LocalizationManager.Instance != null)
+            LocalizationManager.Instance.OnLanguageChanged -= UpdateTabLabels;
+    }
 }

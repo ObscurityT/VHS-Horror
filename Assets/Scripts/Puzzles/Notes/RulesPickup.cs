@@ -3,8 +3,7 @@ using UnityEngine;
 public class RulesPickup : MonoBehaviour, IInteractable
 {
     [Header("Texto e Ordem da Regra")]
-    [TextArea]
-    public string ruleText;
+    public string ruleKey;
     public int ruleOrder = 0;
 
     private PuzzleAudioHelper audioHelper;
@@ -21,6 +20,7 @@ public class RulesPickup : MonoBehaviour, IInteractable
         if (audioHelper != null)
             audioHelper.PlayOpenSound();
 
-        RuleUIController.instance.ShowRule(ruleText, this.gameObject);
+        string localizedText = LocalizationManager.Instance.GetText(ruleKey);
+        RuleUIController.instance.ShowRule(localizedText, this.gameObject);
     }
 }
