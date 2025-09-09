@@ -11,6 +11,9 @@ namespace AudioSystem
         public AudioSource sfxSource;
         public AudioSource musicSource;
 
+        [SerializeField] private AudioClip startMusic;
+        [SerializeField] private bool playOnStart = true;
+
         [Header("Audio Clips")]
         public List<AudioClip> sfxClips;
         public List<AudioClip> musicClips;
@@ -37,6 +40,20 @@ namespace AudioSystem
             else
             {
                 Destroy(gameObject);
+            }
+        }
+
+        void Start()
+        {
+            if (musicSource == null)
+            {
+                Debug.LogError("[AudioManager] Music Source não está atribuído no Inspector!");
+                return;
+            }
+
+            if (musicClips.Count > 0 && playOnStart)
+            {
+                PlayMusic(musicClips[0].name);
             }
         }
 

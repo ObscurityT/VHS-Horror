@@ -3,7 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenuManager : MonoBehaviour
 {
-    public GameObject pauseMenuUI;
+    public GameObject panelPause;
+    public GameObject panelSettings;
     public GameObject crosshair;
     private bool isPaused = false;
 
@@ -22,7 +23,7 @@ public class PauseMenuManager : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        pauseMenuUI.SetActive(false);
+        panelPause.SetActive(false);
         crosshair.SetActive(true);
         Time.timeScale = 1f;
         isPaused = false;
@@ -32,7 +33,7 @@ public class PauseMenuManager : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        pauseMenuUI.SetActive(true);
+        panelPause.SetActive(true);
         crosshair.SetActive(false);
         Time.timeScale = 0f;
         isPaused = true;
@@ -40,8 +41,14 @@ public class PauseMenuManager : MonoBehaviour
 
     public void OpenOptions()
     {
-        Debug.Log("Abrir Settings");
-        
+        panelPause.SetActive(false);
+        panelSettings.SetActive(true);
+    }
+
+    public void BackToPauseMenu()
+    {
+        panelPause.SetActive(true);
+        panelSettings.SetActive(false);
     }
 
     public void LoadMainMenu()
