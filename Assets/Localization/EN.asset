@@ -16,31 +16,100 @@ MonoBehaviour:
   entries:
   - key: NOTE_01
     value: FIRST NOTE TEST
+    sprite: {fileID: 0}
   - key: NOTE_02
     value: SECOND NOTE TEST
+    sprite: {fileID: 0}
   - key: DIALOGUE_HELLO
     value: 'This is Dialogue Test
 
 '
+    sprite: {fileID: 0}
   - key: DIARY_TAB_LEGENDS
     value: Legends
+    sprite: {fileID: 0}
   - key: DIARY_TAB_RULES
     value: Rules
+    sprite: {fileID: 0}
   - key: DIARY_BTN_PREVIOUS
     value: Previous
+    sprite: {fileID: 0}
   - key: DIARY_BTN_NEXT
     value: Next
+    sprite: {fileID: 0}
   - key: RULE_01
     value: Don't go back by the same door you came in.
+    sprite: {fileID: 0}
   - key: RULE_02
     value: Don't look at the broken mirror.
+    sprite: {fileID: 0}
   - key: ITEM_SILVER_KEY
     value: SILVER KEY
+    sprite: {fileID: 0}
   - key: ITEM_SILVER_KEY_DESC
     value: An old, silver key. Maybe it opens a door.
+    sprite: {fileID: 0}
   - key: ITEM_GOLDEN_KEY
     value: 'Golden Key
 
 '
+    sprite: {fileID: 0}
   - key: ITEM_GOLDENKEY_DESC
     value: An old, Golden key. Maybe it opens a door.
+    sprite: {fileID: 0}
+  - key: btn_play_normal
+    value: 
+    sprite: {fileID: 21300000, guid: 0dc650e2d3fc52447ae3e2e7d734dde8, type: 3}
+  - key: btn_play_highlighted
+    value: 
+    sprite: {fileID: 21300000, guid: 65d8df1b66e3c704084d3b7bb9d1b7bc, type: 3}
+  - key: btn_play_pressed
+    value: 
+    sprite: {fileID: 21300000, guid: 65d8df1b66e3c704084d3b7bb9d1b7bc, type: 3}
+  - key: btn_options_normal
+    value: 
+    sprite: {fileID: 21300000, guid: f900a8590954026498cb6eb934fa05a3, type: 3}
+  - key: btn_options_highlighted
+    value: 
+    sprite: {fileID: 21300000, guid: 514241d40d3f1b44c80e378d18880feb, type: 3}
+  - key: btn_options_pressed
+    value: 
+    sprite: {fileID: 21300000, guid: 514241d40d3f1b44c80e378d18880feb, type: 3}
+  - key: btn_quit_normal
+    value: 
+    sprite: {fileID: 21300000, guid: a9f437b307930854eaa37a8ccf86b003, type: 3}
+  - key: btn_quit_highlighted
+    value: 
+    sprite: {fileID: 21300000, guid: 0dcc9186ad3f11f4685efeb21200de79, type: 3}
+  - key: btn_quit_pressed
+    value: 
+    sprite: {fileID: 21300000, guid: 0dcc9186ad3f11f4685efeb21200de79, type: 3}
+  - key: btn_pausemenu_continue
+    value: 'Continue
+
+'
+    sprite: {fileID: 0}
+  - key: btn_pausemenu_settings
+    value: Settings
+    sprite: {fileID: 0}
+  - key: btn_pausemenu_menu
+    value: Main Menu
+    sprite: {fileID: 0}
+  - key: btn_pausemenu_quit
+    value: Quit
+    sprite: {fileID: 0}
+  - key: game_title
+    value: 
+    sprite: {fileID: 21300000, guid: 3599c463cac3f04489216aef47bad4fe, type: 3}
+  - key: bookpuzzle_title
+    value: 
+    sprite: {fileID: 21300000, guid: ef808e47a05a4a04c9845a15e6ef94bb, type: 3}
+  - key: btn_bookpuzzle_normal
+    value: 
+    sprite: {fileID: 21300000, guid: 4d9e94119671fd840a1fe85441170a80, type: 3}
+  - key: btn_bookpuzzle_highlighted
+    value: 
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: btn_bookpuzzle_pressed
+    value: 
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
