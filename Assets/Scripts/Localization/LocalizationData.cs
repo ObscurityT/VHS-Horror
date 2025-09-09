@@ -12,5 +12,8 @@ public class LocalizationData : ScriptableObject
 public class LocalizationEntry
 {
     public string key;
+
     [TextArea] public string value;
+
+    public Sprite sprite;
 }

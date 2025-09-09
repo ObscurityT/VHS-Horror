@@ -11,6 +11,13 @@ public class InventoryController : MonoBehaviour
     [SerializeField]
     private InventorySO inventoryData;
 
+    [Header("Áudio")]
+    [SerializeField] private AudioClip openSfx;
+    [SerializeField] private AudioClip closeSfx;
+    [SerializeField] private AudioClip inventoryMusic;
+    [SerializeField] private bool pauseGameTime = false;
+
+
     public void Awake()
     {
         inventoryData.Initialize();
@@ -57,8 +64,12 @@ public class InventoryController : MonoBehaviour
 
     public void OpenInventory()
     {
+
         if (!inventory.isActiveAndEnabled)
         {
+            if (inventoryMusic != null)
+                AudioManager.Instance.PlayMusic(inventoryMusic);
+
             inventory.Show();
 
             foreach (var item in inventoryData.GetCurrentInventoryState())
@@ -69,8 +80,11 @@ public class InventoryController : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
 
-            if (AudioManager.Instance != null)
-                AudioManager.Instance.PlaySFX("InventoryOpen");
+            if (pauseGameTime)
+                Time.timeScale = 0f;
+
+            if (openSfx != null)
+                AudioManager.Instance.PlaySFX(openSfx);
         }
     }
 
@@ -80,8 +94,16 @@ public class InventoryController : MonoBehaviour
         {
             inventory.Hide();
 
+            if (pauseGameTime)
+                Time.timeScale = 1f;
+
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+
+            AudioManager.Instance.StopMusic();
+
+            if (closeSfx != null)
+                AudioManager.Instance.PlaySFX(closeSfx);
         }
     }
 
