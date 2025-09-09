@@ -1,19 +1,34 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PuzzleManager : MonoBehaviour
 {
     public Padlock[] padlocks;
 
+    [Tooltip("Chamado quando todos os cadeados estiverem destrancados.")]
+    public UnityEvent onSolved;
+
+    private bool _alreadySolved;
+
     public void CheckPuzzle()
     {
-        foreach (var l in padlocks)
+        if (_alreadySolved) return;
+
+        if (padlocks == null || padlocks.Length == 0)
         {
-            if (!l.IsUnlocked())
-                return; // Puzzle not solved yet
+            Debug.LogWarning("[PuzzleManager] Nenhum padlock atribuído.");
+            return;
         }
 
-        Debug.Log("Solved");
-        // TODO: Call animation, sound, door opening, etc. //add sound of unlocking a door. 
+        for (int i = 0; i < padlocks.Length; i++)
+        {
+            var p = padlocks[i];
+            if (p == null || !p.IsUnlocked())
+                return; // ainda falta
+        }
+
+        _alreadySolved = true;
+        Debug.Log("[PuzzleManager] Puzzle resolvido!");
+        onSolved?.Invoke();
     }
 }
-

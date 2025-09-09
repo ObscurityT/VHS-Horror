@@ -36,32 +36,40 @@ public class NoteUIController : MonoBehaviour
 
     public void CloseNote()
     {
-        Debug.Log("Fechando nota...");
-
-        if (audioHelper != null)
-            audioHelper.PlayCloseSound();
-        else
-            Debug.LogWarning("audioHelper está NULL!");
-
         noteCanvas.SetActive(false);
 
-        
         Time.timeScale = 1f;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
-        FindFirstObjectByType<PlayerController>().canLook = true;
+        var player = FindFirstObjectByType<PlayerController>();
+        if (player != null) player.canLook = true;
 
-        if (lastNoteObject != null)
+        if (lastNoteObject == null)
         {
-            var notePickup = lastNoteObject.GetComponent<NotePickup>();
-            if (notePickup != null)
-            {
-                NotesManager.instance.MarkNoteCollected(notePickup.noteOrder);
-                Destroy(lastNoteObject);
-            }
-
-            lastNoteObject = null;
+            Debug.LogWarning("lastNoteObject está NULL!");
+            return;
         }
+        var notePickup = lastNoteObject.GetComponent<NotePickup>();
+
+        if (notePickup == null)
+        {
+            Debug.LogWarning("NotePickup não encontrado no objeto da nota");
+            return;
+        }
+
+
+        DiaryManager.Instance.AddLegendPage(notePickup.noteOrder, notePickup.noteKey);
+        NotesManager.instance.MarkNoteCollected(notePickup.noteOrder);
+
+        Destroy(lastNoteObject.gameObject);
+        lastNoteObject = null;
+
+        var diaryUI = FindFirstObjectByType<DiaryTabsUI>();
+        if (diaryUI != null && diaryUI.gameObject.activeSelf)
+        {
+            diaryUI.SelectTab("Legends");
+        }
+
     }
 }

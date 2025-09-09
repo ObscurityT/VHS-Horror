@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,6 +7,7 @@ public class ScreenFade : MonoBehaviour
     public Image blackScreen;
     public float fadeSpeed = 1.5f;
     private bool fading = false;
+
 
     private void Update()
     {
@@ -26,5 +28,25 @@ public class ScreenFade : MonoBehaviour
     public void StartFade()
     {
         fading = true;
+    }
+
+    public IEnumerator CollapseTVEffect(float duration)
+    {
+        if (blackScreen == null) yield break;
+
+        RectTransform rt = blackScreen.GetComponent<RectTransform>();
+        Vector3 originalScale = rt.localScale;
+        Vector3 collapsedScale = new Vector3(1f, 0f, 1f);
+
+        float t = 0f;
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            float lerp = Mathf.SmoothStep(0f, 1f, t / duration);
+            rt.localScale = Vector3.Lerp(originalScale, collapsedScale, lerp);
+            yield return null;
+        }
+
+        rt.localScale = collapsedScale;
     }
 }

@@ -66,5 +66,23 @@ namespace AudioSystem
         {
             musicSource.Stop();
         }
+
+        public List<string> GetSFXNames()
+        {
+            List<string> names = new();
+            foreach (var clip in sfxClips)
+                if (clip != null)
+                    names.Add(clip.name);
+            return names;
+        }
+
+        public List<string> GetMusicNames()
+        {
+            List<string> names = new();
+            foreach (var clip in musicClips)
+                if (clip != null)
+                    names.Add(clip.name);
+            return names;
+        }
     }
 }

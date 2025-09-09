@@ -14,14 +14,12 @@ public class Door : MonoBehaviour
                 if (status.lastDoorID == doorID)
                 {
                     Debug.Log("Você está tentando voltar pela mesma porta!");
-                    status.DecreaseSanity(50f);
+                    status.DecreaseSanity(1);
                     return;
                 }
 
                 Debug.Log("Porta: " + doorID);
                 status.lastDoorID = doorID;
-
-                // Aqui pode teleportar, trocar cena etc.
             }
         }
     }

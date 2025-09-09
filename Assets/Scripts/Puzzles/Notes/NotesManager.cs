@@ -6,12 +6,15 @@ public class NotesManager : MonoBehaviour
 {
     public static NotesManager instance;
 
-    private HashSet<int> collectedNoteOrders = new HashSet<int>();
-    public int totalNotes = 5;
+    private Dictionary<int, string> noteTexts = new Dictionary<int, string>();
 
+    private List<int> collectedNoteOrdersList = new List<int>();
+    
+    private HashSet<int> collectedNoteOrdersSet = new HashSet<int>();
+
+    public int totalNotes = 5;
     [Header("Event when all notes are collected")]
     public UnityEvent onAllNotesCollected;
-
 
     void Awake()
     {
@@ -21,18 +24,39 @@ public class NotesManager : MonoBehaviour
             Destroy(gameObject);
     }
 
+
+    public void RegisterNoteText(int order, string text)
+    {
+        if (!noteTexts.ContainsKey(order))
+            noteTexts.Add(order, text);
+    }
+
+    public string GetNoteText(int order)
+    {
+        if (noteTexts.TryGetValue(order, out var text))
+            return text;
+        return "";
+    }
+
     public void MarkNoteCollected(int noteOrder)
     {
-        if (!collectedNoteOrders.Contains(noteOrder))
+        if (!collectedNoteOrdersSet.Contains(noteOrder))
         {
-            collectedNoteOrders.Add(noteOrder);
-            Debug.Log($"Nota {noteOrder} coletada ({collectedNoteOrders.Count}/{totalNotes})");
+            collectedNoteOrdersSet.Add(noteOrder);
+            collectedNoteOrdersList.Add(noteOrder);
 
-            if (collectedNoteOrders.Count >= totalNotes)
+            Debug.Log($"Nota {noteOrder} coletada ({collectedNoteOrdersList.Count}/{totalNotes})");
+
+            if (collectedNoteOrdersList.Count >= totalNotes)
             {
                 Debug.Log("All notes are collected");
-                onAllNotesCollected?.Invoke(); // Gatilho para liberar puzzle
+                onAllNotesCollected?.Invoke(); 
             }
         }
+    }
+
+    public List<int> GetCollectedNotesInOrder()
+    {
+        return collectedNoteOrdersList;
     }
 }

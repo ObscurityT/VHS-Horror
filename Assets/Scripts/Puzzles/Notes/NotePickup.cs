@@ -6,7 +6,7 @@ public class NotePickup : MonoBehaviour, IInteractable
 {
     [Header("Texto e Ordem da Nota")]
     [TextArea]
-    public string noteText;
+    public string noteKey;
     public int noteOrder = 0;
 
     public AudioClip soundClip;
@@ -37,6 +37,7 @@ public class NotePickup : MonoBehaviour, IInteractable
 
         audioSource.PlayOneShot(soundClip);
 
-        NoteUIController.instance.ShowNote(noteText, this.gameObject);
+        string localizedText = LocalizationManager.Instance.GetText(noteKey);
+        NoteUIController.instance.ShowNote(localizedText, this.gameObject);
     }
 }

@@ -7,7 +7,7 @@ public class DiaryPage : MonoBehaviour
 
     public void Collect()
     {
-        DiaryManager.Instance.AddPage(pageNumber, pageText);
+        DiaryManager.Instance.AddLegendPage(pageNumber, pageText);
         Destroy(gameObject);
     }
 }

@@ -5,14 +5,20 @@ public class DiaryManager : MonoBehaviour
 {
     public static DiaryManager Instance;
 
-    private SortedDictionary<int, string> collectedPages = new SortedDictionary<int, string>();
+    private SortedDictionary<int, string> legendPages = new SortedDictionary<int, string>();
+    private SortedDictionary<int, string> rulesPages = new SortedDictionary<int, string>();
+
+    private void Start()
+    {
+      
+    }
+
 
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Opcional
         }
         else
         {
@@ -20,14 +26,38 @@ public class DiaryManager : MonoBehaviour
         }
     }
 
-    public void AddPage(int pageNumber, string text)
+    public void AddLegendPage(int pageNumber, string text)
     {
-        if (!collectedPages.ContainsKey(pageNumber))
-            collectedPages.Add(pageNumber, text);
+        if (!legendPages.ContainsKey(pageNumber))
+            legendPages.Add(pageNumber, text);
     }
 
-    public List<string> GetOrderedPages()
+    public List<string> GetLegendPages()
     {
-        return new List<string>(collectedPages.Values);
+        List<string> pages = new List<string>();
+        foreach (var key in legendPages.Values)
+        {
+            pages.Add(LocalizationManager.Instance.GetText(key));
+        }
+        return pages;
+    }
+
+    public List<string> GetRulesPages()
+    {
+        int i = 1;
+        var linhas = new List<string>();
+        foreach (var key in rulesPages.Values)
+        {
+            linhas.Add($"{i}: {LocalizationManager.Instance.GetText(key)}");
+            i++;
+        }
+        string allRules = string.Join("\n", linhas);
+        return new List<string> { allRules };
+    }
+
+    public void AddRulePage(int ruleNumber, string text)
+    {
+        if (!rulesPages.ContainsKey(ruleNumber))
+            rulesPages.Add(ruleNumber, text);
     }
 }
