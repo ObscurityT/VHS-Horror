@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Pedra
   - Madeira
+  - Mirror
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PostProcessing
   - Water
   - UI
   - 
