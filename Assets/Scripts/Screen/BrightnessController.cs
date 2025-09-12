@@ -18,19 +18,31 @@ public class BrightnessController : MonoBehaviour
 
     private ColorAdjustments colorAdjustments;
 
+    private const string BRIGHTNESS_KEY = "BrightnessValue";
+
+
     private void Start()
     {
         if (globalVolume.profile.TryGet(out colorAdjustments))
         {
+            float savedValue = PlayerPrefs.GetFloat(BRIGHTNESS_KEY, 0.5f);
             brightnessSlider.onValueChanged.AddListener(HandleBrightnessChange);
 
             brightnessSlider.value = 0.5f;
-            HandleBrightnessChange(0.5f);
+
+            brightnessSlider.value = savedValue;
+
+            HandleBrightnessChange(savedValue);
         }
     }
 
     private void HandleBrightnessChange(float value)
     {
+
+        PlayerPrefs.SetFloat(BRIGHTNESS_KEY, value);
+        PlayerPrefs.Save();
+
+
         colorAdjustments.postExposure.value = Mathf.Lerp(-1f, 1f, value);
 
         if (brightnessOverlay != null)

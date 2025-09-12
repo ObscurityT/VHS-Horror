@@ -3,6 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject MenuPanel;
+    [SerializeField]
+    private GameObject SettingsPanel;
+
 
     public string sceneToLoad;
     
@@ -13,7 +18,14 @@ public class MainMenu : MonoBehaviour
 
     public void Options()
     {
-        Debug.Log("Open options");
+        MenuPanel.SetActive(false);
+        SettingsPanel.SetActive(true);
+    }
+
+    public void CloseOptions()
+    {
+        SettingsPanel.SetActive(false);
+        MenuPanel.SetActive(true);
     }
 
     public void QuitGame()
