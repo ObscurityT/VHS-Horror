@@ -6,6 +6,9 @@ public class PauseMenuManager : MonoBehaviour
     public GameObject panelPause;
     public GameObject panelSettings;
     public GameObject crosshair;
+    public GameObject cameraOverlay;
+
+
     private bool isPaused = false;
 
     void Update()
@@ -25,6 +28,7 @@ public class PauseMenuManager : MonoBehaviour
         Cursor.visible = false;
         panelPause.SetActive(false);
         crosshair.SetActive(true);
+        cameraOverlay.SetActive(true);
         Time.timeScale = 1f;
         isPaused = false;
     }
@@ -35,6 +39,7 @@ public class PauseMenuManager : MonoBehaviour
         Cursor.visible = true;
         panelPause.SetActive(true);
         crosshair.SetActive(false);
+        cameraOverlay.SetActive(false);
         Time.timeScale = 0f;
         isPaused = true;
     }

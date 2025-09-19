@@ -5,8 +5,8 @@ public class MelodyController : MonoBehaviour
 
     public AudioSource melodia;
     public float duracaoMelodia = 5f;
-
     private bool tocando = false;
+    public bool IsMelodyActive() => tocando;
 
     public void TocarMelodia()
     {

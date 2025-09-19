@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerStatus : MonoBehaviour
@@ -13,6 +14,7 @@ public class PlayerStatus : MonoBehaviour
     public string sfxGrito;
     public string sfxVozInterna;
     public string sfxGameOver;
+    private string menu = "Menu";
 
     [Header("Post Processing")]
     public Volume postProcessVolume;
@@ -60,13 +62,27 @@ public class PlayerStatus : MonoBehaviour
                 if (fade.blackScreen != null)
                     fade.blackScreen.rectTransform.localScale = Vector3.one;
 
+                fade.OnFadeFinished += OnFadeFinishedLoadMenu;
                 fade.StartFade(); 
             }
             else
             {
                 Debug.LogWarning("Nenhum ScreenFade encontrado!");
+                SceneManager.LoadScene("Menu");
             }
+
         }
+    }
+
+    private void OnFadeFinishedLoadMenu()
+    {
+        StartCoroutine(LoadMenuWithDelay());
+    }
+
+    private IEnumerator LoadMenuWithDelay()
+    {
+        yield return new WaitForSecondsRealtime(1f); 
+        SceneManager.LoadScene("Menu");
     }
 
     public float GetCurrentSanity()

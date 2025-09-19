@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,6 +8,9 @@ public class ScreenFade : MonoBehaviour
     public Image blackScreen;
     public float fadeSpeed = 1.5f;
     private bool fading = false;
+
+    public event Action OnFadeFinished;
+
 
 
     private void Update()
@@ -21,6 +25,7 @@ public class ScreenFade : MonoBehaviour
             {
                 fading = false;
                 Debug.Log("You're Dead");
+                OnFadeFinished?.Invoke();
             }
         }
     }
