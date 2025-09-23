@@ -43,7 +43,7 @@ public class PlayerStatus : MonoBehaviour, IDataPersistence
                 
     }
 
-    public void DecreaseSanity(float amount)
+    public void DecreaseSanity(int amount)
     {
         currentSanity -= amount;
         currentSanity = Mathf.Clamp(currentSanity, 0, maxSanity);
@@ -213,6 +213,9 @@ public class PlayerStatus : MonoBehaviour, IDataPersistence
             yield return null;
         }
         insanityVolume.weight = targetWeight;
+    }
+
+
     public void LoadData(GameData data)
     {
         if (data == null) return;
@@ -233,5 +236,10 @@ public class PlayerStatus : MonoBehaviour, IDataPersistence
         data.playerPosition = transform.position;
         data.currentSanity = currentSanity;
         data.lastDoorID = lastDoorID;
+
+        if (insanityVolume != null)
+            data.insanityWeight = insanityVolume.weight;
+        else
+            data.insanityWeight = 0f;
     }
 }

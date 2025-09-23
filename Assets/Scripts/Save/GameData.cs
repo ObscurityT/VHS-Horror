@@ -11,8 +11,9 @@ namespace SaveSystem
         public SerializableDictionary<string, string> itemSlot;
 
         public List<bool> rhythmVictory;
-        public float currentSanity;
+        public int currentSanity;
         public string lastDoorID;
+        public float insanityWeight;
 
         // valores iniciais das variaveis quando n?o tiver nenhuma arquivo de save
         public GameData()
@@ -23,7 +24,7 @@ namespace SaveSystem
 
             rhythmVictory = new List<bool>();
 
-            currentSanity = 100f;
+            currentSanity = 5;
             lastDoorID = "";
         }
     }
