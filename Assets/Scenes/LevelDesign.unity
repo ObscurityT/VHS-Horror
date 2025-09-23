@@ -302,8 +302,8 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_Camera: {fileID: 770487052}
+  m_PlaneDistance: 1500
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1293,6 +1293,7 @@ GameObject:
   - component: {fileID: 19950969}
   - component: {fileID: 19950968}
   - component: {fileID: 19950967}
+  - component: {fileID: 19950970}
   m_Layer: 5
   m_Name: 'BotaoFechar '
   m_TagString: Untagged
@@ -1413,6 +1414,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19950965}
   m_CullTransparentMesh: 1
+--- !u!114 &19950970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19950965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ffd3791fae63b43bd561cc12e9275b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverClip: {fileID: 0}
+  clickClip: {fileID: 0}
 --- !u!1001 &20155145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25546,7 +25561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 2.05}
+  m_AnchoredPosition: {x: 0, y: 2.0499992}
   m_SizeDelta: {x: 0, y: -4.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &173388702
@@ -33683,7 +33698,7 @@ MonoBehaviour:
   availableLanguages:
   - {fileID: 11400000, guid: cd22c8deddb6260409e0a7d7a4bd4bc8, type: 2}
   - {fileID: 11400000, guid: e2456515b56d25d43a2cae3e97c54d12, type: 2}
-  currentLanguage: 10
+  currentLanguage: 28
 --- !u!4 &286852399
 Transform:
   m_ObjectHideFlags: 0
@@ -40651,10 +40666,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -40671,8 +40686,8 @@ Canvas:
   m_GameObject: {fileID: 320906568}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 770487052}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -53473,8 +53488,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436820527}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -27.326}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -53484,7 +53499,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -4.668, y: -1.1887641}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &436820529
@@ -56426,7 +56441,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &462550616
@@ -71239,6 +71254,7 @@ GameObject:
   - component: {fileID: 566187872}
   - component: {fileID: 566187871}
   - component: {fileID: 566187870}
+  - component: {fileID: 566187873}
   m_Layer: 5
   m_Name: AbaTextoLenda
   m_TagString: Untagged
@@ -71364,6 +71380,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &566187873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566187869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf88046f0bece84a9f4cde4d5064b98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: NOTES_TAB
 --- !u!1001 &566723056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -120187,6 +120216,7 @@ GameObject:
   - component: {fileID: 915002102}
   - component: {fileID: 915002101}
   - component: {fileID: 915002103}
+  - component: {fileID: 915002104}
   m_Layer: 5
   m_Name: BotaoDireito
   m_TagString: Untagged
@@ -120308,6 +120338,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &915002104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915002099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ffd3791fae63b43bd561cc12e9275b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverClip: {fileID: 0}
+  clickClip: {fileID: 0}
 --- !u!1001 &916537124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -129583,7 +129627,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -112.1}
+  m_AnchoredPosition: {x: 0, y: -112.100006}
   m_SizeDelta: {x: 0, y: 224.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &956309675
@@ -156283,6 +156327,7 @@ GameObject:
   - component: {fileID: 1169420248}
   - component: {fileID: 1169420247}
   - component: {fileID: 1169420246}
+  - component: {fileID: 1169420249}
   m_Layer: 0
   m_Name: NotesClose
   m_TagString: Untagged
@@ -156403,6 +156448,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169420244}
   m_CullTransparentMesh: 1
+--- !u!114 &1169420249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169420244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ffd3791fae63b43bd561cc12e9275b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverClip: {fileID: 0}
+  clickClip: {fileID: 0}
 --- !u!1001 &1170344566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -169032,6 +169091,7 @@ GameObject:
   - component: {fileID: 1240057540}
   - component: {fileID: 1240057539}
   - component: {fileID: 1240057538}
+  - component: {fileID: 1240057541}
   m_Layer: 5
   m_Name: AbaTextoRegra
   m_TagString: Untagged
@@ -169157,6 +169217,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1240057541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240057537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf88046f0bece84a9f4cde4d5064b98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: RULES_TAB
 --- !u!1001 &1240797706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -205750,6 +205823,7 @@ GameObject:
   - component: {fileID: 1507399638}
   - component: {fileID: 1507399637}
   - component: {fileID: 1507399639}
+  - component: {fileID: 1507399640}
   m_Layer: 5
   m_Name: ButtonAbaLenda
   m_TagString: Untagged
@@ -205859,6 +205933,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1507399640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507399635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ffd3791fae63b43bd561cc12e9275b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverClip: {fileID: 0}
+  clickClip: {fileID: 0}
 --- !u!1001 &1508264879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -249833,9 +249921,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brightnessSlider: {fileID: 460051966}
   globalVolume: {fileID: 1574700699}
-  brightnessOverlay: {fileID: 1792388846}
-  maxDarkAlpha: 0.9
-  maxLightAlpha: 0.5
 --- !u!1001 &1793869607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -252210,6 +252295,7 @@ GameObject:
   - component: {fileID: 1817721542}
   - component: {fileID: 1817721541}
   - component: {fileID: 1817721543}
+  - component: {fileID: 1817721544}
   m_Layer: 5
   m_Name: ButtonAbaRegra
   m_TagString: Untagged
@@ -252319,6 +252405,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1817721544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817721539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ffd3791fae63b43bd561cc12e9275b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverClip: {fileID: 0}
+  clickClip: {fileID: 0}
 --- !u!1001 &1819710642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -270921,14 +271021,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931972719}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.05710886, z: -0, w: -0.998368}
+  m_LocalRotation: {x: -0, y: 0.74633515, z: -0, w: -0.6655703}
   m_LocalPosition: {x: 4.896063, y: 1.1887641, z: 25.339046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 770487055}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 353.452, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 263.452, z: 0}
 --- !u!1001 &1932874075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -284091,6 +284191,7 @@ GameObject:
   - component: {fileID: 2024888680}
   - component: {fileID: 2024888679}
   - component: {fileID: 2024888681}
+  - component: {fileID: 2024888682}
   m_Layer: 5
   m_Name: BotaoEsquerdo
   m_TagString: Untagged
@@ -284212,6 +284313,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2024888682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024888677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ffd3791fae63b43bd561cc12e9275b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverClip: {fileID: 0}
+  clickClip: {fileID: 0}
 --- !u!1 &2024975437
 GameObject:
   m_ObjectHideFlags: 0
@@ -288261,6 +288376,7 @@ GameObject:
   - component: {fileID: 2074449805}
   - component: {fileID: 2074449804}
   - component: {fileID: 2074449803}
+  - component: {fileID: 2074449806}
   m_Layer: 0
   m_Name: RegrasClose
   m_TagString: Untagged
@@ -288381,6 +288497,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074449801}
   m_CullTransparentMesh: 1
+--- !u!114 &2074449806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074449801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ffd3791fae63b43bd561cc12e9275b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverClip: {fileID: 0}
+  clickClip: {fileID: 0}
 --- !u!1001 &2074780580
 PrefabInstance:
   m_ObjectHideFlags: 0

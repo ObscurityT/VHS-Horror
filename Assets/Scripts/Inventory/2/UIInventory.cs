@@ -61,7 +61,6 @@ public class UIInventory : MonoBehaviour
         gameObject.SetActive(true);
         itemDescription.ResetDescription();
 
-        // Para garantir que o evento está conectado:
         foreach (var slot in slotList)
         {
             slot.OnItemClicked -= HandleItemSelection; // Evita duplicatas
