@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource Passos;
     public AudioClip woodClip;
     public AudioClip rockClip;
+    public AudioClip gramClip;
     public float pitchMin = 0.85f;
     public float pitchMax = 1.05f;
     public float resetDelay = 1f;
@@ -133,7 +134,6 @@ public class PlayerController : MonoBehaviour
         HandleFootsteps(move);
     }
 
-    //programador noob aaaaaaaaargh
     void HandleFootsteps(Vector3 move)
     {
         bool isMoving = move.magnitude > 0.6f && IsGrounded(out groundTag);
@@ -146,6 +146,8 @@ public class PlayerController : MonoBehaviour
                 desiredClip = woodClip;
             else if (groundTag == "Pedra")
                 desiredClip = rockClip;
+            else if (groundTag == "Grama") // <-- ADICIONADO
+                desiredClip = gramClip;
 
             if (desiredClip != null)
             {
