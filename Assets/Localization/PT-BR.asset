@@ -102,3 +102,68 @@ MonoBehaviour:
   - key: btn_bookpuzzle_pressed
     value: 
     sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: TriggerFala1
+    value: "O ar aqui dentro \xE9 mais pesado\u2026\\ncomo se cada parede respirasse.\\n\xC9
+      como se o castelo estivesse aguardando minha chegada."
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: TriggerFala2
+    value: "Este \xE9 o corredor principal.\\nDizem que Gravenmoor foi uma fortaleza
+      contra o tempo\u2026\\nE \xE9 estranho como tudo parece intacto.\\nN\xE3o h\xE1
+      poeira suficiente para um lugar abandonado h\xE1 d\xE9cadas."
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: TriggerFala3
+    value: "O corredor para esse lado est\xE1 bloqueado.\\nNenhum sinal de como isso
+      foi colocado aqui.\\nParece que s\xF3 h\xE1 um caminho a seguir..."
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: TriggerFala4
+    value: "Frio\u2026 mas n\xE3o um frio comum.\\n\xC9 como se algo tivesse passado
+      por mim, ou\u2026 atravessado."
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: TriggerFala5
+    value: "Preciso explorar cada c\xF4modo.\\nDescobrir o que \xE9 verdade por tr\xE1s
+      da lenda\u2026\\nE entender a maldi\xE7\xE3o que ainda vive nesse lugar."
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: TriggerFala6
+    value: "A biblioteca\u2026\\nAs luzes est\xE3o acesas, mas n\xE3o h\xE1 sinais
+      de velas ou eletricidade.\\nComo \xE9 poss\xEDvel?"
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: TriggerFala7
+    value: "Os livros est\xE3o dispostos como se algu\xE9m tivesse acabado de deix\xE1-los.\\nAlguns
+      cobertos de p\xF3\u2026\\nOutros parecem rec\xE9m-tocados."
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: TriggerFala8
+    value: "Esses ossos\u2026\\nSeria de algum morador?\\nOu de outro investigador
+      que nunca saiu daqui?"
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: TriggerFala9
+    value: "Uma p\xE1gina de di\xE1rio.\\nO que quer dizer essas anota\xE7\xF5es?"
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: TriggerFala10
+    value: "O que ser\xE1 p\xE1gina?"
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: TriggerFala11
+    value: "\xC9 quieto demais\u2026\\nParece que at\xE9 o som evita este lugar."
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: TriggerFala12
+    value: "Fechada.\\nAs fechaduras aqui parecem velhas, mas resistentes.\\nComo
+      se estivessem protegendo\u2026 ou prendendo algo."
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: TriggerFala13
+    value: "Nenhum instrumento parece capaz de tocar sozinho\u2026\\nMas \xE9 estranho,
+      porque parece que foram tocados h\xE1 pouco,\\neu sinto a melodia aqui."
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: TriggerFala14
+    value: "Espelhos quebrados...\\nCada um refletindo fragmentos distorcidos.\\nFicar
+      na presen\xE7a deles,\\nmesmo por alguns segundos,\\nme d\xE1 a sensa\xE7\xE3o
+      de que algo ruim vai acontecer."
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: TriggerFala15
+    value: "Um anjo segurando uma palma... Interessante.\\nEm meus estudos, sei que
+      a palma simboliza a eternidade,\\ne conhecendo a lenda da Condessa,\\ncompreendo
+      por que esta est\xE1tua foi colocada aqui."
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: "P\xE1gina4A"
+    value: "Um anjo segurando uma palma... Interessante.\\nEm meus estudos, sei que
+      a palma simboliza a eternidade,\\ne conhecendo a lenda da Condessa,\\ncompreendo
+      por que esta est\xE1tua foi colocada aqui."
+    sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}

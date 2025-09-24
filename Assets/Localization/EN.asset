@@ -113,3 +113,65 @@ MonoBehaviour:
   - key: btn_bookpuzzle_pressed
     value: 
     sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: TriggerFala1
+    value: "The air here is heavier\u2026\\nas if every wall was breathing.\\nIt\u2019s
+      as if the castle was waiting my arrival."
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: TriggerFala2
+    value: "This is the main hallway.\\nThey say Gravenmoor was a fortress against
+      time\u2026\\nAnd it's strange how intact everything seems.\\nThere's not enough
+      dust for a place abandoned for decades."
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: TriggerFala3
+    value: "The corridor on this side is blocked.\\nNo sign of how this was put here.\\nIt
+      seems there\u2019s only one path forward..."
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: TriggerFala4
+    value: "Cold\u2026 but not a common cold.\\nIt\u2019s like something passed through
+      me\u2026"
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: TriggerFala5
+    value: "I need to explore every room.\\nDiscover the truth behind the legend\u2026\\nAnd
+      understand the curse that still lives in this place."
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: TriggerFala6
+    value: "The library\u2026\\nThe lights are on, but there are no signs of candles
+      or electricity.\\nHow is that possible?"
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: TriggerFala7
+    value: "The books are arranged as if someone had just left them here.\\nSome
+      are covered in dust\u2026\\nOthers look freshly touched."
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: TriggerFala8
+    value: "These bones\u2026\\nCould they belong to a resident?\\nOr\u2026 to another
+      investigator who never left this place?"
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: TriggerFala9
+    value: A diary page.\nWhat do these notes mean?
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: TriggerFala10
+    value: What could this page be?
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: TriggerFala11
+    value: "It\u2019s too quiet\u2026\\nIt seems like even the sound avoids this
+      place."
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: TriggerFala12
+    value: "Locked.\\nThe locks here look old, but strong.\\nAs if they\u2019re protecting\u2026
+      or locking something in."
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: TriggerFala13
+    value: "No instrument seems capable of playing on its own\u2026\\nBut it\u2019s
+      strange, because it feels like they were played just moments ago,\\nI can feel
+      the melody here."
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: TriggerFala14
+    value: Broken mirrors... each one reflecting distorted fragments.\nStanding near
+      them for even a few seconds gives me the feeling that something bad is about
+      to happen.
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}
+  - key: TriggerFala15
+    value: An angel holding a palm... Interesting.\nIn my studies, I know the palm
+      symbolizes eternity,\nand knowing the legend of the Countess,\nI understand
+      why this statue was placed here.
+    sprite: {fileID: 21300000, guid: 82cbac058319c07469fa7becd675131f, type: 3}

@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     {
         if (SceneManager.GetActiveScene().buildIndex == (int)SCENES.Menu)
         {
-            UIManager.instance.Animation(ANIMATION.SlideInAndOut, true);
+            //UIManager.instance.Animation(ANIMATION.SlideInAndOut, true);
             // AudioManager.instance.PlaySfx();
         }
     }
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     {
         if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().buildIndex == (int)SCENES.Exploration)
         {
-            UIManager.instance.PauseSettings();
+            //UIManager.instance.PauseSettings();
         }
     }
 
@@ -50,8 +50,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public void LoadSceneWithTransition(TRANSITION transition = TRANSITION.CloseAndOpen)
     {
         DataPersistenceManager.instance.SaveGame();
-        UIManager.instance.Animation(ANIMATION.SlideInAndOut, false);
-        UIManager.instance.Transition(transition, sceneToLoad);
+        //UIManager.instance.Animation(ANIMATION.SlideInAndOut, false);
+        //UIManager.instance.Transition(transition, sceneToLoad);
         DataPersistenceManager.instance.LoadGame();
     }
 

@@ -7,6 +7,8 @@ TagManager:
   - Pedra
   - Madeira
   - Mirror
+  - Grama
+  - Interactable
   layers:
   - Default
   - TransparentFX
