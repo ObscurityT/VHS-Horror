@@ -223,9 +223,13 @@ public class PlayerStatus : MonoBehaviour, IDataPersistence
         currentSanity = data.currentSanity;
         lastDoorID = data.lastDoorID;
 
+        if (insanityVolume != null)
+            insanityVolume.weight = Mathf.Clamp01(data.insanityWeight);
+
         //posição definida apenas no caregamento de cena
         transform.position = data.playerPosition;
         UpdateSanityUI();
+
     }
 
     public void SaveData(GameData data)
