@@ -10,6 +10,7 @@ using UnityEngine;
     [SerializeField] string fileName;
 
     GameData gameData;
+    public GameData CurrentGameData => gameData;
     List<IDataPersistence> dataPersistenceObjects;
     FileDataHandler dataHandler;
 

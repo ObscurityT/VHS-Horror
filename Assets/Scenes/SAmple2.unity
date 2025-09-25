@@ -8742,6 +8742,7 @@ MonoBehaviour:
   runSpeed: 4
   mouseSensitivity: 2
   cameraTransform: {fileID: 1764431811}
+  melodyController: {fileID: 0}
   cameraPitch: 0
   canLook: 1
   Passos: {fileID: 0}
@@ -14858,6 +14859,7 @@ MonoBehaviour:
   panelPause: {fileID: 1840402773}
   panelSettings: {fileID: 580113245}
   crosshair: {fileID: 0}
+  cameraOverlay: {fileID: 0}
 --- !u!4 &2063332598
 Transform:
   m_ObjectHideFlags: 0
@@ -15338,9 +15340,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brightnessSlider: {fileID: 648150619}
   globalVolume: {fileID: 4022356880759288517}
-  brightnessOverlay: {fileID: 134961526}
-  maxDarkAlpha: 0.8
-  maxLightAlpha: 0.5
 --- !u!4 &2125096657
 Transform:
   m_ObjectHideFlags: 0

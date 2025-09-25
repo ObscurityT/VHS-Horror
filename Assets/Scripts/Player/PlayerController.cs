@@ -13,6 +13,11 @@ public class PlayerController : MonoBehaviour
     public float mouseSensitivity = 2f;
     public Transform cameraTransform;
 
+    private float melodySanityTimer = 0f;
+    public MelodyController melodyController;
+
+    private PlayerStatus status;
+
     private Rigidbody rb;
     public float cameraPitch = 0f;
 
@@ -37,6 +42,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        status = GetComponent<PlayerStatus>();
         Cursor.lockState = CursorLockMode.Locked;
         rb.freezeRotation = true;
 
@@ -97,6 +103,27 @@ public class PlayerController : MonoBehaviour
         //Movement
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
+
+
+        bool isMoving = Mathf.Abs(moveX) > 0.01f || Mathf.Abs(moveZ) > 0.01f;
+
+        if (melodyController != null && melodyController.IsMelodyActive())
+        {
+            if (isMoving)
+            {
+                melodySanityTimer += Time.fixedDeltaTime;
+                if (melodySanityTimer >= 1f)
+                {
+                    status.DecreaseSanity(1);
+                    melodySanityTimer = 0f;
+                }
+            }
+            else
+            {
+                melodySanityTimer = 0f; 
+            }
+        }
+
 
         isRunning = Input.GetKey(KeyCode.LeftShift);
         float currentSpeed = isRunning ? runSpeed : walkSpeed;
