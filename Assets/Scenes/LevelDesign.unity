@@ -52738,7 +52738,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 40c1f214b48f0714f8df1ff18056845b, type: 3}
 --- !u!4 &421529389 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400006, guid: 40c1f214b48f0714f8df1ff18056845b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9223372036854775806, guid: 40c1f214b48f0714f8df1ff18056845b, type: 3}
   m_PrefabInstance: {fileID: 421529388}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &424172911
@@ -122542,6 +122542,7 @@ MonoBehaviour:
   panelPause: {fileID: 1623519082}
   panelSettings: {fileID: 1999109257}
   crosshair: {fileID: 398078186}
+  cameraOverlay: {fileID: 0}
 --- !u!4 &929869694
 Transform:
   m_ObjectHideFlags: 0
@@ -228014,9 +228015,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b371f89d379fec43a2eb4e29c4d454b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageData: {fileID: 11400000, guid: 1cecfe4ecc92e3641bc8cbb4f6ed5d87, type: 2}
-  promptUI: {fileID: 0}
-  audioSource: {fileID: 1585146170}
 --- !u!1 &1587462525 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f351b00357fec3948859c62c88c35d6a, type: 3}
@@ -241287,9 +241285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b371f89d379fec43a2eb4e29c4d454b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageData: {fileID: 11400000, guid: 1ad6ce3dda84b72409b084a2047b8d5e, type: 2}
-  promptUI: {fileID: 0}
-  audioSource: {fileID: 1713670238}
 --- !u!82 &1713670238
 AudioSource:
   m_ObjectHideFlags: 0
@@ -242060,7 +242055,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 956fb5712f910104689e7a7574fc3ce5, type: 3}
 --- !u!4 &1716732980 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400018, guid: 956fb5712f910104689e7a7574fc3ce5, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9223372036854775806, guid: 956fb5712f910104689e7a7574fc3ce5, type: 3}
   m_PrefabInstance: {fileID: 1716732979}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1718208226
@@ -250651,9 +250646,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brightnessSlider: {fileID: 460051966}
   globalVolume: {fileID: 1574700699}
-  brightnessOverlay: {fileID: 1792388846}
-  maxDarkAlpha: 0.9
-  maxLightAlpha: 0.5
 --- !u!1001 &1793869607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -271708,6 +271700,7 @@ MonoBehaviour:
   runSpeed: 4
   mouseSensitivity: 2
   cameraTransform: {fileID: 770487055}
+  melodyController: {fileID: 0}
   cameraPitch: 0
   canLook: 1
   Passos: {fileID: 1931972730}
@@ -271843,9 +271836,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1397085e40de04a8057f7b63c586c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionDistance: 3
-  interactKey: 101
-  cam: {fileID: 0}
 --- !u!1001 &1932874075
 PrefabInstance:
   m_ObjectHideFlags: 0

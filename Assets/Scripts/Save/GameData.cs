@@ -25,6 +25,7 @@ namespace SaveSystem
             rhythmVictory = new List<bool>();
 
             currentSanity = 5;
+            insanityWeight = currentSanity;
             lastDoorID = "";
         }
     }
