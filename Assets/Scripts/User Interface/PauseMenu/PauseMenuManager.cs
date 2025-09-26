@@ -58,15 +58,34 @@ public class PauseMenuManager : MonoBehaviour
 
     public void LoadMainMenu()
     {
+        if (DataPersistenceManager.instance != null)
+            DataPersistenceManager.instance.SaveGame();
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Menu"); 
+        SceneManager.LoadScene("Menu");
     }
 
     public void QuitGame()
     {
-        Application.Quit();
+        StartCoroutine(SaveAndQuitCoroutine());
+    }
+
+    private System.Collections.IEnumerator SaveAndQuitCoroutine()
+    {
+        if (DataPersistenceManager.instance != null)
+        {
+            Debug.Log("[QUIT] Salvando jogo...");
+            DataPersistenceManager.instance.SaveGame();
+        }
+
+        // Espera 0.2 segundos para garantir que o JSON foi escrito
+        yield return new WaitForSecondsRealtime(0.2f);
+
+        Debug.Log("[QUIT] Encerrando jogo");
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
+#else
+    Application.Quit();
 #endif
     }
+
 }

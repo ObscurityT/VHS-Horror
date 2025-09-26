@@ -1,3 +1,4 @@
+using SaveSystem;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,10 +11,36 @@ public class MainMenu : MonoBehaviour
 
 
     public string sceneToLoad;
-    
+
+    public GameObject dataPersistencePrefab;
+
+    void Awake()
+    {
+        if (FindFirstObjectByType<DataPersistenceManager>() == null)
+        {
+            Instantiate(dataPersistencePrefab); 
+        }
+    }
+
     public void StartGame()
     {
-        SceneManager.LoadScene(sceneToLoad);  
+        if (DataPersistenceManager.instance != null)
+            DataPersistenceManager.instance.NewGame(new GameData());
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneToLoad);
+    }
+
+    public void Continue()
+    {
+
+        if (DataPersistenceManager.instance == null) { StartGame(); return; }
+
+        var data = DataPersistenceManager.instance.CurrentGameData;
+        if (data == null) { StartGame(); return; }
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(sceneToLoad);
     }
 
     public void Options()
@@ -35,4 +62,6 @@ public class MainMenu : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false; 
 #endif
     }
+
+
 }

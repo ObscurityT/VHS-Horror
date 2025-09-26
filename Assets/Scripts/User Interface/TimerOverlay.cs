@@ -1,39 +1,63 @@
-using UnityEngine;
+using SaveSystem;
 using TMPro; 
+using UnityEngine;
 
-public class TimerOverlay : MonoBehaviour
+public class TimerOverlay : MonoBehaviour, IDataPersistence
 {
+    [Header("UI")]
     public TextMeshProUGUI timerText;
-    private float elapsedTime = 0f;
+
+    [Header("Behaviour")]
     public bool isPaused = false;
 
-    private const string TIMER_KEY = "OverlayElapsedTime";
+    private float elapsedTime = 0f;
 
-    void Start()
-    {
-        
-        if (PlayerPrefs.HasKey(TIMER_KEY))
-        {
-            elapsedTime = PlayerPrefs.GetFloat(TIMER_KEY, 0f);
-        }
-    }
 
     void Update()
     {
-        if (!isPaused)
-        {
-            elapsedTime += Time.deltaTime;
-            int hours = Mathf.FloorToInt(elapsedTime / 3600);
-            int minutes = Mathf.FloorToInt((elapsedTime % 3600) / 60);
-            int seconds = Mathf.FloorToInt(elapsedTime % 60);
+        if (isPaused) return;
 
+        elapsedTime += Time.deltaTime;
+
+        int hours = Mathf.FloorToInt(elapsedTime / 3600f);
+        int minutes = Mathf.FloorToInt((elapsedTime % 3600f) / 60f);
+        int seconds = Mathf.FloorToInt(elapsedTime % 60f);
+
+        if (timerText != null)
             timerText.text = $"{hours:00}:{minutes:00}:{seconds:00}";
+    }
+
+    // ===== IDataPersistence =====
+    public void LoadData(GameData data)
+    {
+        elapsedTime = data.overlayElapsedSeconds;
+        Debug.Log("[TIMER] Carregado tempo: " + elapsedTime);
+
+        // atualiza a UI imediatamente
+        int hours = Mathf.FloorToInt(elapsedTime / 3600f);
+        int minutes = Mathf.FloorToInt((elapsedTime % 3600f) / 60f);
+        int seconds = Mathf.FloorToInt(elapsedTime % 60f);
+
+        if (timerText != null)
+            timerText.text = $"{hours:00}:{minutes:00}:{seconds:00}";
+        else
+            Debug.LogWarning("[TIMER] timerText está nulo no LoadData!");
+
+        if (data == null)
+        {
+            Debug.LogError("[TIMER] GameData está NULO no LoadData");
+            return;
         }
     }
 
-    void OnApplicationQuit()
+    public void SaveData(GameData data)
     {
-        PlayerPrefs.SetFloat(TIMER_KEY, elapsedTime);
-        PlayerPrefs.Save();
+        if (data == null)
+        {
+            Debug.LogWarning("[TIMER] GameData está nulo no SaveData!");
+            return;
+        }
+        Debug.Log("[TIMER] Salvando tempo: " + elapsedTime);
+        data.overlayElapsedSeconds = elapsedTime;
     }
 }

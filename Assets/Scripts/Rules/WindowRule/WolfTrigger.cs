@@ -1,6 +1,5 @@
 using System.Data.Common;
 using AudioSystem;
-using UnityEditor.PackageManager.UI;
 using UnityEngine;
 
 public class WolfTrigger : MonoBehaviour

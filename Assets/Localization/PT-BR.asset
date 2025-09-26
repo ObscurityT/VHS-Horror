@@ -111,6 +111,12 @@ MonoBehaviour:
   - key: btn_bookpuzzle_pressed
     value: 
     sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: btn_quit_highlighted
+    value: Notas
+    sprite: {fileID: 21300000, guid: d7f58271a2165af42a74b93b0a51f3e9, type: 3}
+  - key: btn_quit_pressed
+    value: Notas
+    sprite: {fileID: 21300000, guid: d7f58271a2165af42a74b93b0a51f3e9, type: 3}
   - key: TriggerFala1
     value: "O ar aqui dentro \xE9 mais pesado\u2026\\ncomo se cada parede respirasse.\\n\xC9
       como se o castelo estivesse aguardando minha chegada."
@@ -182,9 +188,3 @@ MonoBehaviour:
   - key: NOTES_TAB
     value: Notas
     sprite: {fileID: 0}
-  - key: btn_quit_highlighted
-    value: Notas
-    sprite: {fileID: 21300000, guid: d7f58271a2165af42a74b93b0a51f3e9, type: 3}
-  - key: btn_quit_pressed
-    value: Notas
-    sprite: {fileID: 21300000, guid: d7f58271a2165af42a74b93b0a51f3e9, type: 3}
