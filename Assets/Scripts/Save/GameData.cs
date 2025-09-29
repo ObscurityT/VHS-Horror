@@ -19,7 +19,7 @@ namespace SaveSystem
         // valores iniciais das variaveis quando n?o tiver nenhuma arquivo de save
         public GameData()
         {
-            playerPosition = new Vector3(25.663435f, -7.28314257f, -10.5941238f);
+            playerPosition = new Vector3(26.3584499f, 1.1887641f, 19.1137943f);
             collectedItems = new SerializableDictionary<string, bool>();
             itemSlot = new SerializableDictionary<string, string>();
 

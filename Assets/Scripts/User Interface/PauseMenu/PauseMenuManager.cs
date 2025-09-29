@@ -8,8 +8,15 @@ public class PauseMenuManager : MonoBehaviour
     public GameObject crosshair;
     public GameObject cameraOverlay;
 
+    private PlayerController playerController;
+
 
     private bool isPaused = false;
+
+    void Start()
+    {
+        playerController = FindFirstObjectByType<PlayerController>();
+    }
 
     void Update()
     {

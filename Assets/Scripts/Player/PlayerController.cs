@@ -41,6 +41,8 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("[DEBUG] Posição atual do jogador no Start(): " + transform.position);
+        Debug.DrawRay(transform.position, Vector3.down * 10f, Color.red, 10f);
         rb = GetComponent<Rigidbody>();
         status = GetComponent<PlayerStatus>();
         Cursor.lockState = CursorLockMode.Locked;
