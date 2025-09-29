@@ -31,6 +31,7 @@ public class PauseMenuManager : MonoBehaviour
 
     public void Resume()
     {
+        Debug.Log("Botão Resume foi clicado!");
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         panelPause.SetActive(false);
@@ -38,6 +39,9 @@ public class PauseMenuManager : MonoBehaviour
         cameraOverlay.SetActive(true);
         Time.timeScale = 1f;
         isPaused = false;
+
+        if (playerController != null)
+            playerController.canLook = true;
     }
 
     void Pause()
@@ -49,6 +53,9 @@ public class PauseMenuManager : MonoBehaviour
         cameraOverlay.SetActive(false);
         Time.timeScale = 0f;
         isPaused = true;
+
+        if (playerController != null)
+            playerController.canLook = false;
     }
 
     public void OpenOptions()
