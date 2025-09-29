@@ -8,8 +8,15 @@ public class PauseMenuManager : MonoBehaviour
     public GameObject crosshair;
     public GameObject cameraOverlay;
 
+    private PlayerController playerController;
+
 
     private bool isPaused = false;
+
+    void Start()
+    {
+        playerController = FindFirstObjectByType<PlayerController>();
+    }
 
     void Update()
     {
@@ -24,6 +31,7 @@ public class PauseMenuManager : MonoBehaviour
 
     public void Resume()
     {
+        Debug.Log("Botão Resume foi clicado!");
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         panelPause.SetActive(false);
@@ -31,6 +39,9 @@ public class PauseMenuManager : MonoBehaviour
         cameraOverlay.SetActive(true);
         Time.timeScale = 1f;
         isPaused = false;
+
+        if (playerController != null)
+            playerController.canLook = true;
     }
 
     void Pause()
@@ -42,6 +53,9 @@ public class PauseMenuManager : MonoBehaviour
         cameraOverlay.SetActive(false);
         Time.timeScale = 0f;
         isPaused = true;
+
+        if (playerController != null)
+            playerController.canLook = false;
     }
 
     public void OpenOptions()
@@ -58,15 +72,34 @@ public class PauseMenuManager : MonoBehaviour
 
     public void LoadMainMenu()
     {
+        if (DataPersistenceManager.instance != null)
+            DataPersistenceManager.instance.SaveGame();
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Menu"); 
+        SceneManager.LoadScene("Menu");
     }
 
     public void QuitGame()
     {
-        Application.Quit();
+        StartCoroutine(SaveAndQuitCoroutine());
+    }
+
+    private System.Collections.IEnumerator SaveAndQuitCoroutine()
+    {
+        if (DataPersistenceManager.instance != null)
+        {
+            Debug.Log("[QUIT] Salvando jogo...");
+            DataPersistenceManager.instance.SaveGame();
+        }
+
+        // Espera 0.2 segundos para garantir que o JSON foi escrito
+        yield return new WaitForSecondsRealtime(0.2f);
+
+        Debug.Log("[QUIT] Encerrando jogo");
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
+#else
+    Application.Quit();
 #endif
     }
+
 }

@@ -66,6 +66,15 @@ MonoBehaviour:
   - key: btn_play_pressed
     value: 
     sprite: {fileID: 21300000, guid: 1774773915fe9384fb0dd11cb1cd74d9, type: 3}
+  - key: btn_continue_normal
+    value: 
+    sprite: {fileID: 21300000, guid: 65dcd6bfa33260d4c9fa9cc9a2bcc1ae, type: 3}
+  - key: btn_continue_highlighted
+    value: 
+    sprite: {fileID: 21300000, guid: d2acab4a2d9b2a34bb8112c72269261c, type: 3}
+  - key: btn_continue_pressed
+    value: 
+    sprite: {fileID: 21300000, guid: d2acab4a2d9b2a34bb8112c72269261c, type: 3}
   - key: btn_options_normal
     value: 
     sprite: {fileID: 21300000, guid: 524c90d82bf66f04f807121b9e83a01e, type: 3}
@@ -102,6 +111,12 @@ MonoBehaviour:
   - key: btn_bookpuzzle_pressed
     value: 
     sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: btn_quit_highlighted
+    value: Notas
+    sprite: {fileID: 21300000, guid: d7f58271a2165af42a74b93b0a51f3e9, type: 3}
+  - key: btn_quit_pressed
+    value: Notas
+    sprite: {fileID: 21300000, guid: d7f58271a2165af42a74b93b0a51f3e9, type: 3}
   - key: TriggerFala1
     value: "O ar aqui dentro \xE9 mais pesado\u2026\\ncomo se cada parede respirasse.\\n\xC9
       como se o castelo estivesse aguardando minha chegada."
@@ -167,3 +182,9 @@ MonoBehaviour:
       a palma simboliza a eternidade,\\ne conhecendo a lenda da Condessa,\\ncompreendo
       por que esta est\xE1tua foi colocada aqui."
     sprite: {fileID: 21300000, guid: d59f7e0f932567746a085fe7f46b4636, type: 3}
+  - key: RULES_TAB
+    value: Regras
+    sprite: {fileID: 0}
+  - key: NOTES_TAB
+    value: Notas
+    sprite: {fileID: 0}

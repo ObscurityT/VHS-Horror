@@ -14,19 +14,21 @@ namespace SaveSystem
         public int currentSanity;
         public string lastDoorID;
         public float insanityWeight;
+        public float overlayElapsedSeconds;
 
         // valores iniciais das variaveis quando n?o tiver nenhuma arquivo de save
         public GameData()
         {
-            playerPosition = new Vector3(0, 1.5f, -28.01f);
+            playerPosition = new Vector3(26.3584499f, 1.1887641f, 19.1137943f);
             collectedItems = new SerializableDictionary<string, bool>();
             itemSlot = new SerializableDictionary<string, string>();
 
             rhythmVictory = new List<bool>();
 
             currentSanity = 5;
-            insanityWeight = currentSanity;
+            insanityWeight = 0;
             lastDoorID = "";
+            overlayElapsedSeconds = 0f;
         }
     }
 }

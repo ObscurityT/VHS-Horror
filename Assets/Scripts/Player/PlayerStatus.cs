@@ -227,7 +227,15 @@ public class PlayerStatus : MonoBehaviour, IDataPersistence
             insanityVolume.weight = Mathf.Clamp01(data.insanityWeight);
 
         //posição definida apenas no caregamento de cena
-        transform.position = data.playerPosition;
+        if (!DataPersistenceManager.instance.IsNewGame)
+        {
+            Debug.Log("[LOADDATA] Aplicando playerPosition do save: " + data.playerPosition);
+            transform.position = data.playerPosition;
+        }
+        else
+        {
+            Debug.Log("[LOADDATA] Novo jogo – usando posição do editor: " + transform.position);
+        }
         UpdateSanityUI();
 
     }

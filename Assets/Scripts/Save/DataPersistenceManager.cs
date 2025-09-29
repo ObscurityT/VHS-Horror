@@ -1,14 +1,17 @@
 using InventorySystem;
 using SaveSystem;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
     public class DataPersistenceManager : MonoBehaviour
 {
     [Header("File Storage Settings")]
     [SerializeField] string fileName;
 
+    public bool IsNewGame { get; private set; }
     GameData gameData;
     public GameData CurrentGameData => gameData;
     List<IDataPersistence> dataPersistenceObjects;
@@ -18,7 +21,9 @@ using UnityEngine;
 
     private void Awake() // singleton
     {
-        if (instance == null) { instance = this; }
+        if (instance == null) { instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
         else { Destroy(gameObject); }
 
         // DontDestroyOnLoad(gameObject);
@@ -39,12 +44,21 @@ using UnityEngine;
    .Where(mb => mb.hideFlags == HideFlags.None && mb.gameObject.scene.IsValid()) // ignora Prefabs e Assets
    .OfType<IDataPersistence>();
 
-        return new List<IDataPersistence>(_dataPersistenceObjects);
+        var list = new List<IDataPersistence>(_dataPersistenceObjects);
+
+        Debug.Log("[DPM] Objetos de persistência encontrados:");
+        foreach (var obj in list)
+        {
+            Debug.Log(" - " + obj.GetType().Name);
+        }
+
+        return list;
     }
 
-    public void NewGame()
+    public void NewGame(GameData newGameData)
     {
-        this.gameData = new GameData();
+        this.gameData = newGameData;
+        IsNewGame = true;
     }
 
     public void LoadGame()
@@ -56,7 +70,8 @@ using UnityEngine;
         if (this.gameData == null)
         {
             Debug.Log("No data was found. Initializing data to defaults.");
-            NewGame();
+            this.gameData = new GameData();
+            IsNewGame = true;
         }
 
         // depois enviar todos os dados carregados para os gameobjects
@@ -65,11 +80,24 @@ using UnityEngine;
 
     public void SaveGame()
     {
-        // passar os dados para outros scripts, para atualizar os dados
-        // salvar esses dados em uma arquivo de texto usando um manipulador de dados
-        foreach (IDataPersistence dataPersistence in dataPersistenceObjects) { dataPersistence.SaveData(gameData); }
+        Debug.Log("[DPM] SaveGame INICIOU");
 
+        foreach (IDataPersistence dataPersistence in dataPersistenceObjects)
+        {
+            Debug.Log("[DPM] Salvando: " + dataPersistence.GetType().Name);
+            try
+            {
+                dataPersistence.SaveData(gameData);
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("[DPM] Erro ao salvar: " + dataPersistence.GetType().Name + " - " + ex);
+            }
+        }
+
+        Debug.Log("[DPM] Antes de salvar arquivo");
         dataHandler.Save(gameData);
+        Debug.Log("[DPM] Save FINALIZADO");
     }
 
     private void OnApplicationQuit()

@@ -41,6 +41,8 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("[DEBUG] Posição atual do jogador no Start(): " + transform.position);
+        Debug.DrawRay(transform.position, Vector3.down * 10f, Color.red, 10f);
         rb = GetComponent<Rigidbody>();
         status = GetComponent<PlayerStatus>();
         Cursor.lockState = CursorLockMode.Locked;
@@ -54,6 +56,7 @@ public class PlayerController : MonoBehaviour
 
         if (canLook)
         {
+            Debug.Log("Mouse: " + Input.GetAxis("Mouse X"));
             //Mouse look
             float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
             float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;

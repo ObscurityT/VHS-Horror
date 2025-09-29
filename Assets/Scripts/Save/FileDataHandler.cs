@@ -49,14 +49,19 @@ namespace SaveSystem
         public void Save(GameData gameData)
         {
             string path = Path.Combine(_dataPath, _fileName);
+
             try
             {
                 // criando o diretorio onde o arquivo vai ser salvo
                 // se nao existir no computador
+                Debug.Log("[FILE] Criando diretório");
                 Directory.CreateDirectory(Path.GetDirectoryName(path));
 
                 // serializando os dados do jogo em um arquivo .json
+                Debug.Log("[FILE] Antes do ToJson");
                 string dataToStore = JsonUtility.ToJson(gameData, true);
+
+                Debug.Log("[FILE] Antes do WriteAllText");
 
                 // escrevendo o arquivo
                 using (FileStream stream = new FileStream(path, FileMode.Create))
@@ -66,7 +71,7 @@ namespace SaveSystem
                         writer.Write(dataToStore);
                     }
                 }
-
+                Debug.Log("[FILE] Depois do WriteAllText");
             }
             catch (Exception e)
             {
