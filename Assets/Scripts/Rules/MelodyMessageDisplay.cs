@@ -8,11 +8,11 @@ public class MelodyMessageDisplay : MonoBehaviour
 
     [TextArea]
     public string[] frasesPossiveis = {
-        "Você não devia ter se movido...",
-        "Ele está ouvindo.",
-        "A música conhece você.",
-        "Se mexer agora seria um erro.",
-        "O castelo sente seu medo."
+        "MELODY_01",
+        "MELODY_02",
+        "MELODY_03",
+        "MELODY_04",
+        "MELODY_05"
     };
 
     public float tempoDeExibicao = 4f;
@@ -31,8 +31,9 @@ public class MelodyMessageDisplay : MonoBehaviour
     {
         if (painelMelodyDialogo != null && textoMelodyDialogo != null)
         {
-            string frase = frasesPossiveis[Random.Range(0, frasesPossiveis.Length)];
-            textoMelodyDialogo.text = frase;
+            string chave = frasesPossiveis[Random.Range(0, frasesPossiveis.Length)];
+            string fraseTraduzida = LocalizationManager.Instance.GetText(chave);
+            textoMelodyDialogo.text = fraseTraduzida;
             painelMelodyDialogo.SetActive(true);
             CancelInvoke(); // evita sobreposição
             Invoke(nameof(EsconderMensagem), tempoDeExibicao);

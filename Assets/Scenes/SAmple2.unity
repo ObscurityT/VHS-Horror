@@ -8748,6 +8748,7 @@ MonoBehaviour:
   Passos: {fileID: 0}
   woodClip: {fileID: 0}
   rockClip: {fileID: 0}
+  gramClip: {fileID: 0}
   pitchMin: 0.85
   pitchMax: 1.05
   resetDelay: 1
@@ -15528,6 +15529,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: RegraMusica
       objectReference: {fileID: 0}
+    - target: {fileID: 7214834673590316474, guid: 70a90c1ba11c6ea4da717d0100dddb83, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 55376a33d36f52c4481a2f836573004c, type: 3}
+    - target: {fileID: 7214834673590316474, guid: 70a90c1ba11c6ea4da717d0100dddb83, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 55376a33d36f52c4481a2f836573004c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

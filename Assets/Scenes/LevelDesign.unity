@@ -51901,6 +51901,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: RegraMusica
       objectReference: {fileID: 0}
+    - target: {fileID: 7214834673590316474, guid: 70a90c1ba11c6ea4da717d0100dddb83, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 55376a33d36f52c4481a2f836573004c, type: 3}
+    - target: {fileID: 7214834673590316474, guid: 70a90c1ba11c6ea4da717d0100dddb83, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 55376a33d36f52c4481a2f836573004c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -155067,11 +155075,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8945664041781937868, guid: 003d79da383364f4d8698424ca761bf5, type: 3}
       propertyPath: tempoMax
-      value: 30
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 8945664041781937868, guid: 003d79da383364f4d8698424ca761bf5, type: 3}
       propertyPath: tempoMin
-      value: 15
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8945664041781937868, guid: 003d79da383364f4d8698424ca761bf5, type: 3}
       propertyPath: playerStatus
@@ -158725,15 +158733,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3436361522493333590, guid: f681efda8f824a044a67f3097235e454, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -40
+      value: 16.395807
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436361522493333590, guid: f681efda8f824a044a67f3097235e454, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.188764
       objectReference: {fileID: 0}
     - target: {fileID: 3436361522493333590, guid: f681efda8f824a044a67f3097235e454, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 22.05
+      value: 21.92147
       objectReference: {fileID: 0}
     - target: {fileID: 3436361522493333590, guid: f681efda8f824a044a67f3097235e454, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.985957
+      value: 0.99931985
       objectReference: {fileID: 0}
     - target: {fileID: 3436361522493333590, guid: f681efda8f824a044a67f3097235e454, type: 3}
       propertyPath: m_LocalRotation.x
@@ -158741,7 +158753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3436361522493333590, guid: f681efda8f824a044a67f3097235e454, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.1669992
+      value: -0.036877062
       objectReference: {fileID: 0}
     - target: {fileID: 3436361522493333590, guid: f681efda8f824a044a67f3097235e454, type: 3}
       propertyPath: m_LocalRotation.z
@@ -158749,11 +158761,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3436361522493333590, guid: f681efda8f824a044a67f3097235e454, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -19.227
+      value: -4.227
       objectReference: {fileID: 0}
     - target: {fileID: 4980235748706257725, guid: f681efda8f824a044a67f3097235e454, type: 3}
       propertyPath: m_Name
       value: DoorTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8799106492753005129, guid: f681efda8f824a044a67f3097235e454, type: 3}
+      propertyPath: m_Size.z
+      value: 1.0000014
+      objectReference: {fileID: 0}
+    - target: {fileID: 8799106492753005129, guid: f681efda8f824a044a67f3097235e454, type: 3}
+      propertyPath: m_Center.x
+      value: -8.3565497e-16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8799106492753005129, guid: f681efda8f824a044a67f3097235e454, type: 3}
+      propertyPath: m_Center.z
+      value: -0.0000007748604
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc40f5c94f0477941a09302c76e13127, type: 3}
       propertyPath: m_LocalScale.x
