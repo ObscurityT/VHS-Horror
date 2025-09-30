@@ -190,3 +190,6 @@ MonoBehaviour:
   - key: btn_continue_pressed
     value: 
     sprite: {fileID: 21300000, guid: 6704d81127df16d4f8814ea57d547878, type: 3}
+  - key: bookpuzzle_title
+    value: 
+    sprite: {fileID: 21300000, guid: ef808e47a05a4a04c9845a15e6ef94bb, type: 3}

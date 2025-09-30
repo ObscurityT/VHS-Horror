@@ -4,10 +4,19 @@ public class DialogueTrigger : MonoBehaviour
 {
     
     public string messageKey;
+    private string messageKeyAtual;
 
+    [Header("Configurações")]
+    public bool allowMessageOverride = false;
     private bool isActive = false;
     public bool oneShot = true;       
     public bool retriggerOnExit = true;
+
+
+    private void Awake()
+    {
+        messageKeyAtual = messageKey; 
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -24,5 +33,14 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
         if (retriggerOnExit) isActive = false;
+    }
+
+    public void OverrideMessage(string novaKey)
+    {
+        if (allowMessageOverride)
+        {
+            messageKeyAtual = novaKey;
+            Debug.Log($"[DialogueTrigger] Texto sobrescrito para: {novaKey}");
+        }
     }
 }

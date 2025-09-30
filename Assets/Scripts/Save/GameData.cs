@@ -10,6 +10,7 @@ namespace SaveSystem
         public SerializableDictionary<string, bool> collectedItems; // respectivamente, id e status (coletado ou nao-coletado)
         public SerializableDictionary<string, string> itemSlot;
 
+        public bool bookPuzzleSolved;
         public List<bool> rhythmVictory;
         public int currentSanity;
         public string lastDoorID;
@@ -29,6 +30,8 @@ namespace SaveSystem
             insanityWeight = 0;
             lastDoorID = "";
             overlayElapsedSeconds = 0f;
+
+            bookPuzzleSolved = false;
         }
     }
 }

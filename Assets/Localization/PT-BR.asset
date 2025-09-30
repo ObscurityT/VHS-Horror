@@ -189,3 +189,6 @@ MonoBehaviour:
   - key: NOTES_TAB
     value: Notas
     sprite: {fileID: 0}
+  - key: bookpuzzle_title
+    value: Notas
+    sprite: {fileID: 21300000, guid: 24eaebee92e016546bdda9f082fca91a, type: 3}

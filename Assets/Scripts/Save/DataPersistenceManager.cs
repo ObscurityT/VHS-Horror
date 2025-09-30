@@ -11,6 +11,9 @@ using UnityEngine.SceneManagement;
     [Header("File Storage Settings")]
     [SerializeField] string fileName;
 
+    [Header("Debug Settings")]
+    [SerializeField] private bool ignoreSave = false;
+
     public bool IsNewGame { get; private set; }
     GameData gameData;
     public GameData CurrentGameData => gameData;
@@ -33,7 +36,16 @@ using UnityEngine.SceneManagement;
     {
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
         this.dataPersistenceObjects = FindAllDataPersistencesObjects();
-        LoadGame();
+        if (!ignoreSave)
+        {
+            LoadGame();
+        }
+        else
+        {
+            Debug.Log("[DPM] Ignorando save. Iniciando cena sem dados carregados.");
+            this.gameData = new GameData(); 
+            IsNewGame = true;
+        }
     }
 
     private List<IDataPersistence> FindAllDataPersistencesObjects()

@@ -1,7 +1,8 @@
+using SaveSystem;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BookPuzzleManager : MonoBehaviour
+public class BookPuzzleManager : MonoBehaviour, IDataPersistence
 {
     public PuzzleAudioHelper audioHelper;
     public List<SlotBook> slots; 
@@ -72,12 +73,21 @@ public class BookPuzzleManager : MonoBehaviour
     private System.Collections.IEnumerator ClosePuzzleAfterDelay(float delay)
     {
         yield return new WaitForSecondsRealtime(delay);
-        if (puzzlePanel != null)
-            puzzlePanel.SetActive(false);
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        ClosePuzzle();
+    }
 
-        var player = FindFirstObjectByType<PlayerController>();
-        if (player != null) player.canLook = true;
+    public void LoadData(GameData data)
+    {
+        puzzleSolved = data.bookPuzzleSolved;
+        if (puzzleSolved)
+        {
+            if (puzzlePanel != null)
+                puzzlePanel.SetActive(false);
+        }
+    }
+
+    public void SaveData(GameData data)
+    {
+        data.bookPuzzleSolved = puzzleSolved;
     }
 }

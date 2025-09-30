@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
 
         if (canLook)
         {
-            Debug.Log("Mouse: " + Input.GetAxis("Mouse X"));
+            
             //Mouse look
             float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
             float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
