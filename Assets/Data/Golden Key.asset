@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <NameKey>k__BackingField: ITEM_GOLDEN_KEY
   <DescriptionKey>k__BackingField: ITEM_GOLDENKEY_DESC
-  <ItemImage>k__BackingField: {fileID: 21300000, guid: 847920f1690a283498b0e2726b6fc74c, type: 3}
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: e4f6b283b379f9e43abc295874932193, type: 3}
