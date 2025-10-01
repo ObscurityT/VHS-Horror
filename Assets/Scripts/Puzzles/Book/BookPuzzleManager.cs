@@ -9,6 +9,7 @@ public class BookPuzzleManager : MonoBehaviour, IDataPersistence
     public List<int> correctOrder; 
     public GameObject puzzlePanel;
     private bool puzzleSolved = false;
+    public Animator wallAnimator;
 
 
     public void CheckPuzzle()
@@ -30,6 +31,11 @@ public class BookPuzzleManager : MonoBehaviour, IDataPersistence
         audioHelper.PlaySuccessSound();
         puzzleSolved = true;
         StartCoroutine(ClosePuzzleAfterDelay(1.5f));
+
+        if (wallAnimator != null)
+        {
+            wallAnimator.SetTrigger("Descend");
+        }
     }
 
     void Update()
