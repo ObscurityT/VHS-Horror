@@ -34,7 +34,7 @@ public class BookPuzzleManager : MonoBehaviour, IDataPersistence
 
         if (wallAnimator != null)
         {
-            wallAnimator.SetTrigger("Descend");
+            wallAnimator.SetTrigger("Caindo");
         }
     }
 
