@@ -192,3 +192,24 @@ MonoBehaviour:
   - key: bookpuzzle_title
     value: Notas
     sprite: {fileID: 21300000, guid: 24eaebee92e016546bdda9f082fca91a, type: 3}
+  - key: Interact_txt
+    value: Pressione 'E' para Interagir
+    sprite: {fileID: 0}
+  - key: DOOR_LOCKED
+    value: Trancada
+    sprite: {fileID: 0}
+  - key: MELODY_01
+    value: Saia daqui!
+    sprite: {fileID: 0}
+  - key: MELODY_02
+    value: "Est\xE1 atr\xE1s de voc\xEA..."
+    sprite: {fileID: 0}
+  - key: MELODY_03
+    value: "Voc\xEA est\xE1 ouvindo?"
+    sprite: {fileID: 0}
+  - key: MELODY_04
+    value: "Sil\xEAncio..."
+    sprite: {fileID: 0}
+  - key: MELODY_05
+    value: "N\xE3o olhe para tr\xE1s."
+    sprite: {fileID: 0}

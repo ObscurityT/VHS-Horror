@@ -193,3 +193,24 @@ MonoBehaviour:
   - key: bookpuzzle_title
     value: 
     sprite: {fileID: 21300000, guid: ef808e47a05a4a04c9845a15e6ef94bb, type: 3}
+  - key: Interact_txt
+    value: Press 'E' to Interact
+    sprite: {fileID: 0}
+  - key: DOOR_LOCKED
+    value: Locked...
+    sprite: {fileID: 0}
+  - key: MELODY_01
+    value: Get out of here!
+    sprite: {fileID: 0}
+  - key: MELODY_02
+    value: It's behind you...
+    sprite: {fileID: 0}
+  - key: MELODY_03
+    value: Can you hear it?
+    sprite: {fileID: 0}
+  - key: MELODY_04
+    value: Silence...
+    sprite: {fileID: 0}
+  - key: MELODY_05
+    value: Don't look back.
+    sprite: {fileID: 0}

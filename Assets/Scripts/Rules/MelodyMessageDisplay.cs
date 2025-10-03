@@ -33,9 +33,12 @@ public class MelodyMessageDisplay : MonoBehaviour
         {
             string chave = frasesPossiveis[Random.Range(0, frasesPossiveis.Length)];
             string fraseTraduzida = LocalizationManager.Instance.GetText(chave);
+
+            Debug.Log($"Chave: {chave} | Tradução: {fraseTraduzida}");
+
             textoMelodyDialogo.text = fraseTraduzida;
             painelMelodyDialogo.SetActive(true);
-            CancelInvoke(); // evita sobreposição
+            CancelInvoke();
             Invoke(nameof(EsconderMensagem), tempoDeExibicao);
         }
     }
