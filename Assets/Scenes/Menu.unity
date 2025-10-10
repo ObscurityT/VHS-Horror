@@ -858,6 +858,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 750689079}
+        m_TargetAssemblyTypeName: AudioSystem.AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: b7ce1d34800bfab48bc02f5ca6548ebe, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &267855578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -908,8 +920,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ffd3791fae63b43bd561cc12e9275b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverClip: {fileID: 0}
-  clickClip: {fileID: 0}
+  hoverClip: {fileID: 8300000, guid: e6f1dc541fd10f84ea997613646b0d5f, type: 3}
+  clickClip: {fileID: 8300000, guid: b7ce1d34800bfab48bc02f5ca6548ebe, type: 3}
 --- !u!1 &271452317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,6 +1550,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 750689079}
+        m_TargetAssemblyTypeName: AudioSystem.AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: c442733499be135479d203394d91eb80, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &744108630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1605,8 +1629,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ffd3791fae63b43bd561cc12e9275b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverClip: {fileID: 8300000, guid: 031a573cb1daba1478d7898f44778c7f, type: 3}
-  clickClip: {fileID: 8300000, guid: a086305af5e0f8240a284413f22927e8, type: 3}
+  hoverClip: {fileID: 8300000, guid: e6f1dc541fd10f84ea997613646b0d5f, type: 3}
+  clickClip: {fileID: 8300000, guid: c442733499be135479d203394d91eb80, type: 3}
+--- !u!114 &750689079 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+  m_PrefabInstance: {fileID: 1550808832}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19d647d7526f43946b14c478ab2ef8e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &751090513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,8 +1908,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ffd3791fae63b43bd561cc12e9275b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverClip: {fileID: 8300000, guid: 031a573cb1daba1478d7898f44778c7f, type: 3}
-  clickClip: {fileID: 8300000, guid: a086305af5e0f8240a284413f22927e8, type: 3}
+  hoverClip: {fileID: 8300000, guid: e6f1dc541fd10f84ea997613646b0d5f, type: 3}
+  clickClip: {fileID: 8300000, guid: c442733499be135479d203394d91eb80, type: 3}
 --- !u!1 &788010331
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,8 +2271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ffd3791fae63b43bd561cc12e9275b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverClip: {fileID: 8300000, guid: 031a573cb1daba1478d7898f44778c7f, type: 3}
-  clickClip: {fileID: 8300000, guid: a086305af5e0f8240a284413f22927e8, type: 3}
+  hoverClip: {fileID: 8300000, guid: e6f1dc541fd10f84ea997613646b0d5f, type: 3}
+  clickClip: {fileID: 8300000, guid: c442733499be135479d203394d91eb80, type: 3}
 --- !u!1 &987616301
 GameObject:
   m_ObjectHideFlags: 0
@@ -2653,7 +2688,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 84aac123083d2984e9b25ed6a781f668, type: 3}
     - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
       propertyPath: sfxClips.Array.size
-      value: 18
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
       propertyPath: musicClips.Array.size
@@ -2714,7 +2749,15 @@ PrefabInstance:
     - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
       propertyPath: 'sfxClips.Array.data[18]'
       value: 
-      objectReference: {fileID: 8300000, guid: 8a3c3fc7cfce1154db9b382c9374dd7a, type: 3}
+      objectReference: {fileID: 8300000, guid: b7ce1d34800bfab48bc02f5ca6548ebe, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[19]'
+      value: 
+      objectReference: {fileID: 8300000, guid: c442733499be135479d203394d91eb80, type: 3}
+    - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+      propertyPath: 'sfxClips.Array.data[20]'
+      value: 
+      objectReference: {fileID: 8300000, guid: e6f1dc541fd10f84ea997613646b0d5f, type: 3}
     - target: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
       propertyPath: 'musicClips.Array.data[0]'
       value: 
@@ -2933,8 +2976,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ffd3791fae63b43bd561cc12e9275b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverClip: {fileID: 8300000, guid: 031a573cb1daba1478d7898f44778c7f, type: 3}
-  clickClip: {fileID: 8300000, guid: a086305af5e0f8240a284413f22927e8, type: 3}
+  hoverClip: {fileID: 8300000, guid: e6f1dc541fd10f84ea997613646b0d5f, type: 3}
+  clickClip: {fileID: 8300000, guid: c442733499be135479d203394d91eb80, type: 3}
 --- !u!114 &1855330550
 MonoBehaviour:
   m_ObjectHideFlags: 0

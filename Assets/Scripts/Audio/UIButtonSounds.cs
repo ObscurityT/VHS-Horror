@@ -20,7 +20,7 @@ public class UIButtonSounds : MonoBehaviour, IPointerEnterHandler, IPointerClick
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (hoverClip != null)
+        if (hoverClip != null && !audioSource.isPlaying)
             audioSource.PlayOneShot(hoverClip);
     }
 

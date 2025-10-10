@@ -22531,7 +22531,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: cf369fc661ddab748b5213d56bb074a0, type: 3}
 --- !u!4 &136553555 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400018, guid: cf369fc661ddab748b5213d56bb074a0, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9223372036854775806, guid: cf369fc661ddab748b5213d56bb074a0, type: 3}
   m_PrefabInstance: {fileID: 136553554}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &142652043 stripped
@@ -30195,6 +30195,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 499356540}
+        m_TargetAssemblyTypeName: AudioSystem.AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: c442733499be135479d203394d91eb80, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -41572,8 +41584,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48deecc14db47e2459d644af9f6c1a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: "Mal dei os primeiros passos e j\xE1 sinto que n\xE3o estou sozinha. Algu\xE9m,
-    ou alguma coisa, j\xE1 sabe que estou aqui."
+  messageKey: 
+  allowMessageOverride: 0
+  oneShot: 1
+  retriggerOnExit: 1
 --- !u!65 &398738964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43524,7 +43538,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 40c1f214b48f0714f8df1ff18056845b, type: 3}
 --- !u!4 &421529389 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400006, guid: 40c1f214b48f0714f8df1ff18056845b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9223372036854775806, guid: 40c1f214b48f0714f8df1ff18056845b, type: 3}
   m_PrefabInstance: {fileID: 421529388}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &423220985
@@ -49340,6 +49354,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: baa992f5e7ac97f488d6777de2b2952e, type: 3}
   m_PrefabInstance: {fileID: 498076272}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &499356540 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1433235513010504752, guid: 82d31fdde3d61514a9e41891bad1f493, type: 3}
+  m_PrefabInstance: {fileID: 1870184442}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19d647d7526f43946b14c478ab2ef8e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &505345708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76691,7 +76716,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 7cde647ab108c98468918338157b760d, type: 3}
 --- !u!4 &801010178 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400008, guid: 7cde647ab108c98468918338157b760d, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9223372036854775806, guid: 7cde647ab108c98468918338157b760d, type: 3}
   m_PrefabInstance: {fileID: 801010177}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &801388623
@@ -85081,7 +85106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48deecc14db47e2459d644af9f6c1a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: "Uma p\xE1gina de di\xE1rio? O que quer dizer essas anota\xE7\xF5es?"
+  messageKey: 
+  allowMessageOverride: 0
+  oneShot: 1
+  retriggerOnExit: 1
 --- !u!65 &847908279
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -85120,11 +85148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1ef1d32891d034ca2600db4d0c5a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoInteracao: {fileID: 1854998900}
-  inspectionPoint: {fileID: 437459691}
-  velocidadeRotacao: 150
-  playerMovement: {fileID: 1170327590}
-  somInspecao: {fileID: 8300000, guid: bedf21030d4849f4b85d3252023bb0dd, type: 3}
 --- !u!82 &847908289
 AudioSource:
   m_ObjectHideFlags: 0
@@ -95828,7 +95851,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: e2766221eccf9ef48995ea1c8bdea5db, type: 3}
 --- !u!4 &916537125 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: e2766221eccf9ef48995ea1c8bdea5db, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9223372036854775806, guid: e2766221eccf9ef48995ea1c8bdea5db, type: 3}
   m_PrefabInstance: {fileID: 916537124}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &918976529
@@ -104020,8 +104043,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48deecc14db47e2459d644af9f6c1a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: "Frio... mas n\xE3o um frio comum. \xC9 como se algo tivesse passado por
-    mim, ou... atravessado."
+  messageKey: 
+  allowMessageOverride: 0
+  oneShot: 1
+  retriggerOnExit: 1
 --- !u!65 &971355836
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -104342,9 +104367,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48deecc14db47e2459d644af9f6c1a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: "Este \xE9 o corredor principal. Dizem que Gravenmoor foi uma fortaleza
-    contra o tempo\u2026 e \xE9 estranho como tudo parece intacto. N\xE3o h\xE1 poeira
-    suficiente para um lugar abandonado h\xE1 d\xE9cadas."
+  messageKey: 
+  allowMessageOverride: 0
+  oneShot: 1
+  retriggerOnExit: 1
 --- !u!65 &974020819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -106144,8 +106170,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48deecc14db47e2459d644af9f6c1a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Esses ossos... Seria de algum morador? Ou de outro investigador que nunca
-    saiu daqui?"
+  messageKey: 
+  allowMessageOverride: 0
+  oneShot: 1
+  retriggerOnExit: 1
 --- !u!65 &993219472
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -106454,8 +106482,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48deecc14db47e2459d644af9f6c1a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: "O ar aqui dentro \xE9 mais pesado...  como se cada parede respirasse.
-    \xC9 como se o castelo estivesse aguardando minha chegada."
+  messageKey: 
+  allowMessageOverride: 0
+  oneShot: 1
+  retriggerOnExit: 1
 --- !u!65 &996691917
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -127400,8 +127430,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3777d842a0904345aef7b9b5b843b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxRespiracao: Aranha
+  sfxMurmurios: Aranha
+  sfxGrito: Aranha
+  sfxVozInterna: Aranha
+  sfxGameOver: Aranha
+  postProcessVolume: {fileID: 0}
+  insanityVolume: {fileID: 0}
   sanitySlider: {fileID: 0}
   maxSanity: 100
+  alucinacaoPrefab: {fileID: 0}
   lastDoorID: 
 --- !u!54 &1170327588
 Rigidbody:
@@ -127471,11 +127509,13 @@ MonoBehaviour:
   runSpeed: 4
   mouseSensitivity: 2
   cameraTransform: {fileID: 1012686265}
+  melodyController: {fileID: 0}
   cameraPitch: 0
   canLook: 1
   Passos: {fileID: 1170327594}
   woodClip: {fileID: 8300000, guid: 527c686ac56fc4d48beed42589ae3643, type: 3}
   rockClip: {fileID: 8300000, guid: 00f1e3320145b0c4f868a71a54dd0dd2, type: 3}
+  gramClip: {fileID: 0}
   pitchMin: 0.85
   pitchMax: 1.05
   resetDelay: 1
@@ -143404,6 +143444,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 499356540}
+        m_TargetAssemblyTypeName: AudioSystem.AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: c442733499be135479d203394d91eb80, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1253742847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145461,8 +145513,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48deecc14db47e2459d644af9f6c1a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: "A biblioteca... As luzes est\xE3o acesas, mas n\xE3o h\xE1 sinais de
-    velas ou eletricidade. Como \xE9 poss\xEDvel?"
+  messageKey: 
+  allowMessageOverride: 0
+  oneShot: 1
+  retriggerOnExit: 1
 --- !u!65 &1275264207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -158682,8 +158736,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48deecc14db47e2459d644af9f6c1a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: "O corredor para esse lado est\xE1 bloqueado. Nenhum sinal de como isso
-    foi colocado aqui. Parece que s\xF3 h\xE1 um caminho a seguir..."
+  messageKey: 
+  allowMessageOverride: 0
+  oneShot: 1
+  retriggerOnExit: 1
 --- !u!65 &1426203244
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -187415,6 +187471,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 499356540}
+        m_TargetAssemblyTypeName: AudioSystem.AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: b7ce1d34800bfab48bc02f5ca6548ebe, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1593176044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188245,8 +188313,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48deecc14db47e2459d644af9f6c1a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: "Os livros est\xE3o dispostos como se algu\xE9m tivesse acabado de deix\xE1-los.
-    Alguns cobertos de p\xF3... outros parecem rec\xE9m-tocados.\n"
+  messageKey: 
+  allowMessageOverride: 0
+  oneShot: 1
+  retriggerOnExit: 1
 --- !u!65 &1607130795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -188862,6 +188932,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 499356540}
+        m_TargetAssemblyTypeName: AudioSystem.AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: b7ce1d34800bfab48bc02f5ca6548ebe, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1616723477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189422,8 +189504,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48deecc14db47e2459d644af9f6c1a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: "Preciso explorar cada c\xF4modo. Descobrir o que \xE9 verdade por tr\xE1s
-    da lenda e entender a maldi\xE7\xE3o que ainda vive nesse lugar."
+  messageKey: 
+  allowMessageOverride: 0
+  oneShot: 1
+  retriggerOnExit: 1
 --- !u!65 &1629883444
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -193756,7 +193840,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 956fb5712f910104689e7a7574fc3ce5, type: 3}
 --- !u!4 &1716732980 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400018, guid: 956fb5712f910104689e7a7574fc3ce5, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9223372036854775806, guid: 956fb5712f910104689e7a7574fc3ce5, type: 3}
   m_PrefabInstance: {fileID: 1716732979}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1718208226
@@ -200970,8 +201054,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62fc642ad806824b9216c4a15fc6c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 264575207}
+  panelPause: {fileID: 0}
+  panelSettings: {fileID: 0}
   crosshair: {fileID: 398078186}
+  cameraOverlay: {fileID: 0}
 --- !u!1001 &1833936884
 PrefabInstance:
   m_ObjectHideFlags: 0
