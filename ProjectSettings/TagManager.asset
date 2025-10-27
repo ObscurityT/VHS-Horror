@@ -9,6 +9,7 @@ TagManager:
   - Mirror
   - Grama
   - Interactable
+  - MenuMusic
   layers:
   - Default
   - TransparentFX

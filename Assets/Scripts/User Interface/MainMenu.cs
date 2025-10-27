@@ -27,6 +27,11 @@ public class MainMenu : MonoBehaviour
         if (DataPersistenceManager.instance != null)
             DataPersistenceManager.instance.NewGame(new GameData());
 
+        // Encontra e destrói a música do menu antes de trocar de cena
+        var menuMusic = GameObject.FindWithTag("MenuMusic");
+        if (menuMusic != null)
+            Destroy(menuMusic);
+
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneToLoad);
     }
@@ -38,6 +43,10 @@ public class MainMenu : MonoBehaviour
 
         var data = DataPersistenceManager.instance.CurrentGameData;
         if (data == null) { StartGame(); return; }
+
+        var menuMusic = GameObject.FindWithTag("MenuMusic");
+        if (menuMusic != null)
+            Destroy(menuMusic);
 
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneToLoad);
