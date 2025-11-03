@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &9195601697151052759
 Transform:
@@ -46,4 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   legendaBox: {fileID: 0}
   legendaText: {fileID: 0}
-  screenTime: 2
+  screenTime: 4
+  fadeDuration: 0.15

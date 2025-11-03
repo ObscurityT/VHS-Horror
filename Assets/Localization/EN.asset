@@ -214,3 +214,11 @@ MonoBehaviour:
   - key: MELODY_05
     value: Don't look back.
     sprite: {fileID: 0}
+  - key: "P\xE1gina4A"
+    value: "\"The servants disappeared.\\nThose who remain avoid my name and the
+      mirror in my room.\\nThey said they heard voices, and saw things that weren\u2019t
+      there.\\nI myself began to forget small details.\\nI opened a door and didn\u2019t
+      know where I was.\\nI returned and closed it, but something told me not to
+      do that.\\nThen one day I heard a whisper again:\\n\u201CNever enter where
+      you have already exited.\u201D\\nI began to avoid doing that.\""
+    sprite: {fileID: 0}
